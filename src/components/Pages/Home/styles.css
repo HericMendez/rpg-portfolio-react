@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25vh auto;
+}
+
+.panel-div{
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.panel-window{
+    width: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-div{
+    padding: 20px;
+    margin: 20px auto;
+}
