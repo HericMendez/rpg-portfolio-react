@@ -1,12 +1,13 @@
-import ProgressBar from 'components/ProgressBar'
+import ProgressBar from 'components/Elements/ProgressBar'
 import React from 'react'
 import './styles.css'
+import Avatar from '../../../assets/images/avatar/avatar_full.png'
 
 const Home = () => {
   return (
     <div className='container'>
       <div className='panel-div'>
-        <div className='panel-window rpgui-container framed'>
+        <div className='panel-window rpgui-container'>
           <>
             <ProgressBar
               label="Health: "
@@ -27,7 +28,7 @@ const Home = () => {
         </div>
 
       </div>
-      <div className='avatar-div'>
+      <div className='hide-mobile avatar-div'>
         <h1>Right side</h1>
       </div>
     </div>

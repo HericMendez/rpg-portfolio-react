@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './assets/rpgui/_variables.css'
 import './assets/rpgui/rpgui.css'
-import './assets/rpgui/rpgui.js'
 
 
 import App from './App';

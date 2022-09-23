@@ -1,4 +1,4 @@
-import MainWindow from "components/MainWindow";
+import MainWindow from "components/Elements/MainWindow";
 
 
 

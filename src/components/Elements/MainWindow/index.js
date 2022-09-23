@@ -26,7 +26,7 @@ const MainWindow = () => {
   return (
     <Router>
       <div main-container>
-        <div className='rpgui-container framed nav-window'>
+        <div className='hide-mobile rpgui-container framed nav-window'>
           <ul onClick={handleClick}>
             <li><Link id="home" to='/'>Home</Link></li>
 
@@ -38,7 +38,7 @@ const MainWindow = () => {
 
           </ul>
         </div>
-        <div className='rpgui-container framed icon-window'>
+        <div className='hide-mobile rpgui-container framed icon-window'>
           <p>Icons here</p>
         </div>
         <div className='rpgui-container framed title-window'>
@@ -56,6 +56,9 @@ const MainWindow = () => {
 
           </Routes>
         </div>
+        <div className='rpgui-container framed nav-mobile'>
+        <h1>Right side</h1>
+      </div>
       </div>
     </Router>
   )

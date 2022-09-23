@@ -1,6 +1,6 @@
 :root {
   --border-img: url("img/ff-theme/border-image_ff.png");
-  --bg-color: linear-gradient(to bottom right, #466bfa, #00008b) repeat repeat;
+  --bg-color: linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
   --progressbar-left: url("img/ff-theme/progress-bar-left-ff.png");
   --progressbar-right: url("img/ff-theme/progress-bar-right-ff.png");
   --progressbar-middle: url("img/ff-theme/progress-bar-track-ff.png");

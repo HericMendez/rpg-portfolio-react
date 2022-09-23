@@ -6,10 +6,10 @@
     margin: 25vh auto;
 }
 
-.panel-div{
+/* .panel-div{
     padding: 20px;
-    margin: 20px auto;
-}
+    margin:  auto 20px;
+} */
 
 .panel-window{
     width: 25vw;
@@ -22,3 +22,19 @@
     padding: 20px;
     margin: 20px auto;
 }
+
+@media screen and (max-width:640px) {
+    .panel-window{
+        width: 70%;
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .panel-div{
+        padding: 0;
+    
+        display: flex;
+        margin-left: 15%;
+        margin-right: 25%;
+    }
+  }
