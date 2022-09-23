@@ -702,7 +702,7 @@ ul.rpgui-list-imp {
 /* default gui link */
 .rpgui-content a {
   /* color and border */
-  color: yellow;
+  color: #fff;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.0em;
   line-height: 22px;
@@ -710,7 +710,9 @@ ul.rpgui-list-imp {
 
 /* default gui link */
 .rpgui-content a:hover {
-  text-decoration: underline; }
+  color: yellow;
+  text-decoration: underline; 
+}
 
 /* default gui label */
 .rpgui-content label {

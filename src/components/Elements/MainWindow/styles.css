@@ -4,40 +4,42 @@
   list-style-type: none;
 
 }
+
+
 .nav-window {
-  width: 25vw;
+  width: 22vw;
   height: 80vh;
 }
 
 .icon-window {
-  width: 25vw;
+  width: 22vw;
   height: 20vh;
   margin-top: 80vh;
 }
 
 .title-window {
-  width: 75vw;
+  width: 78vw;
   height: 12vh;
-  margin-left: 25vw;
+  margin-left: 22vw;
 }
 
 .content-window {
-  width: 75vw;
+  width: 78vw;
   height: 88vh;
-  margin-left: 25vw;
+  margin-left: 22vw;
   margin-top: 12vh;
 }
 
 ul {
   list-style-type: none;
-  padding: 0px;
-  font-size: 1rem;
+  padding: 16px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
 }
 
 li {
-  padding-top: 26px;
+  padding-top: 30px;
   color: white;
 }
 
@@ -50,6 +52,37 @@ li {
     padding: 0px;
     font-size: 9px;
   }
+  .nav-window {
+    width: 25vw;
+    height: 80vh;
+  }
+  
+  .icon-window {
+    width: 25vw;
+    height: 20vh;
+    margin-top: 80vh;
+  }
+
+  .title-window {
+    width: 75vw;
+    height: 15vh;
+    margin-left: 25vw;
+  }
+  
+  .content-window {
+    overflow-y: scroll;
+    width: 75vw;
+    height: 85vh;
+    margin-left: 25vw;
+    margin-top: 15vh;
+  }
+  
+}
+.skill-icons {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 8px;
+
 }
 
 @media screen and (max-width: 640px) {
@@ -61,10 +94,12 @@ li {
 
   .content-window {
     width: 100vw;
-    height: 64vh;
-    margin-left: 0vw;
-    margin-top: 15vh;
+    height: 80vh;
+    margin-left: 0;
+    overflow: hidden;
+    margin-top: 0vh;
   }
+
 
   .title-window {
     width: 100vw;
@@ -76,7 +111,21 @@ li {
     display: flex;
     width: 100vw;
     height: 15vh;
-    margin-top: 78vh;
+    margin-top: 77vh;
+    justify-content: space-around;
+    padding: 0 !important;
+    font-size: 8px;
+
     
+  }
+  .nav-icon{
+    width: 50px;
+    height: 50px;
+  }
+  .nav-link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
   }
 }

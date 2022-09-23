@@ -3,7 +3,7 @@ import React from "react";
 
 const ProgressBar = (props) => {
   return (
-    <>
+    <div className="container-bar">
       <label>{props.label ? props.label : "Progress:"}</label>
       <div class="rpgui-progress" data-rpguitype="progress">
         <div class=" rpgui-progress-track">
@@ -15,7 +15,7 @@ const ProgressBar = (props) => {
         <div class=" rpgui-progress-left-edge"></div>
         <div class=" rpgui-progress-right-edge"></div>
       </div>
-    </>
+    </div>
   );
 };
 

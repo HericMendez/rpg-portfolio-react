@@ -1,40 +1,155 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25vh auto;
+  margin: 0px 2vw;
 }
 
-/* .panel-div{
-    padding: 20px;
-    margin:  auto 20px;
-} */
+.panel-div {
+  display: flex;
+  padding: 0px 15px;
+  margin: 0 15px;
+}
+.scrollable{
+  overflow: scroll;
 
-.panel-window{
-    width: 25vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
 }
 
-.avatar-div{
-    padding: 20px;
-    margin: 20px auto;
+.panel-window {
+  width: 35vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+
 }
 
-@media screen and (max-width:640px) {
-    .panel-window{
-        width: 70%;
-        margin: auto;
-        margin-left: 0;
-    }
+.avatar-div {
+  padding: 20px;
+  margin: 0;
+}
 
-    .panel-div{
-        padding: 0;
-    
-        display: flex;
-        margin-left: 15%;
-        margin-right: 25%;
-    }
+.avatar-img {
+  position: absolute;
+  bottom: 0;
+  right: 5vw;
+  height: 78vh;
+}
+
+.profile-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.profile-description {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+
+}
+
+
+.skill-icons {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.portrait-div {
+  display: none;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+}
+
+h1,
+h2 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .avatar-img {
+    right: 0;
   }
+  .panel-window {
+    width: 25vw;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .avatar-div {
+    display: none;
+  }
+
+
+  .avatar-portrait {
+    width: 12vw;
+    min-width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+
+  .portrait-div {
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .panel-window {
+    width: 55vw;
+    margin: auto;
+    margin-left: 0;
+  }
+  .profile-description{
+    font-size: 14px;
+    padding: 8px;
+    
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    overflow-y: hidden;
+  }
+  .panel-window {
+    width: 80vw;
+    
+  }
+  .avatar-portrait {
+padding-top: 25px;
+  }
+  
+
+
+  .panel-div {
+    padding: 0;
+
+    display: flex;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .profile-description{
+    font-size: 12px;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .avatar-img{
+    width: 300px;
+  }
+}
