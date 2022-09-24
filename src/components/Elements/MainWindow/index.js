@@ -8,12 +8,12 @@ import Quests from "components/Pages/Quests";
 import Skills from "components/Pages/Skills";
 import Contact from "components/Pages/Contact";
 
-import HomeIcon from "../../../assets/images/icons/pixel-icons/House_Red.png";
-import IconBlack from "../../../assets/images/icons/pixel-icons/Blank_Black.png";
-import IconGreen from "../../../assets/images/icons/pixel-icons/Blank_Green.png";
-import IconLightBlue from "../../../assets/images/icons/pixel-icons/Blank_LightBlue.png";
-import IconPurple from "../../../assets/images/icons/pixel-icons/Blank_Purple.png";
-import IconYellow from "../../../assets/images/icons/pixel-icons/Blank_Yellow.png";
+import HomeIcon from "../../../assets/images/icons/House_Red.png";
+import IconBlack from "../../../assets/images/icons/Blank_Black.png";
+import IconGreen from "../../../assets/images/icons/Blank_Green.png";
+import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
+import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
+import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
 
 

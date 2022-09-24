@@ -10,8 +10,7 @@ import IconReact from "../../../assets/images/original/react.png";
 const Home = () => {
   return (
     <div className="container">
-     <div className="scrollable">
-     <div className="panel-div " >
+      <div className="panel-div ">
         <div className="hide-mobile panel-window rpgui-container scrollable">
           <div className="profile-div">
             <div className="portrait-div">
@@ -39,16 +38,13 @@ const Home = () => {
               <img className="skill-icon" src={IconJS} alt="Javascript" />
               <img className="skill-icon" src={IconNode} alt="NodeJS" />
               <img className="skill-icon" src={IconReact} alt="React" />
-              
             </div>
-            
           </div>
         </div>
       </div>
       <div className="hide-mobile avatar-div">
         <img className="avatar-img" src={Avatar} alt="Avatar"></img>
       </div>
-     </div>
     </div>
   );
 };

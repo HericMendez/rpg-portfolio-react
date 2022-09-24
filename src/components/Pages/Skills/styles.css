@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.skills-div{
+    margin-top: 50px;
+}
+
+.skills-grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 10px;
+
+  }
+  
+.skill-icon {
+    width: 75px;
+    height: 75px;
+    margin: 8px;
+}
+
+.details-box{
+    margin-top: 50px;
+    width: 35vw;
+    height: 45vh;
+}
