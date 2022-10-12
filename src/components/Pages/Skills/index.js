@@ -1,52 +1,76 @@
 import React from "react";
 import { useState } from "react";
-import IconBlack from "../../../assets/images/icons/Blank_Black.png";
-import IconGreen from "../../../assets/images/icons/Blank_Green.png";
-import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
-import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
-import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
-import IconRed from "../../../assets/images/icons/Blank_Red.png";
-
+import ProgressBar from "components/Elements/ProgressBar";
+import HtmlSlotIcon from "../../../assets/images/icons/skill-slots/html-slot.png";
+import CssSlotIcon from "../../../assets/images/icons/skill-slots/css-slot.png";
+import JsSlotIcon from "../../../assets/images/icons/skill-slots/js-slot.png";
+import ReactSlotIcon from "../../../assets/images/icons/skill-slots/react-slot.png";
+import ReactNativeSlotIcon from "../../../assets/images/icons/skill-slots/rn-slot.png";
+import NodeSlotIcon from "../../../assets/images/icons/skill-slots/node-slot.png";
+import TailwindSlotIcon from "../../../assets/images/icons/skill-slots/tailwind-slot.png";
+import GithubSlotIcon from "../../../assets/images/icons/skill-slots/github-slot.png";
+import AgileSlotIcon from "../../../assets/images/icons/skill-slots/agile-slot.png";
+import MysqlSlotIcon from "../../../assets/images/icons/skill-slots/mysql-slot.png";
 import "./styles.css";
-
+import SkillData from "./skillData";
 const Skills = () => {
-const [skill, setSkill] = useState("")
-const tech = ['html', 'css', 'javascript', 'react', 'react-native', 'node', 'tailwind', 'scrum', 'git']
-  function handleClick(e){
-
-     if(e.target.id) setSkill(tech[e.target.id-1])
-    
+  const [skill, setSkill] = useState(SkillData[0]);
+  function handleClick(e) {
+    if (e.target.id) setSkill(SkillData[e.target.id - 1]);
   }
 
-
   return (
-    <div className="container scrollable">
+    <div className="rpgui-container skills-container scrollable">
       <div className="skills-div">
-      <h1>Main Skills</h1>
-      <div onClick={handleClick} className="skills-grid">
-    
+        <h1 className="center-text">Main Skills</h1>
+        <div onClick={handleClick} className="skills-grid">
+          <img id="1" className="skill-icon" src={HtmlSlotIcon} alt="HTML" />
+          <img id="2" className="skill-icon" src={CssSlotIcon} alt="CSS" />
+          <img id="3" className="skill-icon" src={JsSlotIcon} alt="JS" />
 
-                <img id="1" className="skill-icon" src={IconRed} alt="Javascript" />
-                <img id="2" className="skill-icon" src={IconRed} alt="NodeJS" />
-                <img id="3" className="skill-icon" src={IconRed} alt="React" />
+          <img id="4" className="skill-icon" src={ReactSlotIcon} alt="React" />
+          <img
+            id="5"
+            className="skill-icon"
+            src={ReactNativeSlotIcon}
+            alt="React"
+          />
+          <img id="6" className="skill-icon" src={NodeSlotIcon} alt="Node" />
+          <img
+            id="7"
+            className="skill-icon"
+            src={TailwindSlotIcon}
+            alt="React"
+          />
 
-
-                <img id="4" className="skill-icon" src={IconRed} alt="Javascript" />
-                <img id="5" className="skill-icon" src={IconRed} alt="NodeJS" />
-                <img id="6" className="skill-icon" src={IconRed} alt="React" />
-
-
-                <img id="7"  className="skill-icon" src={IconRed}  alt="Javascript" />
-                <img id="8"  className="skill-icon" src={IconRed} alt="NodeJS" />
-                <img id="9"  className="skill-icon" src={IconRed} alt="React" />
-                
-
-            </div>
-            
+          <img
+            id="8"
+            className="skill-icon"
+            src={MysqlSlotIcon}
+            alt="Javascript"
+          />
+          <img id="9" className="skill-icon" src={AgileSlotIcon} alt="NodeJS" />
+        </div>
       </div>
       <div className="details-div">
-        <div className="rpgui-container framed details-box">
-          <h1>{skill}</h1>
+        <div className="rpgui-container details-box">
+          <div className="details-header">
+            <img className="skill-icon" src={skill.image} alt={skill.name}></img>
+            <div className="header-text">
+              <h1>{skill.name}</h1>
+              <br />
+              <h4>{skill.meta}</h4>
+            </div>
+          </div>
+<hr className="golden"></hr>
+          <h3>Descripton</h3>
+          <p>{skill.description}</p>
+    <br/>
+          <ProgressBar
+            label={`Skill level: ${skill.level}`}
+            color={skill.barColor}
+            fill={skill.percent}
+          />
         </div>
       </div>
     </div>

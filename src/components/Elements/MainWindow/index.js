@@ -74,7 +74,7 @@ const MainWindow = () => {
         <div className="hide-mobile rpgui-container framed icon-window">
           <p>Icons here</p>
         </div>
-        <div className="hide-mobile rpgui-container framed title-window">
+        <div className="hide-mobile rpgui-container framed title-window center-text">
           <h1>{title}</h1>
         </div>
 

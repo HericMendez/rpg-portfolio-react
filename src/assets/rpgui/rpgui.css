@@ -638,7 +638,7 @@ ul.rpgui-list-imp {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.5em;
   /* center text */
-  text-align: center;
+
   /* padding */
   padding: 0 0 0 0;
  /* margin: 5px 5px 5px 5px;*/ }
@@ -650,7 +650,7 @@ ul.rpgui-list-imp {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.25em;
   /* center text */
-  text-align: center;
+
   /* padding */
   padding: 0 0 0 0;
  /* margin: 7px 7px 17px 7px;*/ }
@@ -664,7 +664,7 @@ ul.rpgui-list-imp {
   font-size: 1.15em;
   text-decoration: underline;
   /* center text */
-  text-align: center;
+
   /* padding */
   padding: 0 0 0 0;
 /*  margin: 7px 7px 17px 7px; */}
@@ -678,7 +678,7 @@ ul.rpgui-list-imp {
   font-size: 1.0em;
   text-decoration: underline;
   /* center text */
-  text-align: center;
+
   /* padding */
   padding: 0 0 0 0;
  /* margin: 7px 7px 17px 7px; */}

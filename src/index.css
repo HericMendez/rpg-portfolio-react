@@ -20,3 +20,11 @@ code {
     display: none;
   }
 }
+
+.center-text{
+  text-align: center;
+}
+.scrollable{
+  overflow: scroll;
+
+}
