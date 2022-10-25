@@ -1,3 +1,12 @@
+Classes/Components
+
+MainWindow.js
+RPGUI classes:
+rpgui-container framed
+
+styles.css classes:
+
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -15,18 +24,12 @@
   width: 22vw;
   height: 20vh;
   margin-top: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-window {
   width: 78vw;
   height: 12vh;
   margin-left: 22vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content-window {
@@ -34,7 +37,6 @@
   height: 88vh;
   margin-left: 22vw;
   margin-top: 12vh;
-
 }
 
 ul {
@@ -107,16 +109,11 @@ li {
     margin-top: 0vh;
   }
 
-  .icon-window{
-    display: none;
-  }
-
 
   .title-window {
     width: 100vw;
     height: 15vh;
     margin-left: 0vw;
-
   }
 
   .nav-mobile{
@@ -141,3 +138,4 @@ li {
 
   }
 }
+

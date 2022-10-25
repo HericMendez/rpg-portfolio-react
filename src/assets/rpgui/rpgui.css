@@ -746,7 +746,7 @@ margin-top: 2px;
 /* progress bar left edge */
 .rpgui-progress-left-edge {
   position: absolute;
-  height: 42px;
+  height: 50px;
   width: 40px;
   left: 0px;
   background-image: var(--progressbar-left);
@@ -755,7 +755,7 @@ margin-top: 2px;
 /* progress bar right edge */
 .rpgui-progress-right-edge {
   position: absolute;
-  height: 42px;
+  height: 50px;
   width: 40px;
   right: 0px;
   background-image: var(--progressbar-right);
@@ -764,7 +764,7 @@ margin-top: 2px;
 /* progress bar background track */
 .rpgui-progress-track {
   position: absolute;
-  height: 42px;
+  height: 50px;
   left: 40px;
   right: 40px;
   background-image: var(--progressbar-middle);
@@ -774,7 +774,7 @@ margin-top: 2px;
 /* progress bar - the fill itself */
 .rpgui-progress-fill {
   position: absolute;
-  top: 9px;
+  top: 12px;
   bottom: 8px;
   left: 0;
   width: 100%;
