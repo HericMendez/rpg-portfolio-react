@@ -15,8 +15,14 @@ import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
 import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
 import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
+import PTBR from '../../../Languages/pt-br.json'
+import ENUS from '../../../Languages/en-us.json'
+
 const MainWindow = () => {
   const [title, setTitle] = useState("Heric's Portfolio - Main Page");
+  const [language, setLanguage] = useState('PT-BR')
+  const language_data = (langdata) => setLanguage(langdata)
+  console.log("lang: ",language)
   function handleClick(e) {
     const pageTitles = {
       home: "Heric's Portfolio - Main Page",
@@ -31,6 +37,17 @@ const MainWindow = () => {
       setTitle(pageTitles[e.target.id]);
     }
   }
+
+  const translate = (section, content) => {
+    if(language=='PT-BR'){
+      return PTBR[section][content];;
+    }
+    else{
+      return ENUS[section][content];
+    }
+
+  };
+
   return (
     <Router>
       <div className="main-container">
@@ -72,17 +89,17 @@ const MainWindow = () => {
         <div className="hide-mobile rpgui-container framed icon-window">
           <div>
             <label>Language:</label>
-            <select class="rpgui-dropdown" style={{width: '100%'}}>
-              <option value="eng">English</option>
-              <option value="ptbr">Portuguese</option>
+            <select onChange={(e)=> setLanguage(e.target.value)} class="rpgui-dropdown" style={{width: '100%'}}>
+              <option value="PT-BR">Português</option>
+              <option value="EN-US">English</option>
               ...
             </select>
           </div>
           <div>
             <label>Theme:</label>
-            <select class="rpgui-dropdown" style={{width: '100%'}}>
-              <option value="option1">Final Fantasy</option>
-              <option value="option2">Undertale</option>
+            <select onChange={(e)=> console.log(e.target.value)} class="rpgui-dropdown" style={{width: '100%'}}>
+              <option value="light">Final Fantasy</option>
+              <option value="dark">Undertale</option>
               ...
             </select>
           </div>
@@ -93,7 +110,7 @@ const MainWindow = () => {
 
         <div className="rpgui-container framed content-window">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home translate={translate}/>} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/status" element={<Status />} />
             <Route path="/quests" element={<Quests />} />

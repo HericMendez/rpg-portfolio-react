@@ -10,10 +10,10 @@ import IconHtml from "../../../assets/images/original/html.png";
 import IconCss from "../../../assets/images/original/css.png";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
 
-const Home = () => {
+const Home = ({ translate }) => {
   const { height, width } = useWindowDimensions();
   console.log(width, height);
-
+  console.log(translate("Home", "p1"))
   if (width > 850) {
     return (
       <div className="home-container">
@@ -30,13 +30,13 @@ const Home = () => {
               <div className="profile-description">
                 <h1 className="center-text">Heric Mendes</h1>
                 <h3 style={{ paddingBottom: "2vh" }} className=" center-text">
-                  Level 31 Developer
+                  {translate("Home", "h3_1")}
                 </h3>
 
-                <p className="text-class">- Front-End/Mobile Freelancer</p>
-                <p className="text-class">- Intern Dev at Biotronica</p>
-                <p className="text-class">- Student at Fatec Taquaritinga</p>
-                <p className="text-class">- Currently learning Typescript</p>
+                <p className="text-class">- {translate("Home", "p1")}</p>
+                <p className="text-class">- {translate("Home", "p2")}</p>
+                <p className="text-class">- {translate("Home", "p3")}</p>
+                <p className="text-class">- {translate("Home", "p4")}</p>
               </div>
             </div>
             <div
@@ -48,14 +48,14 @@ const Home = () => {
               }}
             >
               <div style={{ width: "45%" }}>
-                <ProgressBar label="Health: " color="red" fill="80%" />
-                <ProgressBar label="Coding Exp:" color="blue" fill="70%" />
-                <ProgressBar label="Hours of Sleep:" color="green" fill="20%" />
+              <ProgressBar label={translate("Home", "label_1")} color="red" fill="80%" />
+              <ProgressBar label={translate("Home", "label_2")} color="blue" fill="70%" />
+              <ProgressBar label={translate("Home", "label_3")} color="green" fill="30%" />
               </div>
               <div style={{ width: "45%", paddingTop: "1.5vh" }}>
                 <div>
                   <h4 className="center-text" style={{ fontSize: "1.5vh" }}>
-                    Main Skills
+                  {translate("Home", "h4_1")}
                   </h4>
                   <div className="skill-icons">
                     <img
@@ -103,7 +103,7 @@ const Home = () => {
             <div className="panel-window scrollable">
             <h1 className="center-text">Heric Mendes</h1>
                 <h4 style={{ paddingBottom: "2vh" }} className=" center-text">
-                  Level 31 Developer
+                {translate("Home", "h3_1")}
                 </h4>
 
               <div className="profile-div ">
@@ -115,9 +115,9 @@ const Home = () => {
                     alt="Avatar Portrait"
                   ></img>
                               <div className="progress-bars">
-              <ProgressBar label="Health: " color="red" fill="80%" />
-              <ProgressBar label="Coding Exp:" color="blue" fill="70%" />
-              <ProgressBar label="Hours of Sleep:" color="green" fill="20%" />
+              <ProgressBar label={translate("Home", "label_1")} color="red" fill="80%" />
+              <ProgressBar label={translate("Home", "label_2")} color="blue" fill="70%" />
+              <ProgressBar label={translate("Home", "label_3")} color="green" fill="30%" />
              </div>
                 </div>
                 
@@ -125,17 +125,17 @@ const Home = () => {
               <hr className="golden" />
               <div className="profile-description">
        
-                <p className="text-class">- Front-End/Mobile Freelancer</p>
-                <p className="text-class">- Intern Dev at Biotronica</p>
-                <p className="text-class">- Student at Fatec Taquaritinga</p>
-                <p className="text-class">- Currently learning Typescript</p>
+              <p className="text-class">- {translate("Home", "p1")}</p>
+                <p className="text-class">- {translate("Home", "p2")}</p>
+                <p className="text-class">- {translate("Home", "p3")}</p>
+                <p className="text-class">- {translate("Home", "p4")}</p>
               </div>
               <br></br>
        
              <div >
                 <div>
                   <h4 className="center-text">
-                    Main Skills
+                  {translate("Home", "h4_1")}
                   </h4>
                   <div className="skill-icons">
                     <img
