@@ -675,7 +675,7 @@ ul.rpgui-list-imp {
   color: white;
   font-weight: 1;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.0em;
+
   text-decoration: underline;
   /* center text */
 
@@ -689,7 +689,7 @@ ul.rpgui-list-imp {
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.0em;
-  line-height: 22px; }
+  line-height: 2.5vh; }
 
 /* default span */
 .rpgui-content span {
@@ -719,7 +719,7 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 12px;
+  font-size: 1.6vh;
   line-height: 20px;
   display: inline; }
 
@@ -730,23 +730,24 @@ ul.rpgui-list-imp {
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.5em;
-  line-height: 22px; }
+  line-height: 2.5vh; }
 
 /*
 * progress bar styling
 */
 /* progress bar container */
 .rpgui-progress {
-  height: 36px;
+  height: 5vh;
   width: 100%;
-margin-top: 2px;
+  margin-top: 0.5vh;
   margin-bottom: 5px;
   position: relative; }
 
 /* progress bar left edge */
 .rpgui-progress-left-edge {
   position: absolute;
-  height: 50px;
+  height: 6vh;
+
   width: 40px;
   left: 0px;
   background-image: var(--progressbar-left);
@@ -755,7 +756,8 @@ margin-top: 2px;
 /* progress bar right edge */
 .rpgui-progress-right-edge {
   position: absolute;
-  height: 50px;
+  height: 6vh;
+
   width: 40px;
   right: 0px;
   background-image: var(--progressbar-right);
@@ -764,7 +766,8 @@ margin-top: 2px;
 /* progress bar background track */
 .rpgui-progress-track {
   position: absolute;
-  height: 50px;
+  height: 6vh;
+
   left: 40px;
   right: 40px;
   background-image: var(--progressbar-middle);
@@ -774,13 +777,13 @@ margin-top: 2px;
 /* progress bar - the fill itself */
 .rpgui-progress-fill {
   position: absolute;
-  top: 12px;
-  bottom: 8px;
+  top: 1.3vh;
+  bottom: 1vh;
   left: 0;
   width: 100%;
   background-image: url("img/progress.png");
   background-repeat: repeat-x;
-  background-size: 36px 100%; }
+  background-size: 3vh 100%; }
 
 /* progress bar - blue color */
 .rpgui-progress-fill.blue {

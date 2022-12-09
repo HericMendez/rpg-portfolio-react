@@ -15,8 +15,6 @@ import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
 import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
 import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
-
-
 const MainWindow = () => {
   const [title, setTitle] = useState("Heric's Portfolio - Main Page");
   function handleClick(e) {
@@ -72,7 +70,22 @@ const MainWindow = () => {
           </ul>
         </div>
         <div className="hide-mobile rpgui-container framed icon-window">
-          <p>Icons here</p>
+          <div>
+            <label>Language:</label>
+            <select class="rpgui-dropdown" style={{width: '100%'}}>
+              <option value="eng">English</option>
+              <option value="ptbr">Portuguese</option>
+              ...
+            </select>
+          </div>
+          <div>
+            <label>Theme:</label>
+            <select class="rpgui-dropdown" style={{width: '100%'}}>
+              <option value="option1">Final Fantasy</option>
+              <option value="option2">Undertale</option>
+              ...
+            </select>
+          </div>
         </div>
         <div className="hide-mobile rpgui-container framed title-window center-text">
           <h1>{title}</h1>
@@ -89,16 +102,30 @@ const MainWindow = () => {
           </Routes>
         </div>
         <div className="rpgui-container framed nav-mobile">
-          <Link className="nav-link" to="/"><img className="nav-icon" src={HomeIcon} alt="Home" />Home</Link>
-          <Link className="nav-link" to="/skills"><img className="nav-icon" src={IconPurple} alt="Home" />Skills</Link>
-          <Link className="nav-link" to="/status"><img className="nav-icon" src={IconLightBlue} alt="Home" />Status</Link>
-          <Link className="nav-link" to="/quests"><img className="nav-icon" src={IconGreen} alt="Home" />Quests</Link>
-          <Link className="nav-link" to="/contact"><img className="nav-icon" src={IconYellow} alt="Home" />Contact</Link>
-          <Link className="nav-link" to="/about"><img className="nav-icon" src={IconBlack} alt="Home" />About</Link>
-          
-
-
-          
+          <Link className="nav-link" to="/">
+            <img className="nav-icon" src={HomeIcon} alt="Home" />
+            Home
+          </Link>
+          <Link className="nav-link" to="/skills">
+            <img className="nav-icon" src={IconPurple} alt="Home" />
+            Skills
+          </Link>
+          <Link className="nav-link" to="/status">
+            <img className="nav-icon" src={IconLightBlue} alt="Home" />
+            Status
+          </Link>
+          <Link className="nav-link" to="/quests">
+            <img className="nav-icon" src={IconGreen} alt="Home" />
+            Quests
+          </Link>
+          <Link className="nav-link" to="/contact">
+            <img className="nav-icon" src={IconYellow} alt="Home" />
+            Contact
+          </Link>
+          <Link className="nav-link" to="/about">
+            <img className="nav-icon" src={IconBlack} alt="Home" />
+            About
+          </Link>
         </div>
       </div>
     </Router>

@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
 
-const ProgressBar = (props) => {
+const  ProgressBar = (props) => {
   return (
     <div className="container-bar">
       <label>{props.label ? props.label : "Progress:"}</label>

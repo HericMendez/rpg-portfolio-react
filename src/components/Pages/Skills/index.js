@@ -14,7 +14,6 @@ import MysqlSlotIcon from "../../../assets/images/icons/skill-slots/mysql-slot.p
 import "./styles.css";
 import SkillData from "./skillData";
 
-import { Container } from "UI";
 const Skills = () => {
   const [skill, setSkill] = useState(SkillData[0]);
   function handleClick(e) {

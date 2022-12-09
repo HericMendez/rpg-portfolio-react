@@ -8,16 +8,18 @@
 
 .nav-window {
   width: 22vw;
-  height: 80vh;
+  height: 70vh;
 }
 
 .icon-window {
   width: 22vw;
-  height: 20vh;
-  margin-top: 80vh;
+  height: 30vh;
+  margin-top: 70vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-window {
@@ -39,15 +41,16 @@
 
 ul {
   list-style-type: none;
-  padding: 16px;
-  font-size: 14px;
+  padding: 2vh;
+  font-size: 2.5vh;
   display: flex;
   flex-direction: column;
 }
 
 li {
-  padding-top: 30px;
+  font-size: 2vh;
   color: white;
+  padding-bottom: 4vh;
 }
 
 .nav-mobile {
