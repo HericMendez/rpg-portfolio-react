@@ -17,7 +17,7 @@ import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
 import PTBR from '../../../Languages/pt-br.json'
 import ENUS from '../../../Languages/en-us.json'
-import { ThemeContext } from "Theme";
+import { ThemeContext } from "Themes";
 
 
 const MainWindow = () => {
@@ -92,8 +92,8 @@ const MainWindow = () => {
           <div>
             <label>Language:</label>
             <select onChange={(e)=> setLanguage(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
-              <option value="PT-BR">Português</option>
-              <option value="EN-US">English</option>
+              <option  style={{ color: "#222", background: "#cccaba" }} value="PT-BR">Português</option>
+              <option  style={{ color: "#222", background: "#cccaba" }} value="EN-US">English</option>
               ...
             </select>
           </div>

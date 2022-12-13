@@ -2,7 +2,7 @@ import React, { useEffect, createContext, useState } from "react";
 
 const ThemeContext = createContext();
 
-/* const getTheme = () => {
+const getTheme = () => {
   const theme = localStorage.getItem("theme");
   if (!theme) {
     // Default theme is taken as ff-theme
@@ -12,9 +12,9 @@ const ThemeContext = createContext();
     return theme;
   }
 };
- */
+
 const ThemeChanger = ({ children }) => {
-  const [theme, setTheme] = useState("ff-theme");
+  const [theme, setTheme] = useState(getTheme);
 
   function toggleTheme(theme) {
     switch (theme) {

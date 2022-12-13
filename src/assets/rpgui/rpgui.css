@@ -256,7 +256,7 @@ inside your html file.
   /* border */
   border-style: solid;
   border-image-source: var(--border-img);
-  border-color:#fff;
+
   border-image-repeat: repeat;
   border-image-slice: 6 6 6 6;
   border-image-width: 18px;
@@ -406,9 +406,9 @@ label {
   -moz-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -webkit-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -o-border-image: url("img/select-border-image.png") 10% repeat repeat;
-  border-image: url("img/select-border-image.png") 10% repeat repeat;
+  border-image: var(--select-border-image) 10% repeat repeat;
   /* background */
-  background: url("img/select-background-image.png") repeat repeat;
+  background: var(--select-bg-image)repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -575,8 +575,8 @@ ul.rpgui-dropdown-imp {
 /* note! this class rule affect both the dropdown header and the list elements! */
 .rpgui-list-imp {
   /* font */
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  color: white;
+
+  color: #222;
   /* default size */
   min-height: 40px;
   margin-top: 0px;
@@ -589,9 +589,9 @@ ul.rpgui-dropdown-imp {
   -moz-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -webkit-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -o-border-image: url("img/select-border-image.png") 10% repeat repeat;
-  border-image: url("img/select-border-image.png") 10% repeat repeat;
+  border-image: url("img/theme-images/select-border-image-ff.png") 10% repeat repeat;
   /* background */
-  background: url("img/select-background-image.png") repeat repeat;
+  background: url("img/theme-images/select-background-image-ff.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -625,8 +625,7 @@ ul.rpgui-list-imp {
   color: yellow; }
 
 /* list hover */
-.rpgui-list-imp:hover {
-  color: yellow; }
+
 
 .rpgui-list-imp .rpgui-selected {
   background: rgba(0, 0, 0, 0.3); }
@@ -848,30 +847,34 @@ ul.rpgui-list-imp {
 * Rules for misc and general things.
 */
 /* set scrollbars for webkit browsers (like chrome) */
-.rpgui-content ::-webkit-scrollbar,
+.rpgui-content ::-webkit-scrollbar ,
 .rpgui-content::-webkit-scrollbar {
-  width: 18px;
-  display: none;
-}
+  width: 0px;
 
+}
+.rpgui-list-imp::-webkit-scrollbar  ,
+.rpgui-list-imp::-webkit-scrollbar {
+  width: 4vh;
+
+}
 /* Track */
-.rpgui-content ::-webkit-scrollbar-track,
-.rpgui-content::-webkit-scrollbar-track {
-  background-image: url("img/scrollbar-track.png");
-  background-size: 18px 60px;
+.rpgui-list-imp::-webkit-scrollbar-track,
+.rpgui-list-imp::-webkit-scrollbar-track {
+  background-image: var(--scrollbar-track);
+  background-size: 4vh 8vh;
   background-repeat: repeat-y; }
 
 /* Handle */
-.rpgui-content ::-webkit-scrollbar-thumb,
-.rpgui-content::-webkit-scrollbar-thumb {
-  background-image: url("img/scrollbar-thumb.png");
-  background-size: 50px 50px;
+.rpgui-list-imp::-webkit-scrollbar-thumb,
+.rpgui-list-imp::-webkit-scrollbar-thumb {
+  background-image: var(--scrollbar-thumb);
+  background-size: 3.6vh 4vh;
   background-repeat: no-repeat; }
 
 /* buttons */
-.rpgui-content ::-webkit-scrollbar-button,
-.rpgui-content::-webkit-scrollbar-button {
-  background-image: url("img/scrollbar-button.png");
+.rpgui-list-imp::-webkit-scrollbar-button,
+.rpgui-list-imp::-webkit-scrollbar-button {
+  background-image: var(--scrollbar-button);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 

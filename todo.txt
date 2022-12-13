@@ -1,8 +1,11 @@
 Mudanças globais:
 - Theme Toggler (FF/Undertale) - OK
-- Edição dos assets
-- Scrollbar do componente de lista
+    - Ajustar tamanhos das fontes para o tema Undertale
+    - alterar avatar portrait
+- Edição dos assets -   OK
+- Scrollbar do componente de lista - OK
 - Json com todos os textos do site (pt/eng)
+- Seletor de idioma e tema para versão mobile
 
 Páginas
 

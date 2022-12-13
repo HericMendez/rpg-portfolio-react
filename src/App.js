@@ -1,7 +1,7 @@
 import MainWindow from "components/Elements/MainWindow";
 import './fonts/DeterminationMonoWebRegular-Z5oq.ttf'
 import { useContext } from "react";
-import { ThemeContext } from "Theme";
+import { ThemeContext } from "Themes";
 
 function App() {
   const { theme } = useContext(ThemeContext);
