@@ -91,7 +91,7 @@ const Home = ({ translate }) => {
           </div>
         </div>
         <div className="hide-mobile avatar-div">
-          <img className="avatar-img" src={Avatar} alt="Avatar"></img>
+          <img className="avatar-img"  alt="Avatar"></img>
         </div>
       </div>
     );
@@ -111,7 +111,7 @@ const Home = ({ translate }) => {
                 <div className="portrait-div">
                   <img
                     className="avatar-portrait"
-                    src={Portrait}
+    
                     alt="Avatar Portrait"
                   ></img>
                               <div className="progress-bars">

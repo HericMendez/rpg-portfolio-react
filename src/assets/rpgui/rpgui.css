@@ -210,7 +210,7 @@ inside your html file.
   top: 0px;
   position: fixed;
   overflow: hidden;
-  font-size: 0.8em; }
+  font-size: 2.2vh; }
 
 /* general rules to apply on anything inside the content */
 .rpgui-content * {
@@ -235,7 +235,9 @@ inside your html file.
   image-rendering: -o-crisp-edges;
   image-rendering: pixelated;
   /* default font */
-  font-family: 'Press Start 2P', cursive; }
+  font-family: var(--font);
+  
+}
 
 /**
 * customized divs (containers) and framed objects (background and frame image).
@@ -254,6 +256,7 @@ inside your html file.
   /* border */
   border-style: solid;
   border-image-source: var(--border-img);
+  border-color:#fff;
   border-image-repeat: repeat;
   border-image-slice: 6 6 6 6;
   border-image-width: 18px;
@@ -429,12 +432,12 @@ ul.rpgui-dropdown-imp {
   /* font */
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   color: white;
-  height: 16px;
+  height: 2vh;
   /* remove the dot */
   list-style-type: none;
   /* padding */
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   padding-left: 6px;
   /* background */
   background: url("img/select-background-image.png") repeat repeat;
@@ -730,7 +733,7 @@ ul.rpgui-list-imp {
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.6vh;
-  line-height: 20px;
+  line-height:3vh;
   display: inline; }
 
 /* default gui label */
@@ -739,7 +742,7 @@ ul.rpgui-list-imp {
   margin-left: 20px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.5em;
+  font-size: 3vh;
   line-height: 2.5vh; }
 
 /*
@@ -758,7 +761,7 @@ ul.rpgui-list-imp {
   position: absolute;
   height: 6vh;
 
-  width: 40px;
+  width: 3vw;
   left: 0px;
   background-image: var(--progressbar-left);
   background-size: 100% 100%; }
@@ -768,7 +771,7 @@ ul.rpgui-list-imp {
   position: absolute;
   height: 6vh;
 
-  width: 40px;
+  width: 3vw;
   right: 0px;
   background-image: var(--progressbar-right);
   background-size: 100% 100%; }
@@ -778,8 +781,8 @@ ul.rpgui-list-imp {
   position: absolute;
   height: 6vh;
 
-  left: 40px;
-  right: 40px;
+  left: 3vw;
+  right: 3vw;
   background-image: var(--progressbar-middle);
   background-repeat: repeat-x;
   background-size: 36px 100%; }

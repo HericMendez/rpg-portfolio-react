@@ -1,3 +1,17 @@
+
+
+@font-face {
+  font-family: "DeterminationMono";   /*Can be any text*/
+  src: local("Determination"),
+    url("./fonts/DeterminationMonoWebRegular-Z5oq.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DeterminationSans";   /*Can be any text*/
+  src: local("Determination"),
+    url("./fonts/DeterminationSansWebRegular-369X.ttf") format("truetype");
+}
+
 body {
 
   background-color: black;

@@ -3,12 +3,15 @@
   flex-direction: row;
   list-style-type: none;
 
+  
+
 }
 
 
 .nav-window {
   width: 22vw;
   height: 70vh;
+  
 }
 
 .icon-window {

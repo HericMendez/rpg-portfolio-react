@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "components/Pages/Home";
@@ -17,11 +17,13 @@ import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
 import PTBR from '../../../Languages/pt-br.json'
 import ENUS from '../../../Languages/en-us.json'
+import { ThemeContext } from "Theme";
+
 
 const MainWindow = () => {
   const [title, setTitle] = useState("Heric's Portfolio - Main Page");
   const [language, setLanguage] = useState('PT-BR')
-  const language_data = (langdata) => setLanguage(langdata)
+  const { theme, toggleTheme } = useContext(ThemeContext);
   console.log("lang: ",language)
   function handleClick(e) {
     const pageTitles = {
@@ -89,7 +91,7 @@ const MainWindow = () => {
         <div className="hide-mobile rpgui-container framed icon-window">
           <div>
             <label>Language:</label>
-            <select onChange={(e)=> setLanguage(e.target.value)} class="rpgui-dropdown" style={{width: '100%'}}>
+            <select onChange={(e)=> setLanguage(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
               <option value="PT-BR">Português</option>
               <option value="EN-US">English</option>
               ...
@@ -97,9 +99,9 @@ const MainWindow = () => {
           </div>
           <div>
             <label>Theme:</label>
-            <select onChange={(e)=> console.log(e.target.value)} class="rpgui-dropdown" style={{width: '100%'}}>
-              <option value="light">Final Fantasy</option>
-              <option value="dark">Undertale</option>
+            <select onChange={(e)=> toggleTheme(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
+              <option value="ff-theme">Final Fantasy</option>
+              <option value="undertale-theme">Undertale</option>
               ...
             </select>
           </div>

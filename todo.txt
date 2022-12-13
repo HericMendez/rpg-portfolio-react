@@ -1,0 +1,40 @@
+Mudanças globais:
+- Theme Toggler (FF/Undertale) - OK
+- Edição dos assets
+- Scrollbar do componente de lista
+- Json com todos os textos do site (pt/eng)
+
+Páginas
+
+Home:
+Concluída?
+
+Skills:
+- Redesenhar Layout (Lista/grid?)
+- Listar skills e respectivas descrições (O que eu sei?)
+- Desenvolver tela desktop
+- Desenvolver tela mobile
+
+Quests:
+- Manter design de Lista
+- Relistar e categorizar projetos (incluir freelas recentes)
+- Tela Desktop
+- Tela Mobile 
+
+Status:
+- Redesenhar Layout (mini currículo) 
+- Comissionar nova arte 
+- Listar cursos/qualificações/experiências
+- Layout parecido com a tela home (arte na lateral da página - lado invertido?)
+- Tela Desktop
+- Tela Mobile
+
+Contact:
+- Fazer como uma tela de save game (desenhar)
+- Formulário responsivo (desktop/mobile)
+
+
+About:
+- Design simples, apenas texto
+- Pequeno texto explicando a ideia e o desenvolvimento
+- Tecnologias e bibliotecas utilizadas

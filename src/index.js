@@ -1,19 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import './assets/rpgui/_variables.css'
-import './assets/rpgui/rpgui.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./assets/rpgui/rpgui.css";
+import App from "./App";
 
+import { ThemeChanger } from "Theme";
+import "./Theme/variables.css";
 
-import App from './App';
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeChanger>
+      <App />
+    </ThemeChanger>
   </React.StrictMode>
 );
-
