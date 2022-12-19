@@ -68,12 +68,12 @@ const MainWindow = () => {
             </li>
             <li>
               <Link id="status" to="/status">
-                Status
+                Resumé
               </Link>
             </li>
             <li>
               <Link id="quests" to="/quests">
-                Quests
+                Projects
               </Link>
             </li>
             <li>

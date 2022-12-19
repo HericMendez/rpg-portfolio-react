@@ -1,11 +1,13 @@
 Mudanças globais:
 - Theme Toggler (FF/Undertale) - OK
-    - Ajustar tamanhos das fontes para o tema Undertale
-    - alterar avatar portrait
+    - Ajustar tamanhos das fontes para o tema Undertale - OK
+    - alterar avatar portrait - Deixa assim por enquanto
 - Edição dos assets -   OK
 - Scrollbar do componente de lista - OK
 - Json com todos os textos do site (pt/eng)
-- Seletor de idioma e tema para versão mobile
+- Seletor de idioma e tema para versão mobile 
+    - Definir design e local do icone
+- Corrigir tamanho da janela e fonte de dropdown/item list
 
 Páginas
 
@@ -13,7 +15,9 @@ Home:
 Concluída?
 
 Skills:
-- Redesenhar Layout (Lista/grid?)
+- Redesenhar Layout (Lista/grid?) 
+    > Skill Tree baseada em Roadmap? - NÃO (Muito trabalho, pouco )
+    
 - Listar skills e respectivas descrições (O que eu sei?)
 - Desenvolver tela desktop
 - Desenvolver tela mobile
@@ -22,7 +26,11 @@ Quests:
 - Manter design de Lista
 - Relistar e categorizar projetos (incluir freelas recentes)
 - Tela Desktop
+    - refatorar inline css
+    - arrumar estilo
 - Tela Mobile 
+    - design vertical
+    - modal onclick (para cada projeto)
 
 Status:
 - Redesenhar Layout (mini currículo) 
@@ -34,7 +42,9 @@ Status:
 
 Contact:
 - Fazer como uma tela de save game (desenhar)
-- Formulário responsivo (desktop/mobile)
+    - New Save > Abre modal form
+    - "Sending this form fills you with determination"
+- Formulário responsivo (tela única desktop/mobile)
 
 
 About:

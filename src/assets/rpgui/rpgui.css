@@ -210,7 +210,7 @@ inside your html file.
   top: 0px;
   position: fixed;
   overflow: hidden;
-  font-size: 2.2vh; }
+  font-size: 2vw; }
 
 /* general rules to apply on anything inside the content */
 .rpgui-content * {
@@ -638,7 +638,8 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.5em;
+
+  font-size: var(--fontsize-h1); 
   /* center text */
 
   /* padding */
@@ -650,7 +651,8 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.25em;
+
+  font-size: var(--fontsize-h2); 
   /* center text */
 
   /* padding */
@@ -663,7 +665,8 @@ ul.rpgui-list-imp {
   color: white;
   font-weight: 1;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.15em;
+
+  font-size: var(--fontsize-h3); 
   text-decoration: underline;
   /* center text */
 
@@ -677,10 +680,10 @@ ul.rpgui-list-imp {
   color: white;
   font-weight: 1;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-
+  font-size: var(--fontsize-h4); 
   text-decoration: underline;
   /* center text */
-
+  line-height: 2.3vh;
   /* padding */
   padding: 0 0 0 0;
  /* margin: 7px 7px 17px 7px; */}
@@ -690,14 +693,15 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.8vh;
-  line-height: 1.8vh; }
+
+  font-size: var(--fontsize-p); 
+  line-height: 2.3vh; }
 
 @media screen and (max-width: 800px) {
   .rpgui-content p {
   /* color and border */
 
-  font-size: 1.5vh;
+
   line-height: 1.8vh; }
 
 }
@@ -708,7 +712,8 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.0em;
+
+  font-size: var(--fontsize-span); 
   line-height: 22px; }
 
 /* default gui link */
@@ -716,8 +721,9 @@ ul.rpgui-list-imp {
   /* color and border */
   color: #fff;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.0em;
-  line-height: 22px;
+
+  font-size: var(--fontsize-a); 
+  line-height: 3vh;
   text-decoration: none; }
 
 /* default gui link */
@@ -731,18 +737,21 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.6vh;
+  font-size: var(--fontsize-label); 
   line-height:3vh;
+  margin-left: 1vw;
   display: inline; }
 
 /* default gui label */
 .rpgui-content li {
   /* color and border */
-  margin-left: 20px;
+  margin-left: 3vh;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 3vh;
+
+  font-size: var(--fontsize-li); 
   line-height: 2.5vh; }
+
 
 /*
 * progress bar styling
@@ -751,9 +760,11 @@ ul.rpgui-list-imp {
 .rpgui-progress {
   height: 5vh;
   width: 100%;
-  margin-top: 0.5vh;
-  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  
   position: relative; }
+  
 
 /* progress bar left edge */
 .rpgui-progress-left-edge {

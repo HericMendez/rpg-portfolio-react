@@ -21,9 +21,9 @@ const Skills = () => {
   }
 
   return (
-    <div className="scrollble">
+    <div className="scrollable">
       <div className="skills-container">
-        <div className="skills-div">
+        <div className=" rpgui-container framed " style={{top: '20vh', left: '25vw', height: '66vh'}}>
           <h1 className="grid-title">Main Skills</h1>
           <div onClick={handleClick} className="skills-grid">
             <img id="1" className="skill-icon" src={HtmlSlotIcon} alt="HTML" />
@@ -64,7 +64,7 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div className="details-div">
+        <div  className="details-div rpgui-container  " style={{top: '20vh', right: '3vw', height: '66vh'}}>
           <div className="details-header">
             <img
               className="header-skill-icon"

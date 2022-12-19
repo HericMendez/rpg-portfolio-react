@@ -1,0 +1,136 @@
+Skills:
+Html 
+A estrutura básica de qualquer site da internet.
+Essencial pra qualquer Front-end. E não, não é uma 
+linguagem de programação.
+Já fiz vários sites e até um joguinho com ela!
+
+
+Css
+Desde centralizar uma simples Div até layouts completos, o Css
+existe pra deixar sua vida na internet mais bonita e colorida!
+Css puro, aplicaçao em frameworks, designs responsivos, 
+styled components, enfim... eu me viro bem por aqui.
+
+
+Javascript
+Front-end, Back-end, Mobile, Desktop... 
+O que você imaginar, o Javascript está lá. 
+E é a linguagem base de toda a minha formação e que
+utilizo em praticamente todos os meus projetos.
+
+
+Typescript
+O Javascript é um pouco bagunçado, mas o Typescript está aí
+pra botar ordem na casa.  
+No momento aprendendo e fuçando na linguagem, que utilizo
+principalmente em projetos do estágio.
+
+
+React
+Este lindo portfolio que está vendo agora é feito em React!
+Preciso dizer mais alguma coisa?
+
+
+React-Native
+Quase a mesma coisa que o React, porém para smartphones.
+Experiência em projetos de freelancer como desenvolvedor Android.
+
+
+Node
+Javascript para desktop! Muito útil para rodar servidores locais
+ou para a construção de bibliotecas.
+
+
+NPM
+Instalador de pacotes que utilizo em praticamente todos os meus projetos.
+Npm > Yarn
+
+
+Bootstrap
+Uma biblioteca CSS bem conhecida por seus designs simples e genéricos.
+Traz classes e componentes prontos para a construção de sites, utilizando
+pouco ou nenhum css. Devs Back-end adoram!
+
+
+Tailwind
+Biblioteca utilitária de CSS, parecida com Bootstrap, só que melhor.
+Permite a utilização de classes com maior nível de personalização,
+dispensa quase que 100% o uso de CSS (o que é ótimo em componentes React),
+e tem até suporte para Dark Mode! Tem como não amar?
+
+
+Mysql
+Sistema de Gestão de Banco de Dados. 
+Possuo pouca experiência com Back-end, mas até que eu me viro aqui.
+
+
+Git
+É basicamente o "Memory Card" do dev, não dá pra sobreviver sem ele!
+
+
+Scrum
+Metodologia ágil para planejamento e organização de projetos.
+Utilizo todo dia no meu estágio (nas dailiy meetings), além de possuir uma certificação de Scrum Master pela Certiprof.
+
+
+
+Swagger
+É uma ferramenta de documentação de APIs. 
+Muito útil para documentar os endpoints que conectam o front-end com o back-end.
+
+
+Projetos:
+
+Flappyvania
+Clone do jogo Flappy Bird, feito utilizando HTML Canvas e Javascript,  com a temática da franquia Castlevania. A tela é responsiva em ambientes desktop e mobile. Eu sempre qus fazer um jogo, e este é meu primeiro (e até agora único) projeto na área de desenvolvimento de games. Fiz a partir de um tutorial de Flappy Bird utilizando HTML Canvas. É um dos projetos que mais me dão orgulho!
+Tecnologias utilizadas: HTML(Canvas Framework), CSS, Javascript."
+
+Movie Meme Generator
+Website - Projeto Pessoal
+Esse é simpĺes, porém é um dos meus favoritos. É UM site que transforma um nome de filme em um nome de meme. A quinta série nunca morre!
+Este projeto começou como uma piada entre amigos, porém muitas pessoas gostaram e me incentivaram a dar continuidade ao projeto, e o mesmo escalou para um estudo de caso, onde implementei o uso de Bootstrap no design de layout, além de desenvolver uma função de troca de tema (claro/escuro/sepia). 
+Atualmente atualizei este projeto, com mais filmes, e mais duas novas categorias,
+"Novelas" e "Animes"!
+Tecnologias utilizadas: HTML, CSS, Javascript."
+
+
+Empresa ACDCIT - Home Page
+Website - Projeto Freelance
+Jogo HTML - Projeto Pessoal
+Esse foi meu primeiro trabalho como freelancer!
+Fiz essa página a partir de um template pré existente, utilizando HTML, CSS e Javscript, e com função de troca de idioma (português/inglês) através de um arquivo Json local, a pedido do cliente.
+
+
+CryptoApp
+Aplicativo React - Estudo de Caso
+É um app React que exibe estatísticas detalhadas das criptomoedas mais valorizadas do mundo. Este projeto foi feito baseado em um tutorial do canal Code Commerce (Youtube), com o intuito de estudar mais a fundo as tecnologias React e TailwindCSS, e também para aplicar o uso de consumo de APIs utilizando Axios (do site https://www.coingecko.com/pt/api
+Tecnologias utilizadas: HTML, CSS, Javascript, TailwindCSS, React.
+
+
+
+Projetos da Biotrônica
+Estágio Remunerado
+Não posso contar, é segredo!
+Mas estou fazendo muita coisa legal aqui, e aprendendo muito também!
+Utilizo principalmente Javascript, Typescript e React.
+
+
+
+Portfolio React Tailwind
+Meu primeiro site de portfolio, feito usando React e TailwindCSS.
+Tem muita coisa legal aqui, aprendi muita coisa programando esse site e testei vários recursos também.
+Como eu não tinha muita experiência quando fiz essa página, a maioria dos projetos listados nele foram feitos para fins didáticos.
+Porém grande parte do código que usei nesse projeto, consigo reaproveitar até hoje (principalmente Dark Mode/troca de idiomas.) 
+
+
+App Polar Sapiens
+Meu primeiro grande projeto, por assim dizer. E também meu primeiro projeto mobile.
+Se trata de um app que tem como função o nível de stress e ansiedade dos usuários por meio de baterias de testes psicológicos.
+Neste projeto estou trabalhando em conjunto com outros devs na implementação de novas features, design de novas telas, correção de bugs e refatoração de código. 
+
+
+Polar Sapiens Webpage
+Versão Web do app feito em React Native. Pode ser acessado pelo navegador. 
+Este projeto foi iniciado do zero, utilizando HTML, CSS, Javascript e um pouquinho de Bootstrap.
+Adaptar o design compacto e vertical da versão para smartphone para uma versão web, mais "bidimensional" e esticada, foi um desafio e tanto!
