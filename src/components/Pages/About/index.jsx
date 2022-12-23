@@ -47,18 +47,16 @@ const About = () => {
         <select onClick={(e)=> console.log(e.target.value)} style={{width: '30vw', height: 100, overflowY: "scroll"}} class="rpgui-list-imp" size="5">
 
 
-          <option value="option1"><div>
-            
-            </div><p>aaaaaa</p><br></br><p>aaaaaa</p></option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-          <option value="option5">option5 </option>
-          <option value="option6">option6</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-          <option value="option5">option5 </option>
-          <option value="option6">option6</option>
+          <option className="select-text" value="option1">aaaaaa</option>
+          <option className="select-text" value="option2">option2</option>
+          <option className="select-text" value="option3">option3</option>
+          <option className="select-text" value="option4">option4</option>
+          <option className="select-text" value="option5">option5 </option>
+          <option className="select-text" value="option6">option6</option>
+          <option className="select-text" value="option3">option3</option>
+          <option className="select-text" value="option4">option4</option>
+          <option className="select-text" value="option5">option5 </option>
+          <option className="select-text" value="option6">option6</option>
           
         </select>
       </div>

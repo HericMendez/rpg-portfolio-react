@@ -1,0 +1,70 @@
+.quests-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: c;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+}
+
+.project-frame {
+  position: absolute !important;
+  width: 33vw;
+  height: 42vh;
+  top: 2vh;
+
+  margin-bottom: 2vh;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin-top: 4vh;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-img {
+  width: 30vw;
+  height: 36vh;
+  padding: 1px;
+  background: #fff;
+}
+
+.buttons-div button {
+  height: 12vh;
+  font-size: 1px;
+  width: 15vw !important;
+}
+
+.projects-list {
+  position: absolute;
+  top: 47vh;
+  left: 2vw;
+  
+
+  overflow-y: scroll;
+}
+
+.projects-list select{
+    width: 32.5vw;
+    height: 30vh;
+}
+
+.right-side {
+  width: 35vw;
+}
+

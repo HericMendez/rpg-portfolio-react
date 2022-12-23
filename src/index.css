@@ -1,40 +1,53 @@
-
-
 @font-face {
-  font-family: "DeterminationMono";   /*Can be any text*/
+  font-family: "DeterminationMono"; /*Can be any text*/
   src: local("Determination"),
     url("./fonts/DeterminationMonoWebRegular-Z5oq.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "DeterminationSans";   /*Can be any text*/
+  font-family: "DeterminationSans"; /*Can be any text*/
   src: local("Determination"),
     url("./fonts/DeterminationSansWebRegular-369X.ttf") format("truetype");
 }
 
 body {
-
   background-color: black;
-
 }
 
-
-.scrollable{
+.scrollable {
   overflow: none;
-
 }
 
-@media screen and (max-width:640px) {
-  .hide-mobile{
+@media screen and (max-width: 640px) {
+  .hide-mobile {
     display: none;
   }
 
-  .scrollable{
+  .scrollable {
     overflow: scroll;
-  
   }
 }
 
-.center-text{
+.center-text {
   text-align: center;
+}
+
+.select-text {
+  color: #fff;
+  font-size: 2.7vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+.dropdown-text {
+  color: #222;
+  background: #cccaba;
+}
+
+option:not(:checked) {
+  color: #fff;
+}
+
+option:checked {
+  color: #222;
 }

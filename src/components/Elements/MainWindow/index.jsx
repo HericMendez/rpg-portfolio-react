@@ -100,8 +100,8 @@ const MainWindow = () => {
           <div>
             <label>Theme:</label>
             <select onChange={(e)=> toggleTheme(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
-              <option value="ff-theme">Final Fantasy</option>
-              <option value="undertale-theme">Undertale</option>
+              <option style={{ color: "#222", background: "#cccaba" }}  value="ff-theme">Final Fantasy</option>
+              <option  style={{ color: "#222", background: "#cccaba" }} value="undertale-theme">Undertale</option>
               ...
             </select>
           </div>
