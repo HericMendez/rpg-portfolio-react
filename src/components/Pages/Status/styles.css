@@ -1,0 +1,29 @@
+.status-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    
+}
+
+.avatar2-div{
+    padding: 20px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0vh;
+    left: 4vh;
+
+
+    height: 75vh;
+    width: 25vw;
+    background-image: url('../../../assets/images/avatar/avatar_transparentbg.40ms.gif');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+

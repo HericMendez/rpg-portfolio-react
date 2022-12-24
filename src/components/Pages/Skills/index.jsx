@@ -1,19 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import ProgressBar from "components/Elements/ProgressBar";
-import HtmlSlotIcon from "../../../assets/images/icons/skill-slots/html-slot.png";
-import CssSlotIcon from "../../../assets/images/icons/skill-slots/css-slot.png";
-import JsSlotIcon from "../../../assets/images/icons/skill-slots/js-slot.png";
-import ReactSlotIcon from "../../../assets/images/icons/skill-slots/react-slot.png";
-import ReactNativeSlotIcon from "../../../assets/images/icons/skill-slots/rn-slot.png";
-import NodeSlotIcon from "../../../assets/images/icons/skill-slots/node-slot.png";
-import TailwindSlotIcon from "../../../assets/images/icons/skill-slots/tailwind-slot.png";
-import GithubSlotIcon from "../../../assets/images/icons/skill-slots/github-slot.png";
-import AgileSlotIcon from "../../../assets/images/icons/skill-slots/agile-slot.png";
-import MysqlSlotIcon from "../../../assets/images/icons/skill-slots/mysql-slot.png";
+
+import EmptySlot from '../../../assets/images/icons/skill-slots/empty-slot-golden256x256.png'
 import "./styles.css";
 import SkillData from "./skillData";
-
+import IconHtml from "../../../assets/images/icons/html.png";
 const Skills = () => {
   const [skill, setSkill] = useState(SkillData[0]);
   function handleClick(e) {
@@ -23,72 +15,153 @@ const Skills = () => {
   return (
     <div className="scrollable">
       <div className="skills-container">
-        <div className=" rpgui-container framed " style={{top: '20vh', left: '25vw', height: '66vh'}}>
+        <div
+          className=" rpgui-container framed "
+          style={{
+            position: "absolute",
+            top: "4vh",
+            left: "1vw",
+            height: "fit-content",
+    
+          }}
+        >
           <h1 className="grid-title">Main Skills</h1>
           <div onClick={handleClick} className="skills-grid">
-            <img id="1" className="skill-icon" src={HtmlSlotIcon} alt="HTML" />
-            <img id="2" className="skill-icon" src={CssSlotIcon} alt="CSS" />
-            <img id="3" className="skill-icon" src={JsSlotIcon} alt="JS" />
+            <img id="1" className="skill-icon" src={EmptySlot} alt="HTML" />
+            <img id="2" className="skill-icon" src={EmptySlot} alt="CSS" />
+            <img id="3" className="skill-icon" src={EmptySlot} alt="JS" />
 
             <img
               id="4"
               className="skill-icon"
-              src={ReactSlotIcon}
+              src={EmptySlot}
               alt="React"
             />
-            <img
+            <div
               id="5"
               className="skill-icon"
-              src={ReactNativeSlotIcon}
+   
+            >
+                      <img
+              id="7"
+
+              src={IconHtml}
               alt="React"
             />
-            <img id="6" className="skill-icon" src={NodeSlotIcon} alt="Node" />
+
+            </div>
+            <img id="6" className="skill-icon" src={EmptySlot} alt="Node" />
             <img
               id="7"
               className="skill-icon"
-              src={TailwindSlotIcon}
+              src={EmptySlot}
               alt="React"
             />
 
             <img
               id="8"
               className="skill-icon"
-              src={MysqlSlotIcon}
+              src={EmptySlot}
               alt="Javascript"
             />
             <img
               id="9"
               className="skill-icon"
-              src={AgileSlotIcon}
+              src={EmptySlot}
+              alt="NodeJS"
+            />
+
+            <img
+              id="5"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="React"
+            />
+            <img id="6" className="skill-icon" src={EmptySlot} alt="Node" />
+            <img
+              id="7"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="React"
+            />
+
+            <img
+              id="8"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="Javascript"
+            />
+            <img
+              id="9"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="NodeJS"
+            />
+            <img
+              id="7"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="React"
+            />
+
+            <img
+              id="8"
+              className="skill-icon"
+              src={EmptySlot}
+              alt="Javascript"
+            />
+            <img
+              id="9"
+              className="skill-icon"
+              src={EmptySlot}
               alt="NodeJS"
             />
           </div>
         </div>
-        <div  className="details-div rpgui-container  " style={{top: '20vh', right: '3vw', height: '66vh'}}>
-          <div className="details-header">
-            <img
+        <div
+          className="details-div rpgui-container framed-golden-2  "
+          style={{
+            position: "absolute",
+            top: "3vh",
+            right: "3vw",
+            height: "75vh",
+
+         // background: '#858587'//"#a8a9ad"
+
+            
+          }}
+        >
+          <div className="details-header rpgui-container framed-grey"
+          
+          >
+          <img
               className="header-skill-icon"
               src={skill.image}
               alt={skill.name}
             ></img>
-            <div className="header-text">
+                    <div className="header-text">
               <h1>{skill.name}</h1>
-              <br />
+  
               <h4>{skill.meta}</h4>
             </div>
           </div>
-          <hr className="golden" />
-          <h1>Descripton</h1>
+   
+
+   
+{/*           <hr className="golden" /> */}
+
           <p className="details-text">{skill.description}</p>
-          <br />
-          <ProgressBar
+               
+     <ProgressBar
             label={`Skill level: ${skill.level}`}
             color={skill.barColor}
             fill={skill.percent}
           />
+          
+        </div>
         </div>
       </div>
-    </div>
+
   );
 };
 

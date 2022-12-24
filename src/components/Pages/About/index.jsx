@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 
 const About = () => {
-  const [dropdownActive, setDropdownActive] = useState(false);
-  const [selectedValue, setSelectedValue] = useState("Wa");
+
   return (
     <div>
       <h1>About</h1>
@@ -13,7 +11,7 @@ const About = () => {
       >
         https://ronenness.github.io/RPGUI/
       </a>
-      <div>
+      <div  >
         <p>Dropdown:</p>
         <select onClick={(e)=> console.log(e.target.value)}  class="rpgui-dropdown-imp" data-rpguitype="dropdown">
           <option
@@ -41,6 +39,7 @@ const About = () => {
         </select>
       </div>
       <br />
+
       <div>
         <p>list:</p>
        

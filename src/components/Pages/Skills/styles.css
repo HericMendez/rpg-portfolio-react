@@ -15,9 +15,9 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 30vw;
-  height: 40vh;
+
 }
 
 .grid-title {
@@ -27,35 +27,73 @@
 }
 
 .skill-icon {
-  width: 7vw;
-  height: 7vw;
-  margin: 10px;
+  width: 5vw;
+  height: 5vw;
+  margin: 1vh;
+  background-image: url('../../../assets/images/icons/skill-slots/empty-slot-golden256x256.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 5vw 5vw;
 }
 
+
+.skill-icon img{
+  width: 80%;
+
+}
 .details-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
-  width: 35vw;
-  height: 40vh;
+  width: 32vw;
+  
+  
+
+/*   background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+)!important;
+   */
 }
 
 .details-header {
   display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 3vh;
+  height: 35vh;
+  justify-content: center;
   align-items: center;
+  border: 10px solid black;
+  text-align: center;
+  background-color: '#a8a9ad' !important;
+ 
+filter: brightness(80%);
+
 }
 .header-skill-icon {
-  width: 100px;
-  height: 100px;
+  width: 20vh;
+  height: 20vh;
+
+
 }
 
 .header-text {
-  text-align: left;
-  padding-left: 12px;
+  text-align: center;
+
 }
 
 @media screen and (max-width: 640px) {

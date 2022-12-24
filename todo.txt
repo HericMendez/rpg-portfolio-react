@@ -7,7 +7,7 @@ Mudanças globais:
 - Json com todos os textos do site (pt/eng) - doing
 - Seletor de idioma e tema para versão mobile 
     - Definir design e local do icone
-- Corrigir tamanho da janela e fonte de dropdown/item list 
+- Corrigir tamanho da janela e fonte de dropdown/item list  - OK
 
 Páginas
 
@@ -16,20 +16,21 @@ Concluída?
 
 Skills:
 - Redesenhar Layout (Lista/grid?) 
-    - manter grid 
-    - lado direito: formato de "cartinha"
-    - mobile: modal onclick
+    - manter grid  - OK
+    - lado direito: formato de "cartinha" - OK
+    - mobile: modal onclick - mesmo do lado direito
     
-- Listar skills e respectivas descrições (O que eu sei?)
-- Desenvolver tela desktop
+- Listar skills e respectivas descrições (O que eu sei?) - OK
+- Desenvolver tela desktop - OK
 - Desenvolver tela mobile
 
 Quests:
-- Manter design de Lista
-- Relistar e categorizar projetos (incluir freelas recentes)
+- Manter design de Lista - OK
+- Relistar e categorizar projetos (incluir freelas recentes) -OK
 - Tela Desktop
     - refatorar inline css - OK
     - arrumar estilo - OK?
+    - Carrossel de imagens
 - Tela Mobile 
     - design vertical
     - modal onclick (para cada projeto) => formato de "cartinha"
@@ -38,8 +39,8 @@ Status:
 - Redesenhar Layout (mini currículo) 
 - Comissionar nova arte - Em Andamento
 - Listar cursos/qualificações/experiências - OK
-- Layout parecido com a tela home (arte na lateral da página - lado invertido?)
-- Tela Desktop
+- Layout parecido com a tela home (arte na lateral da página - lado invertido?) - OK (e ficou MUTIO FODA!!!!!!)
+- Tela Desktop - 
 - Tela Mobile
 
 Contact:
