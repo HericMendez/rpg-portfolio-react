@@ -12,12 +12,12 @@
     margin: 0px;
     position: absolute;
     bottom: 0vh;
-    left: 4vh;
+    left: 1vw;
 
 
     height: 75vh;
     width: 25vw;
-    background-image: url('../../../assets/images/avatar/avatar_transparentbg.40ms.gif');
+    background-image: url('../../../assets/images/avatar/avatar_transparentbg_40ms.gif');
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,3 +27,27 @@
   transform: scaleX(-1);
 }
 
+.resume-container{
+  width: 45vw;
+  position: absolute;
+  right: 2vw;
+
+}
+
+.resume-text{
+  overflow-y: scroll;
+  height: 72vh;
+
+  width: 100%;
+
+}
+
+.resume-text p{
+  line-height: 3vh;
+  margin-bottom: 3vh;
+}
+
+.resume-text span{
+
+  color: #aaa;
+}

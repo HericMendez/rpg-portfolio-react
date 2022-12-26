@@ -8,6 +8,7 @@ Mudanças globais:
 - Seletor de idioma e tema para versão mobile 
     - Definir design e local do icone
 - Corrigir tamanho da janela e fonte de dropdown/item list  - OK
+- Ícones da mobile bottom navbar
 
 Páginas
 

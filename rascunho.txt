@@ -1,21 +1,21 @@
 Skills:
-Html
-Css
-Javascript
-Typescript
-React
-React Native
-Node
-NPM
-Bootstrap
-Tailwind
-Mysql
-Git
-Scrum
-Swagger
-PS/Gimp
-Figma
-Papercraft
+Html ok
+Css ok
+Javascript ok
+Typescript ok
+React ok 
+React Native ok
+Node ok
+NPM ok
+Bootstrap ok
+Tailwind ok
+Mysql ok
+Git ok
+Scrum ok
+Swagger ok
+PS/Gimp ok
+Figma ok
+Papercraft ok
 
 
 Projetos:
@@ -39,46 +39,78 @@ Essencial pra qualquer Front-end. E não, não é uma
 linguagem de programação.
 Já fiz vários sites e até um joguinho com ela!
 
+The basic structure of any website.
+It's essential knowledge for any Front-end dev.
+ And no, it's not a programming language.
+ I have developed many websites with it, and even coded a game!
+
 
 Css
 Desde centralizar uma simples Div até layouts completos, o Css
 existe pra deixar sua vida na internet mais bonita e colorida!
-Css puro, aplicaçao em frameworks, designs responsivos, 
+Css puro, aplicaçao em frameworks, designs responsivos, grid, flexbox,
 styled components, enfim... eu me viro bem por aqui.
+
+From centering a div to making complex layouts,
+Css is out there to make your life on the web more 
+neat and colorful!
+I can use pure CSS, or with frameworks like React, 
+responsive layouts, grid, flexbox, styled components...
+Anyway, i am quite comfortable with this technology.
 
 
 Javascript
 Front-end, Back-end, Mobile, Desktop... 
 O que você imaginar, o Javascript está lá. 
-É a linguagem base de toda a minha formação, e a 
+É a linguagem base de toda a minha formação como dev, e a 
 utilizo em praticamente todos os meus projetos.
+
+Front-end, Back-end, Mobile, Desktop...
+Anything you can imagine, Javascript is there.
+It's the base language of my dev stack, and i use it
+on most of my projects.
 
 
 Typescript
-O Javascript é um pouco bagunçado, mas o Typescript está aí
+O Javascript é legal porém um pouco bagunçado, mas o Typescript está aí
 pra botar ordem na casa.  
 No momento aprendendo e fuçando na linguagem, que utilizo
 principalmente em projetos do estágio.
 
+Javascript is cool but is a bit messy, and Tailwind is there to 
+put things right.
+Right now i'm learning and messing around with this language,
+which i use mainly on my internship's projects.
 
 React
 Este portfolio lindo e incrível que está vendo agora é feito em React!
 Preciso dizer mais alguma coisa?
+
+This beautiful and amazing portfolio you're seeing is entirely
+made with React!
+Do i have to say anything else? 
 
 
 React-Native
 Quase a mesma coisa que o React, porém para smartphones.
 Experiência em projetos de freelancer como desenvolvedor Android.
 
+Almost the same as React, but for mobile phones.
+I have experience in freelance projects as a Android developer.
 
 Node
 Javascript para desktop! Muito útil para rodar servidores locais
 ou para a construção de bibliotecas.
 
+JS for Desktop! Very useful for running local servers or
+for building libs.
 
 NPM
 Instalador de pacotes que utilizo em praticamente todos os meus projetos.
 Npm > Yarn
+
+Package installer, which i use in nearly all my projects.
+Npm > Yarn 
 
 
 Bootstrap
@@ -86,58 +118,112 @@ Uma biblioteca CSS bem conhecida por seus designs simples e genéricos.
 Traz classes e componentes prontos para a construção de sites, utilizando
 pouco ou nenhum css. Devs Back-end adoram!
 
+A Css Lib well known for its simple and generic designs.
+Comes with built-in classes and components to build websites 
+easily, with little to none CSS. Back-end devs love it!
+
 
 Tailwind
 Biblioteca utilitária de CSS, parecida com Bootstrap, só que melhor.
-Permite a utilização de classes com maior nível de personalização,
-dispensa quase que 100% o uso de CSS (o que é ótimo em componentes React),
+Permite a utilização de classes CSS inline,com maior nível de personalização,
+dispensa quase que 100% o uso de CSS (o que é ótimo na reutilização de código),
 e tem até suporte para Dark Mode! Tem como não amar?
+
+An utility-first Css Lib, almost like Bootstrap, but better.
+Allows the use of inline CSS with built-in classes with a higher
+customization level, and dismisses the use of css
+ almost completely (which is great in code reuse).
+ It even supports dark mode! How can you not love it?
 
 
 Mysql
-Sistema de Gestão de Banco de Dados. 
+Sistema de Gestão de Banco de Dados (SGBD).
 Possuo pouca experiência com Back-end, mas até que eu me viro aqui.
+
+Database Management System (DBMS).
+I have little experience with Back-end, but i can get by if i have to use it.
 
 
 Git
-Não tenho muito o que falar sobre o Git, basicamente ele é o "Memory Card" do dev, não dá pra sobreviver sem ele!
-Utilizo o Git nas plataformas Github e Gitlab.
+Basicamente ele é o "Memory Card" do dev, não dá pra sobreviver sem ele!
+Utilizo o Git todos os dias nas plataformas Github e Gitlab.
 
+It's basically the dev's "Memory Card", you can't survive without it!
+I use Git on a daily basis, on the platforms Github and Gitlab.
 
 Scrum
 Metodologia ágil para planejamento e organização de projetos.
-Utilizo todo dia no meu estágio (nas dailiy meetings), além de possuir uma certificação de Scrum Master pela Certiprof.
+Utilizo todo dia no meu estágio, além de possuir uma certificação de Scrum Master pela Certiprof.
+
+Agile methodology used to plan and organize projects.
+I use it every day on my internship, aside from having a Scrum Master certificate from Certiprof.
 
 
 Swagger
 É uma ferramenta de documentação de APIs. 
 Muito útil para documentar os endpoints que conectam o front-end com o back-end, e facilita bastante o trabalho em equipe.
 
+An API documentation tool.
+It's very useful to list all endpoint URLs that connect server to client.
+
 
 Photoshop/Gimp
-Ferramentas de criação e edição de imagens, consigo fazer muita coisa legal aqui, desde edição de imagens até criação e adaptação de logos, ícones, elementos de front-end, enfim... No Linux eu uso a versão "de pobre" do Photoshop, o GIMP (que também é uma ferramente muito boa e versátil).
+Softwares de criação e edição de imagens. 
+Consigo fazer muita coisa legal aqui, desde edição de
+ fotos até criação e adaptação de logos, ícones,
+ elementos de front-end, enfim... 
+No Linux eu uso a versão "de pobre" do Photoshop, o GIMP (que também é uma ferramente muito boa e versátil).
+
+Image creation and edition softwares. 
+I can do al lot of nice things here, from photo edition to
+ creation and adaptation of logos, icons, front-end elements, and so on...
+On Linux, i use the Photoshop's "low budget" version, Gimp
+(Which is also a very good and versatile tool).
 
 
 Figma
-É uma plataforma de criação e compartilhamento de design de layouts, que assim como o Swagger, facilita muito no trabalho em equipe e no compartilhamento de ideias. 
+É uma plataforma de criação e compartilhamento de
+ design de layouts, que assim como o Swagger, 
+facilita muito no trabalho em equipe e no compartilhamento de ideias. 
 
+A tool used to create and share layout designs, that just like
+Swagger, makes teamwork and idea sharing a lot easier.
 
-Manutenção de Computadores
-Formato o HD, instalo impressora, configuro o wi-fi, instalo placa de vídeo, e faço tudo isso melhor que seu sobrinho (mas vu cobrar mais caro também)!
+Manutenção de Hardware 
+Formato o HD, instalo impressora, configuro o wi-fi, e faço tudo isso melhor que seu sobrinho (mas vou cobrar mais caro também)!
 
+Hardware Maintenance 
+I format hard drives,install printers, set up wifi network, and i do it better than your nephew (but it'll cost more too!)
 
 Papercraft
-Apesar de não ser uma skill de desenvolvedor, muito do meu conhecimento de edição de imagens e da minha inspiração para me tornar Front-end vem daqui. O Papercraft não somente é meu hobby favorito como também minha terapia anti-stress, e eu consigo fazer várias coisas legais (personagens, animais, veículos, armas realistas, etc), apenas usando uma impressora, papel, cola, tesoura e um pouquinho de paciência.
+Apesar de não ser uma skill de desenvolvedor, muito 
+do meu conhecimento de edição de imagens e da 
+minha inspiração para me tornar Front-end vem daqui. 
+O Papercraft não somente é meu hobby favorito como
+ também minha terapia anti-stress, e eu consigo fazer 
+várias coisas legais (personagens, animais, veículos,
+ armas realistas, etc), apenas usando uma impressora,
+ papel, cola, tesoura e um pouquinho de paciência.
 
+Although this is not a dev skill, a lot of my knowledge in
+image edition and my inspiration to become a front-end dev
+comes from it.
+Papercraft is not only my favorite hobby but is also a
+great anti-stress therapy, and i can do many cool things
+(fictional characters, vehicles, animals, realistic weaponry, etc),
+only using a printer, paper, glue, scissors and a little bit of patience.
 
 _____________________________________________________________________________________________
 
 Projetos:
 
 Flappyvania
-Jogo HTML - Projeto Pessoal
+Jogo HTML Canvas - Projeto Pessoal
 Clone do jogo Flappy Bird, feito utilizando HTML Canvas e Javascript,  com a temática da franquia Castlevania. A tela é responsiva em ambientes desktop e mobile. Eu sempre qus fazer um jogo, e este é meu primeiro (e até agora único) projeto na área de desenvolvimento de games. Fiz a partir de um tutorial de Flappy Bird utilizando HTML Canvas. É um dos projetos que mais me dão orgulho!
 Tecnologias utilizadas: HTML(Canvas Framework), CSS, Javascript."
+
+Flappyvania
+HTML Canvas Game - Personal Projectkkkkkk
 
 
 Movie Meme Generator
@@ -224,9 +310,14 @@ Bio
 
 (pensar em um texto bonitinho - ou nem inserir uma bio)
 
+Estudante de Análise e Desenvolvimento de Sistemas e Dev Freelancer,
+apaixonado por tudo que envolve tecnologia e design.
+Autodidata e de perfil criativo, possuo experiência como desenvolvedor Web e Mobile. Em meus conhecimentos destacam-se as
+tecnologias React, React Native e a criação de layouts responsivos.
+
 Trabalho atual
 Desenvolvedor Estagiário na Biotrônica
-Dev Freelancer pra quem pagar bem
+
 
 
 Formação profissional
@@ -248,6 +339,9 @@ Cursos e Certificados
 Scrum Foundation Professional Certificate
 Certiprof - 2021
 
+Responsive Web Designs
+FreeCodeCamp - 2021
+
 Javascript Algorithms and Data Structures 
 FreeCodeCamp - 2021
 
@@ -256,4 +350,3 @@ Alura - 2021
 
 React com Typescript
 Alura - 2022 (cursando atualmente)
-

@@ -17,6 +17,30 @@ body {
 .scrollable {
   overflow: none;
 }
+.resume-text::-webkit-scrollbar {
+  width: 2vw;
+}
+
+/* Track */
+.resume-text::-webkit-scrollbar-track {
+  background-image: var(--scrollbar-track);
+  background-size: 4vh 8vh;
+  background-repeat: repeat-y; }
+
+/* Handle */
+
+.resume-text::-webkit-scrollbar-thumb {
+  background-image: var(--scrollbar-thumb);
+  background-size: 3.6vh 5vh;
+  background-repeat: no-repeat; }
+
+/* buttons */
+
+.resume-text::-webkit-scrollbar-button {
+  background-image: var(--scrollbar-button);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
 
 @media screen and (max-width: 640px) {
   .hide-mobile {
@@ -27,7 +51,10 @@ body {
     overflow: scroll;
   }
 }
+.scrollable::-webkit-scrollbar {
+  width: 0vh;
 
+}
 .center-text {
   text-align: center;
 }
@@ -51,3 +78,5 @@ option:not(:checked) {
 option:checked {
   color: #222;
 }
+
+

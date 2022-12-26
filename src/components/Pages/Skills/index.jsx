@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ProgressBar from "components/Elements/ProgressBar";
 
-import EmptySlot from '../../../assets/images/icons/skill-slots/empty-slot-golden256x256.png'
+import EmptySlot from '../../../assets/images/icons/empty-slot-ff.png'
 import "./styles.css";
 import SkillData from "./skillData";
 import IconHtml from "../../../assets/images/icons/html.png";

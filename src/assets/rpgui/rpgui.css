@@ -858,32 +858,26 @@ ul.rpgui-list-imp {
 * Rules for misc and general things.
 */
 /* set scrollbars for webkit browsers (like chrome) */
-.rpgui-content ::-webkit-scrollbar ,
-.rpgui-content::-webkit-scrollbar {
-  width: 0px;
 
-}
-.rpgui-list-imp::-webkit-scrollbar  ,
 .rpgui-list-imp::-webkit-scrollbar {
   width: 4vh;
 
 }
 /* Track */
-.rpgui-list-imp::-webkit-scrollbar-track,
 .rpgui-list-imp::-webkit-scrollbar-track {
   background-image: var(--scrollbar-track);
   background-size: 4vh 8vh;
   background-repeat: repeat-y; }
 
 /* Handle */
-.rpgui-list-imp::-webkit-scrollbar-thumb,
+
 .rpgui-list-imp::-webkit-scrollbar-thumb {
   background-image: var(--scrollbar-thumb);
   background-size: 3.6vh 4vh;
   background-repeat: no-repeat; }
 
 /* buttons */
-.rpgui-list-imp::-webkit-scrollbar-button,
+
 .rpgui-list-imp::-webkit-scrollbar-button {
   background-image: var(--scrollbar-button);
   background-size: 100% 100%;

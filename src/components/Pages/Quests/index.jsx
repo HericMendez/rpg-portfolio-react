@@ -10,7 +10,7 @@ const Quests = () => {
             <img className="project-img" src={Flappy} />
           </div>
         </div>
-        <div className="projects-list">
+        <div className="projects-list scrollable">
           <select
             onClick={(e) => console.log(e.target.value)}
             class="rpgui-list-imp "
