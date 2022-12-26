@@ -26,13 +26,13 @@ const ThemeChanger = ({ children }) => {
     console.log(theme);
   }
 
-  useEffect(() => {
+/*   useEffect(() => {
     const refreshTheme = () => {
       localStorage.setItem("theme", theme);
     };
 
     refreshTheme();
-  }, [theme]);
+  }, [theme]); */
 
   return (
     <ThemeContext.Provider

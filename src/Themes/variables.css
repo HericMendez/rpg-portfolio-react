@@ -26,7 +26,7 @@
     --fontsize-h4: 2.0vh;
     --fontsize-p: 1.8vh;
     --fontsize-span: 1.8vh;
-    --fontsize-a: 1.6vw;
+    --fontsize-a: 3vw;
     --fontsize-label: 1.6vh;
     --fontsize-li: 3vh;
   }
@@ -57,7 +57,7 @@
     --fontsize-h4: 2.0vh;
     --fontsize-p: 1.8vh;
     --fontsize-span: 1.8vh;
-    --fontsize-a: 1.8vw;
+    --fontsize-a: 3vh;
     --fontsize-label: 1.6vh;
     --fontsize-li: 3vh;
     
@@ -89,7 +89,7 @@
     --fontsize-h4: 3.0vh;
     --fontsize-p: 2.8vh;
     --fontsize-span: 2.2vh;
-    --fontsize-a: 3vw;
+    --fontsize-a: 5vh;
     --fontsize-label: 2.6vh;
     --fontsize-li: 4vh;
   

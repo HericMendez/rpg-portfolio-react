@@ -147,3 +147,17 @@ li {
 
   }
 }
+
+.nav-item img{
+
+  display: none;
+
+
+
+}
+.nav-item:hover img{
+  display: block;
+  position: absolute;
+  width: 2.5vw;
+  left: 2vh;
+}

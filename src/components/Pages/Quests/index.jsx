@@ -12,33 +12,36 @@ const Quests = () => {
         </div>
         <div className="projects-list scrollable">
           <select
-            onClick={(e) => console.log(e.target.value)}
+            onClick={(e) => console.log(e.target.id)}
             class="rpgui-list-imp "
             size="6"
           >
-            <option className="select-text" value="option1">
+            <option id='1' className="select-text" value="flappyvania">
               Flappyvania
             </option>
-            <option className="select-text" value="option2">
-              option2
+            <option id='2'  className="select-text" value="meme-generator">
+            Movie Meme Generator
             </option>
-            <option className="select-text" value="option3">
-              option3
+            <option id='3'  className="select-text" value="acdcit">
+            Empresa ACDCIT - Home Page
             </option>
-            <option className="select-text" value="option4">
-              option4
+            <option id="4" className="select-text" value="advogada">
+            Escritório Advocacia - Home Page
             </option>
-            <option className="select-text" value="option5">
-              option5{" "}
+            <option id='5' className="select-text" value="cryptoapp">
+            CryptoApp
             </option>
-            <option className="select-text" value="option6">
-              option6
+            <option id='6' className="select-text" value="portfolio_1.0">
+            Portfolio React Tailwind
             </option>
-            <option className="select-text" value="option7">
-              option7
+            <option id='7' className="select-text" value="biotronica">
+            Projetos da Biotrônica
             </option>
-            <option className="select-text" value="option8">
-              option8
+            <option id='8' className="select-text" value="polar_mobile">
+            App Polar Sapiens
+            </option>
+            <option id='9' className="select-text" value="polar_web">
+            Polar Sapiens Webpage
             </option>
           </select>
         </div>
@@ -46,8 +49,13 @@ const Quests = () => {
 
       <div
         style={{
-          width: "35vw",
+          width: "37vw",
+          position:'absolute',
+          right: '2vw',
+          top: '2vh',
+          height: '78vh'
         }}
+        className='rpgui-container framed resume-text'
       >
         <div>
           <h1>FlappyVania</h1>

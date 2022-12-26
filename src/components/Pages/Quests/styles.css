@@ -52,16 +52,18 @@
 
 .projects-list {
   position: absolute;
-  top: 47vh;
+  top: 44vh;
   left: 2vw;
+  
   
 
   overflow-y: scroll;
 }
 
 .projects-list select{
-    width: 32.5vw;
-    height: 30vh;
+    width: 33vw;
+    height: 36vh;
+
 }
 
 .right-side {

@@ -15,74 +15,106 @@ import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
 import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
 import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
-import PTBR from '../../../Languages/pt-br.json'
-import ENUS from '../../../Languages/en-us.json'
+import HandCursor from "../../../assets/images/hand_cursor.png";
+import HeartCursor from "../../../assets/images/heart_cursor.png";
+import PTBR from "../../../Languages/pt-br.json";
+import ENUS from "../../../Languages/en-us.json";
 import { ThemeContext } from "Themes";
-
 
 const MainWindow = () => {
   const [title, setTitle] = useState("Heric's Portfolio - Main Page");
-  const [language, setLanguage] = useState('PT-BR')
+  const [language, setLanguage] = useState("PT-BR");
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log("lang: ",language)
+  console.log("title:",title)
+  const ChangeThemeIcon =()=>theme === 'ff-theme' ? HandCursor : HeartCursor
+
+  console.log("lang: ", language);
+
+  const translate = (section, content) => {
+    if (language === "PT-BR") {
+      return PTBR[section][content];
+    } else {
+      return ENUS[section][content];
+    }
+  };
+
   function handleClick(e) {
-    const pageTitles = {
-      home: "Heric's Portfolio - Main Page",
-      skills: "Skills and Proficiency Levels",
-      status: "My Professional Profile",
-      quests: "Projects and Successful Jobs",
-      contact: "Hire this Adventurer!",
-      about: "About this Project",
-    };
+
     if (e.target.id) {
-      console.log(pageTitles[e.target.id]);
-      setTitle(pageTitles[e.target.id]);
+      console.log(e.target.id);
+      setTitle(()=>translate("PageTitles", e.target.id))
+      
     }
   }
 
-  const translate = (section, content) => {
-    if(language=='PT-BR'){
-      return PTBR[section][content];;
-    }
-    else{
-      return ENUS[section][content];
-    }
 
-  };
 
   return (
     <Router>
       <div className="main-container">
         <div className="hide-mobile rpgui-container framed nav-window">
           <ul onClick={handleClick}>
-            <li>
+            <li className="nav-item">
               <Link id="home" to="/">
+                <img
+               
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />
                 Home
               </Link>
             </li>
 
-            <li>
+            <li className="nav-item">
+              <Link id="status" to="/status">
+                <img
+          
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />{" "}
+                Bio
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link id="skills" to="/skills">
+                <img
+                className="nav-cursor"
+   
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />{" "}
                 Skills
               </Link>
             </li>
-            <li>
-              <Link id="status" to="/status">
-                Resumé
-              </Link>
-            </li>
-            <li>
+
+            <li className="nav-item">
               <Link id="quests" to="/quests">
-                Projects
+                <img
+       
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />{" "}
+                Quests
               </Link>
             </li>
-            <li>
+            <li className="nav-item">
               <Link id="contact" to="/contact">
+                <img
+     
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="nav-item">
               <Link id="about" to="/about">
+                <img
+        
+                  src={ChangeThemeIcon()}
+                  alt=""
+                />{" "}
                 About
               </Link>
             </li>
@@ -91,18 +123,46 @@ const MainWindow = () => {
         <div className="hide-mobile rpgui-container framed icon-window">
           <div>
             <label>Language:</label>
-            <select onChange={(e)=> setLanguage(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
-              <option  style={{ color: "#222", background: "#cccaba" }} value="PT-BR">Português</option>
-              <option  style={{ color: "#222", background: "#cccaba" }} value="EN-US">English</option>
+            <select
+              onChange={(e) => setLanguage(e.target.value)}
+              className="rpgui-dropdown"
+              style={{ width: "100%" }}
+            >
+              <option
+                style={{ color: "#222", background: "#cccaba" }}
+                value="PT-BR"
+              >
+                Português
+              </option>
+              <option
+                style={{ color: "#222", background: "#cccaba" }}
+                value="EN-US"
+              >
+                English
+              </option>
               ...
             </select>
           </div>
           <div>
             <label>Theme:</label>
-            <select onChange={(e)=> toggleTheme(e.target.value)} className="rpgui-dropdown" style={{width: '100%'}}>
-              <option style={{ color: "#222", background: "#cccaba" }}  value="ff-theme">Final Fantasy</option>
-              <option  style={{ color: "#222", background: "#cccaba" }} value="undertale-theme">Undertale</option>
-              ...
+            <select
+              onChange={(e) => toggleTheme(e.target.value)}
+              className="rpgui-dropdown"
+              style={{ width: "100%" }}
+            >
+              <option
+                style={{ color: "#222", background: "#cccaba" }}
+                value="ff-theme"
+              >
+                Final Fantasy
+              </option>
+              <option
+                style={{ color: "#222", background: "#cccaba" }}
+                value="undertale-theme"
+              >
+                Undertale
+              </option>
+              
             </select>
           </div>
         </div>
@@ -112,8 +172,8 @@ const MainWindow = () => {
 
         <div className="rpgui-container framed content-window">
           <Routes>
-            <Route path="/" element={<Home translate={translate}/>} />
-            <Route path="/skills" element={<Skills />} />
+            <Route path="/" element={<Home translate={translate} />} />
+            <Route path="/skills" element={<Skills translate={translate} />} />
             <Route path="/status" element={<Status />} />
             <Route path="/quests" element={<Quests />} />
             <Route path="/contact" element={<Contact />} />

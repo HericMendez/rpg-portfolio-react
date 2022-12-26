@@ -41,8 +41,8 @@ Já fiz vários sites e até um joguinho com ela!
 
 The basic structure of any website.
 It's essential knowledge for any Front-end dev.
- And no, it's not a programming language.
- I have developed many websites with it, and even coded a game!
+And no, it's not a programming language.
+I have developed many websites with it, and even coded a game!
 
 
 Css
@@ -296,7 +296,7 @@ Em meu primeiro portfolio, que fiz baseado em um tutorial do Youtube de React e 
 Este projeto não seria possível sem a Biblioteca CSS RPGUI, do dev RonenNess. 
 Se um dia ler isso, saiba que seu trabalho é incrível, muito obrigado!
 
-Ah, e um agradecimento especial à minha amiga JinfSZ pela belíssima arte da página inicial. Mais do trabalho dela aqui: /*(link dela aqui)*/[
+Ah, e um agradecimento especial à minha amiga JinfSZ pela belíssima arte da página inicial. Mais do trabalho dela aqui: /*(link dela aqui)*/
 
 se gostou desse projeto ou dos outros listados neste portfolio, deixa uma estrelinha no meu repositório /*(link do meu github aqui)*/
 

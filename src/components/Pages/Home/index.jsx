@@ -18,7 +18,7 @@ const Home = ({ translate }) => {
     return (
       <div className="home-container">
         <div className="panel-div ">
-          <div className="hide-mobile panel-window rpgui-container rpgui-draggable framed scrollable">
+          <div className="hide-mobile panel-window rpgui-container  framed scrollable">
             <div className="profile-div ">
               <div className="portrait-div">
                 <img

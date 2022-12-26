@@ -1,16 +1,227 @@
 {
+  "PageTitles": {
+    "home": "Heric's Portfolio - Overview",
+    "skills": "Skills and Proficiency Levels",
+    "status": "My Professional Profile",
+    "quests": "Projects and Successful Jobs",
+    "contact": "Get in Touch With me",
+    "about": "About this Project"
+  },
   "Home": {
     "h3_1": "Level 31 Front-end Dev",
-    "p1":"Front-end/Mobile Freelancer",
-    "p2":"Intern Dev at Biotronica",
-    "p3":"Student at Fatec Taquaritinga",
-    "p4":" Currently learning Typescript",
+    "p1": "Front-end/Mobile Freelancer",
+    "p2": "Intern Dev at Biotronica",
+    "p3": "Student at Fatec Taquaritinga",
+    "p4": " Currently learning Typescript",
     "label_1": "Health",
     "label_2": "Coding Exp",
     "label_3": "Hours of Sleep",
     "h4_1": "Main Skills"
+  },
+ 
+  "Skills": 
+  [ 
+   {
+     "name": "HTML",
+     "meta": "Hypertext Markup Language",
+     
+     "level": "Advanced",
 
+     "percent": "80%",
+     "barColor": "red",
+     "description": "The basic structure of any website.It's essential knowledge for any Front-end dev. And no, it's not a programming language. I have developed many websites with it, and even coded a game!"
 
+   },
 
-  }
+   {
+     "name": "CSS",
+     "meta": "Cascading Styled Sheets",
+     
+     "level": "Advanced",
+
+     "percent": "80%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Javascript",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "React",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "React Native",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Node",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Npm",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Bootstrap",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Tailwind",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "MySql",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Git",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Scrum",
+     "meta": "Metodologia ágil",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Swagger",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Photoshop/Gimp",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Figma",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Typescript",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+
+   {
+     "name": "Papercraft",
+     "meta": "Personal Hobby",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   },
+   {
+     "name": "Hardware Maintainance",
+     "meta": "[insert metadescription here]",
+     
+     "level": "[insert level here]",
+
+     "percent": "0%",
+     "barColor": "red",
+     "description": "[insert description here]"
+
+   }
+ 
+  ]
+ 
 }

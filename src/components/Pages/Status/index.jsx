@@ -4,7 +4,7 @@ const Status = () => {
   return (
     <div className="status-container">
       <section className="avatar2-div"></section>
-      <section className="resume-container rpgui-container framed">
+      <section className="resume-container rpgui-container framed rpgui-draggable">
         <div className="resume-text ">
           <h1>
             Olá, meu nome é Héric, e este é meu portfolio de desenvolvedor
@@ -19,7 +19,7 @@ const Status = () => {
             e a criação de layouts responsivos.
           </p>
           <br />
-          <h2>Trabalho Atual</h2>
+          <h2>Emprego Atual</h2>
           <p>Desenvolvedor Estagiário na Biotrônica</p>
           <br />
           <h2>Formação Profissional</h2>

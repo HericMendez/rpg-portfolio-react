@@ -37,11 +37,11 @@ Quests:
     - modal onclick (para cada projeto) => formato de "cartinha"
 
 Status:
-- Redesenhar Layout (mini currículo) 
+- Redesenhar Layout (mini currículo) -OK
 - Comissionar nova arte - Em Andamento
 - Listar cursos/qualificações/experiências - OK
 - Layout parecido com a tela home (arte na lateral da página - lado invertido?) - OK (e ficou MUTIO FODA!!!!!!)
-- Tela Desktop - 
+- Tela Desktop - OK
 - Tela Mobile
 
 Contact:
