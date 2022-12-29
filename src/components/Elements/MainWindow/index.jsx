@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "components/Pages/Home";
@@ -15,8 +15,8 @@ import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
 import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
 import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
 
-import HandCursor from "../../../assets/images/hand_cursor.png";
-import HeartCursor from "../../../assets/images/heart_cursor.png";
+import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
+import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
 import PTBR from "../../../Languages/pt-br.json";
 import ENUS from "../../../Languages/en-us.json";
 import { ThemeContext } from "Themes";
@@ -25,30 +25,32 @@ const MainWindow = () => {
   const [title, setTitle] = useState("Heric's Portfolio - Main Page");
   const [language, setLanguage] = useState("PT-BR");
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log("title:",title)
-  const ChangeThemeIcon =()=>theme === 'ff-theme' ? HandCursor : HeartCursor
+  console.log("title:", title);
+  const ChangeThemeIcon = () =>
+    theme === "ff-theme" ? HandCursor : HeartCursor;
 
   console.log("lang: ", language);
 
   const translate = (section, content) => {
     if (language === "PT-BR") {
+
       return PTBR[section][content];
+      
     } else {
+      localStorage.setItem("language", 'EN-US')
       return ENUS[section][content];
     }
   };
 
   function handleClick(e) {
-
     if (e.target.id) {
       console.log(e.target.id);
-      setTitle(()=>translate("PageTitles", e.target.id))
-      
+      setTitle(() => translate("PageTitles", e.target.id));
     }
   }
 
-
-
+  
+  console.log("aaaa",localStorage.language)
   return (
     <Router>
       <div className="main-container">
@@ -56,66 +58,38 @@ const MainWindow = () => {
           <ul onClick={handleClick}>
             <li className="nav-item">
               <Link id="home" to="/">
-                <img
-               
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />
+                <img src={ChangeThemeIcon()} alt="" />
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="status" to="/status">
-                <img
-          
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />{" "}
-                Bio
+                <img src={ChangeThemeIcon()} alt="" /> Bio
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="skills" to="/skills">
-                <img
-                className="nav-cursor"
-   
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />{" "}
+                <img className="nav-cursor" src={ChangeThemeIcon()} alt="" />{" "}
                 Skills
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="quests" to="/quests">
-                <img
-       
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />{" "}
-                Quests
+                <img src={ChangeThemeIcon()} alt="" /> Quests
               </Link>
             </li>
             <li className="nav-item">
               <Link id="contact" to="/contact">
-                <img
-     
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />
+                <img src={ChangeThemeIcon()} alt="" />
                 Contact
               </Link>
             </li>
             <li className="nav-item">
               <Link id="about" to="/about">
-                <img
-        
-                  src={ChangeThemeIcon()}
-                  alt=""
-                />{" "}
-                About
+                <img src={ChangeThemeIcon()} alt="" /> About
               </Link>
             </li>
           </ul>
@@ -124,7 +98,12 @@ const MainWindow = () => {
           <div>
             <label>Language:</label>
             <select
-              onChange={(e) => setLanguage(e.target.value)}
+              onChange={(e) => {
+                setLanguage(()=>e.target.value);
+               
+        
+              }}
+              value={language}
               className="rpgui-dropdown"
               style={{ width: "100%" }}
             >
@@ -147,6 +126,7 @@ const MainWindow = () => {
             <label>Theme:</label>
             <select
               onChange={(e) => toggleTheme(e.target.value)}
+
               className="rpgui-dropdown"
               style={{ width: "100%" }}
             >
@@ -162,7 +142,6 @@ const MainWindow = () => {
               >
                 Undertale
               </option>
-              
             </select>
           </div>
         </div>

@@ -276,7 +276,7 @@ inside your html file.
 .rpgui-container.framed-golden {
   /* border */
   border-style: solid;
-  border-image-source: url("img/border-image-golden.png");
+  border-image-source: var(--card-border);
   border-image-repeat: repeat;
   border-image-slice: 4 4 4 4;
   border-image-width: 18px;
@@ -287,7 +287,7 @@ inside your html file.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("img/background-image-golden.png") repeat repeat;
+  background: var(--card-bg) repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -296,7 +296,7 @@ inside your html file.
 .rpgui-container.framed-golden-2 {
   /* border */
   border-style: solid;
-  border-image-source: url("img/border-image-golden2.png");
+  border-image-source: var(--card-border);
   border-image-repeat: repeat;
   border-image-slice: 8 8 8 8;
   border-image-width: 18px;
@@ -307,7 +307,7 @@ inside your html file.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("img/background-image-golden2.png") repeat repeat;
+  background: var(--card-bg) repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }

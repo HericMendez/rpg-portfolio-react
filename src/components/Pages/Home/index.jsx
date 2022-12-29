@@ -1,10 +1,9 @@
 import ProgressBar from "components/Elements/ProgressBar";
 import React from "react";
 import "./styles.css";
-import Avatar from "../../../assets/images/avatar/avatar_half_res.png";
+
 import Portrait from "../../../assets/images/avatar/avatar_portrait.png";
 import IconJS from "../../../assets/images/icons/javascript.png";
-import IconNode from "../../../assets/images/icons/node.png";
 import IconReact from "../../../assets/images/icons/react.png";
 import IconHtml from "../../../assets/images/icons/html.png";
 import IconCss from "../../../assets/images/icons/css.png";

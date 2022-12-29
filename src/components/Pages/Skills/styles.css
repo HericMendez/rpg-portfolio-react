@@ -30,7 +30,7 @@
   width: 5vw;
   height: 5vw;
   margin: 1vh;
-  background-image: url('../../../assets/images/icons/empty-slot-ff.png');
+  background-image: var(--skill-frame);
   display: flex;
   justify-content: center;
   align-items: center;

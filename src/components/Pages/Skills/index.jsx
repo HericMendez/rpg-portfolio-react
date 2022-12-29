@@ -26,8 +26,14 @@ import IconPepakura from "../../../assets/images/icons/pepakura.png";
 const Skills = ({ translate }) => {
   const translatedSkill = translate("Skills", "0");
   const [skill, setSkill] = useState(translate("Skills", "0"));
-  const [skillIcon, setSkillIcon] = useState("");
-  const icons = [IconHtml, IconCSS];
+  const [skillIcon, setSkillIcon] = useState(IconHtml);
+  const icons = [
+    IconHtml, IconCSS, IconJS, IconReact,
+    IconReactNative, IconNode,IconNpm, 
+    IconBootstrap, IconTailwind, IconNMysql,
+    IconGit, IconScrum, IconSwagger, IconPSGimp,
+    IconFigma, IconTS, IconHD, IconPepakura
+  ];
   function handleClick(e) {
     console.log(skill);
     if (e.target.id) {

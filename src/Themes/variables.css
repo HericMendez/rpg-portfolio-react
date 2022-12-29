@@ -1,6 +1,6 @@
 :root {
 
-    --border-img:   url("assets/rpgui/img/theme-images/border-image_ff.png");
+    --border-img:   url("assets/rpgui/img/theme-images/border-image-ff.png");
     --bg-color:linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
 
     --avatar-full: url("assets/images/avatar/sans.png");
@@ -17,6 +17,10 @@
     --progressbar-left: url("assets/rpgui/img/theme-images/progress-bar-left-ff.png");
     --progressbar-right: url("assets/rpgui/img/theme-images/progress-bar-right-ff.png");
     --progressbar-middle: url("assets/rpgui/img/theme-images/progress-bar-track-ff.png");
+    
+    --card-border: url("assets/rpgui/img/theme-images/card-border-image-ff.png");
+    --card-bg: url("assets/rpgui/img/theme-images/background-image-ff.png");
+    --skill-frame: url('assets/rpgui/img/theme-images/empty-slot-ff.png');
 
     --font: 'Press Start 2P', cursive;
 
@@ -32,7 +36,7 @@
   }
   
   .ff-theme {
-    --border-img:   url("assets/rpgui/img/theme-images/border-image_ff.png");  
+    --border-img:url("assets/rpgui/img/theme-images/border-image-ff.png");  
     --bg-color:linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
 
     --avatar-full: url("assets/images/avatar/avatar_half_res.png");
@@ -48,6 +52,11 @@
     --progressbar-left: url("assets/rpgui/img/theme-images/progress-bar-left-ff.png");
     --progressbar-right: url("assets/rpgui/img/theme-images/progress-bar-right-ff.png");
     --progressbar-middle: url("assets/rpgui/img/theme-images/progress-bar-track-ff.png");
+
+    --card-border: url("assets/rpgui/img/theme-images/card-border-image-ff.png");
+    --card-bg: url("assets/rpgui/img/theme-images/background-image-ff.png");
+    --skill-frame: url("assets/rpgui/img/theme-images/empty-slot-ff.png");
+
 
     --font: 'Press Start 2P', cursive;
 
@@ -81,6 +90,10 @@
     --progressbar-right: url("assets/rpgui/img/theme-images/progress-bar-right-undertale.png");
     --progressbar-middle: url("assets/rpgui/img/theme-images/progress-bar-track-undertale.png");
 
+    --card-border: url("assets/rpgui/img/theme-images/card-border-image-undertale.png");
+    --card-bg: url("assets/rpgui/img/theme-images/background-image-undertale.png");
+    --skill-frame: url('assets/rpgui/img/theme-images/empty-slot-undertale.png');
+
     --font: 'DeterminationMono';
     
     --fontsize-h1: 4vh;
@@ -95,12 +108,3 @@
   
     
   }
-  
-  /*
-   rpgui content p, h1-h6, a, label, 
-    select.rpgui-dropdown, 
-    .rpgui-list-imp
-
-    
-    
-   */
