@@ -45,7 +45,7 @@ Status:
 - Tela Mobile
 
 Contact:
-- Fazer como uma tela de save game (desenhar)
+- Fazer como uma tela de save game (desenhar) - ideia descartada?
     - New Save > Abre modal form
     - "Sending this form fills you with determination"
 - Formulário responsivo (tela única desktop/mobile)
