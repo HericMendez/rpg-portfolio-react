@@ -22,6 +22,12 @@
     --card-bg: url("assets/rpgui/img/theme-images/background-image-ff.png");
     --skill-frame: url('assets/rpgui/img/theme-images/empty-slot-ff.png');
 
+    --button: url("assets/rpgui/img/theme-images/button-ff.png");
+    --button-down: url("assets/rpgui/img/theme-images/button-down-ff.png");
+    --button-hover: url("assets/rpgui/img/theme-images/button-hover-ff.png");
+
+    --inputarea-bg: #fff;
+    --inputarea-border: #000
     --font: 'Press Start 2P', cursive;
 
     --fontsize-h1: 3vh;
@@ -30,7 +36,8 @@
     --fontsize-h4: 2.0vh;
     --fontsize-p: 1.8vh;
     --fontsize-span: 1.8vh;
-    --fontsize-a: 3vw;
+    --fontsize-a: 3.2vw;
+    --fontsize-form-a: 2vh;
     --fontsize-label: 1.6vh;
     --fontsize-li: 3vh;
   }
@@ -57,6 +64,12 @@
     --card-bg: url("assets/rpgui/img/theme-images/background-image-ff.png");
     --skill-frame: url("assets/rpgui/img/theme-images/empty-slot-ff.png");
 
+    --button: url("assets/rpgui/img/theme-images/button-ff.png");
+    --button-down: url("assets/rpgui/img/theme-images/button-down-ff.png");
+    --button-hover: url("assets/rpgui/img/theme-images/button-hover-ff.png");
+
+    --inputarea-bg: #4e4a4e;
+    --inputarea-border: #fff;
 
     --font: 'Press Start 2P', cursive;
 
@@ -66,7 +79,8 @@
     --fontsize-h4: 2.0vh;
     --fontsize-p: 1.8vh;
     --fontsize-span: 1.8vh;
-    --fontsize-a: 3vh;
+    --fontsize-a: 3.5vh;
+    --fontsize-form-a: 2vh;
     --fontsize-label: 1.6vh;
     --fontsize-li: 3vh;
     
@@ -94,6 +108,13 @@
     --card-bg: url("assets/rpgui/img/theme-images/background-image-undertale.png");
     --skill-frame: url('assets/rpgui/img/theme-images/empty-slot-undertale.png');
 
+    --button: url("assets/rpgui/img/theme-images/button-undertale.png");
+    --button-down: url("assets/rpgui/img/theme-images/button-down-undertale.png");
+    --button-hover: url("assets/rpgui/img/theme-images/button-hover-undertale.png");
+
+    --inputarea-bg: #000;
+    --inputarea-border: #fff;
+
     --font: 'DeterminationMono';
     
     --fontsize-h1: 4vh;
@@ -102,7 +123,8 @@
     --fontsize-h4: 3.0vh;
     --fontsize-p: 2.8vh;
     --fontsize-span: 2.2vh;
-    --fontsize-a: 5vh;
+    --fontsize-a: 6vh;
+    --fontsize-form-a: 4vh;
     --fontsize-label: 2.6vh;
     --fontsize-li: 4vh;
   

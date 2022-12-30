@@ -58,7 +58,7 @@ inside your html file.
   overflow: hidden;
   outline: none;
   /* background */
-  background: url("img/button.png") no-repeat no-repeat;
+  background: var(--button) no-repeat no-repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center;
@@ -77,12 +77,14 @@ inside your html file.
 /* button hover */
 .rpgui-button.hover,
 .rpgui-button:hover {
-  background-image: url("img/button-hover.png"); }
+
+  background-image: var(--button-hover); }
 
 /* button clicked */
 .rpgui-button.down,
 .rpgui-button:active {
-  background-image: url("img/button-down.png"); }
+  color: #000 !important;
+  background-image: var(--button-down); }
 
 /* golden button stuff */
 .rpgui-button.golden p {

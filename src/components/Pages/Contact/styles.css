@@ -4,13 +4,17 @@
     justify-content: space-around;
     padding-top: 5vh;
 
+    padding-right: 4vw;
+    padding-left: 2vw;
+
 }
 
 .form-div, .social-links-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+    
 
 }
 
@@ -21,12 +25,16 @@
     font-size: 3vh !important;
 }
 .social-links-div{
+
     width: 40%;
+
 }
 
 
 .form-div{
-    width: 50%;
+    width: 35vw;
+    height: 10vh;
+
 
 }
 
@@ -34,10 +42,14 @@
     height: 50vh;
 }
 .form-div textarea{
-    height: 20vh;
+    height: 25vh;
 }
 .form-div button{
-    width: 100%;
+    width: 60%;
+    height: 10vh;
+margin-left: 20%;
+margin-right: 20%;
+    font-size: 2.5vh;
 
 }
 
@@ -51,4 +63,58 @@
     flex-direction: row;
     justify-items: flex-start;
     align-items: center;
+
+    margin-bottom: 2vh;
+    
+}
+
+.social-link-container a{
+    font-size: var(--fontsize-form-a);
+    color: yellow;
+    
+    
+}
+
+
+.form-div input, .form-div textarea{
+    background-color: var(--inputarea-bg);
+    color: #ddd;
+    border: 3px solid var(--inputarea-border);
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+@media screen and (max-width: 800px) {
+
+    .contact-container{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5vh;
+    
+        padding-right: 4vw;
+        padding-left: 2vw;
+    
+    }
+
+    .social-links-div{
+        width: 100%;
+        margin-top: 58vh;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5vh;
+        
+    
+    }
+    
+    
+    .form-div{
+        width: 90%;
+        
+        margin-right: 3vw;
+    
+    }
+    
 }
