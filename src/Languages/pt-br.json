@@ -227,9 +227,15 @@
 
         }
       
-       ]
-      
-
-
+       ],
+       "Quests": [
+        {
+          "project_name": "projectXYZ",
+          "project_type": "Freelancer Project",
+          "project_images": ["img01.png", "img02.png", "img03.png"],
+          "project_description": "lorem ipsum dolor sit amet.......",
+          "project_tech": ["Html", "Css", "Js"]
+        }
+      ]
     
   }

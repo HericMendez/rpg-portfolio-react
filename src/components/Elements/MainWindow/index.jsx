@@ -29,11 +29,18 @@ const MainWindow = () => {
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
 
-  console.log("lang: ", language);
 
+   const PageTitles = {
+    home: "Página Inicial" ,
+    skills: "Skills and Proficiency Levels",
+    status: "My Professional Profile",
+    quests: "Projects and Successful Jobs",
+    contact: "Get in Touch With me",
+    about: "About this Project"
+  }
   const translate = (section, content) => {
     if (language === "PT-BR") {
-
+      localStorage.setItem("language", 'PT-BR')
       return PTBR[section][content];
       
     } else {
@@ -45,7 +52,7 @@ const MainWindow = () => {
   function handleClick(e) {
     if (e.target.id) {
       console.log(e.target.id);
-      setTitle(() => translate("PageTitles", e.target.id));
+      setTitle(() => PageTitles[e.target.id]);
     }
   }
 
@@ -152,11 +159,11 @@ const MainWindow = () => {
         <div className="rpgui-container framed content-window">
           <Routes>
             <Route path="/" element={<Home translate={translate} />} />
-            <Route path="/skills" element={<Skills translate={translate} />} />
-            <Route path="/status" element={<Status />} />
-            <Route path="/quests" element={<Quests />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills translate={translate}   />} />
+            <Route path="/status" element={<Status translate={translate} />} />
+            <Route path="/quests" element={<Quests translate={translate} />} />
+            <Route path="/contact" element={<Contact translate={translate} />} />
+            <Route path="/about" element={<About translate={translate} />} />
           </Routes>
         </div>
         <div className="rpgui-container framed nav-mobile">

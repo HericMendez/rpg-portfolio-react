@@ -14,11 +14,16 @@ body {
   background-color: black;
 }
 
-.scrollable {
+/* .scrollable {
   overflow: none;
-}
-.resume-text::-webkit-scrollbar {
+
+} */
+.resume-text::-webkit-scrollbar, .content-window::-webkit-scrollbar {
   width: 2vw;
+}
+
+ .content-window::-webkit-scrollbar {
+  width: 0vw;
 }
 
 /* Track */
@@ -31,8 +36,8 @@ body {
 
 .resume-text::-webkit-scrollbar-thumb {
   background-image: var(--scrollbar-thumb);
-  background-size: 3.6vh 5vh;
-  background-repeat: no-repeat; }
+  background-size: 3.6vh 100%;
+  background-repeat: repeat; }
 
 /* buttons */
 
@@ -47,9 +52,13 @@ body {
     display: none;
   }
 
-  .scrollable {
-    overflow: scroll;
+  .resume-text::-webkit-scrollbar {
+    width: 0vw;
   }
+
+/*   .scrollable {
+    overflow-y: scroll;
+  } */
 }
 .scrollable::-webkit-scrollbar {
   width: 0vh;
@@ -62,8 +71,11 @@ body {
 .select-text {
   color: #fff;
   font-size: 2.3vh;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
+  padding-top: 1vh;
+  padding-bottom:1vh;
+
+  white-space: normal;
+  border-bottom: 2px solid #222;
   
 }
 
@@ -73,11 +85,12 @@ body {
 }
 
 option:not(:checked) {
-  color: #fff;
+  color: #222;
 }
 
 option:checked {
-  color: #222;
+  color: #fff;
+  background-color: #222;
 }
 
 

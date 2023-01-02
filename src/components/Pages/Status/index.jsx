@@ -1,10 +1,15 @@
-import React from "react";
+
+import useWindowDimensions from "Hooks/UseWindowDimensions";
+
+
 import "./styles.css";
+
 const Status = () => {
+  const { height, width } = useWindowDimensions();
   return (
     <div className="status-container">
       <section className="avatar2-div"></section>
-      <section className="resume-container rpgui-container framed rpgui-draggable">
+      <section className={width>800? "resume-container rpgui-container framed": "resume-container"}>
         <div className="resume-text ">
           <h1>
             Olá, meu nome é Héric, e este é meu portfolio de desenvolvedor

@@ -173,37 +173,7 @@ h4 {
 
 }
 
-/* @media screen and (max-width: 640px) {
-  .home-container {
-    overflow-y: hidden;
-  }
-  .panel-window {
-    justify-content: center;
-    align-items: stretch;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-  .avatar-portrait {
-    padding-top: 35px;
-  }
 
-  .profile-description {
-    font-size: 1px;
-
-    text-align: left;
-  }
-
-  .avatar-img {
-    width: 300px;
-  }
-
-  .main-skill-icon {
-    width: 70px;
-    height: 70px;
-  }
-}
- */
 
 .text-class{
   padding-top: 0;

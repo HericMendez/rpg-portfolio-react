@@ -109,7 +109,7 @@ li {
     width: 100vw;
     height: 80vh;
     margin-left: 0;
-    overflow: hidden;
+    overflow-y: auto;
     margin-top: 0vh;
   }
 

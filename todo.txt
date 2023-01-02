@@ -32,9 +32,19 @@ Quests:
     - refatorar inline css - OK
     - arrumar estilo - OK?
     - Carrossel de imagens
+    - Função Javascript para alternar projetos da lista
+    object: {
+        project_name: "projectXYZ",
+        project_type: "Freelancer Project",
+        project_images: ["img01.png", "img02.png", "img03.png", ... ]
+        project_description: "lorem ipsum dolor sit amet......."
+        project_tech: "HTML, CSS, JS"
+    }
 - Tela Mobile 
     - design vertical
     - modal onclick (para cada projeto) => formato de "cartinha"
+
+
 
 Status:
 - Redesenhar Layout (mini currículo) -OK

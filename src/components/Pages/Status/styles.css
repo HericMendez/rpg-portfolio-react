@@ -14,12 +14,12 @@
     margin: 0px;
     position: absolute;
     bottom: 0vh;
-    left: 1vw;
+    left: 0;
 
 
-    height: 75vh;
+    height: 83vh;
     width: 25vw;
-    background-image: url('../../../assets/images/avatar/avatar_transparentbg_40ms.gif');
+    background-image: url('../../../assets/images/avatar/ff_avatar_rascunho.png');
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,4 +53,19 @@
 .resume-text span{
 
   color: #aaa;
+}
+
+@media screen and (max-width: 800px) {
+
+  .avatar2-div{
+    display: none;
+  }
+
+  .resume-container{
+    width: 95%;
+    position:static;
+    right:0;
+
+  
+  }
 }

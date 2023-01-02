@@ -18,210 +18,198 @@
     "label_3": "Hours of Sleep",
     "h4_1": "Main Skills"
   },
- 
-  "Skills": 
-  [ 
-   {
-     "name": "HTML",
-     "meta": "Hypertext Markup Language",
-     
-     "level": "Advanced",
 
-     "percent": "80%",
-     "barColor": "red",
-     "description": "The basic structure of any website.It's essential knowledge for any Front-end dev. And no, it's not a programming language. I have developed many websites with it, and even coded a game!"
+  "Skills": [
+    {
+      "name": "HTML",
+      "meta": "Hypertext Markup Language",
 
-   },
+      "level": "Advanced",
 
-   {
-     "name": "CSS",
-     "meta": "Cascading Styled Sheets",
-     
-     "level": "Advanced",
+      "percent": "80%",
+      "barColor": "red",
+      "description": "The basic structure of any website.It's essential knowledge for any Front-end dev. And no, it's not a programming language. I have developed many websites with it, and even coded a game!"
+    },
 
-     "percent": "80%",
-     "barColor": "red",
-     "description": "[insert description here]"
+    {
+      "name": "CSS",
+      "meta": "Cascading Styled Sheets",
 
-   },
-   {
-     "name": "Javascript",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "Advanced",
 
-     "percent": "0%",
-     "barColor": "",
-     "description": "[insert description here]"
+      "percent": "80%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Javascript",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "React",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "React",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "React Native",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "React Native",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Node",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Node",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Npm",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Npm",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Bootstrap",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Bootstrap",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Tailwind",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Tailwind",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "MySql",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "MySql",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Git",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Git",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Scrum",
-     "meta": "Metodologia ágil",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Scrum",
+      "meta": "Metodologia ágil",
 
-   },
-   {
-     "name": "Swagger",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Swagger",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Photoshop/Gimp",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Photoshop/Gimp",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Figma",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Figma",
+      "meta": "[insert metadescription here]",
 
-   },
-   {
-     "name": "Typescript",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Typescript",
+      "meta": "[insert metadescription here]",
 
-   },
+      "level": "[insert level here]",
 
-   {
-     "name": "Papercraft",
-     "meta": "Personal Hobby",
-     
-     "level": "[insert level here]",
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+    {
+      "name": "Papercraft",
+      "meta": "Personal Hobby",
 
-   },
-   {
-     "name": "Hardware Maintainance",
-     "meta": "[insert metadescription here]",
-     
-     "level": "[insert level here]",
+      "level": "[insert level here]",
 
-     "percent": "0%",
-     "barColor": "red",
-     "description": "[insert description here]"
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    },
+    {
+      "name": "Hardware Maintainance",
+      "meta": "[insert metadescription here]",
 
-   }
- 
+      "level": "[insert level here]",
+
+      "percent": "0%",
+      "barColor": "red",
+      "description": "[insert description here]"
+    }
+  ],
+  "Quests": [
+    {
+      "name": "projectXYZ",
+      "type": "Freelancer Project",
+      "images": ["img01.png", "img02.png", "img03.png"],
+      "description": "lorem ipsum dolor sit amet.......",
+      "tech": ["Html", "Css", "Js"]
+    }
   ]
- 
 }

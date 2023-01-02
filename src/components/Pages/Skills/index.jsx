@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProgressBar from "components/Elements/ProgressBar";
 
 import "./styles.css";
@@ -24,37 +23,41 @@ import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
 
 const Skills = ({ translate }) => {
-  const translatedSkill = translate("Skills", "0");
+
   const [skill, setSkill] = useState(translate("Skills", "0"));
   const [skillIcon, setSkillIcon] = useState(IconHtml);
+
   const icons = [
     IconHtml, IconCSS, IconJS, IconReact,
     IconReactNative, IconNode,IconNpm, 
     IconBootstrap, IconTailwind, IconNMysql,
     IconGit, IconScrum, IconSwagger, IconPSGimp,
-    IconFigma, IconTS, IconHD, IconPepakura
+    IconFigma, IconTS,IconPepakura, IconHD, 
   ];
   function handleClick(e) {
-    console.log(skill);
+
     if (e.target.id) {
+
       setSkill(() => translate("Skills", e.target.id - 1));
       setSkillIcon(() => icons[e.target.id - 1]);
     }
+    return e.target.id -1
   }
+
+  
+
+
+
 
   return (
     <div className="scrollable">
       <div className="skills-container">
         <div
-          className=" rpgui-container framed "
-          style={{
-            position: "absolute",
-            top: "4vh",
-            left: "1vw",
-            height: "fit-content",
-          }}
+          className=" rpgui-container framed skills-div"
+ 
         >
           <h1 className="grid-title">Main Skills</h1>
+
           <div onClick={handleClick} className="skills-grid">
             <div className="skill-icon">
               <img id="1" src={IconHtml} alt="Html" />
