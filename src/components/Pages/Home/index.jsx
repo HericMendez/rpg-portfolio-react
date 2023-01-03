@@ -8,6 +8,7 @@ import IconReact from "../../../assets/images/icons/react.png";
 import IconHtml from "../../../assets/images/icons/html.png";
 import IconCss from "../../../assets/images/icons/css.png";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
+  import Text from "../../../context/Languages/MultiLingualContent/";
 
 const Home = ({ translate }) => {
   const { height, width } = useWindowDimensions();
@@ -29,13 +30,13 @@ const Home = ({ translate }) => {
               <div className="profile-description">
                 <h1 className="center-text">Heric Mendes</h1>
                 <h4 className=" center-text">
-                  {translate("Home", "h3_1")}
+                <Text contentID="home_h4_1" />
                 </h4>
 
-                <p className="text-class">- {translate("Home", "p1")}</p>
-                <p className="text-class">- {translate("Home", "p2")}</p>
-                <p className="text-class">- {translate("Home", "p3")}</p>
-                <p className="text-class">- {translate("Home", "p4")}</p>
+                <p className="text-class">- <Text contentID="home_p_1" /></p>
+                <p className="text-class">- <Text contentID="home_p_2" /></p>
+                <p className="text-class">- <Text contentID="home_p_3" /></p>
+                <p className="text-class">- <Text contentID="home_p_4" /></p>
               
               </div>
 
@@ -49,14 +50,14 @@ const Home = ({ translate }) => {
               }}
             >
               <div style={{ width: "55%" }}>
-              <ProgressBar label={translate("Home", "label_1")} color="red" fill="80%" />
-              <ProgressBar label={translate("Home", "label_2")} color="blue" fill="70%" />
-              <ProgressBar label={translate("Home", "label_3")} color="green" fill="30%" />
+              <ProgressBar label={<Text contentID="home_label_1" />} color="red" fill="80%" />
+              <ProgressBar label={<Text contentID="home_label_2" />} color="blue" fill="70%" />
+              <ProgressBar label={<Text contentID="home_label_3" />} color="green" fill="30%" />
               </div>
               <div style={{ width: "45%"}}>
                 <div>
                   <p className="center-text">
-                  {translate("Home", "h4_1")}
+                  <Text contentID="home_h4_2" />
                   </p>
                   <div className="skill-icons">
                     <img

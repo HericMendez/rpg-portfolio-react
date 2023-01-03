@@ -6,7 +6,7 @@ import IconGithub from "../../../assets/images/icons/github.png";
 import IconResume from "../../../assets/images/icons/resume.png";
 import IconSteam from "../../../assets/images/icons/steam.png";
 
-import { ThemeContext } from "Themes";
+import { ThemeContext } from "context/Themes";
 const Contact = () => {
 
 

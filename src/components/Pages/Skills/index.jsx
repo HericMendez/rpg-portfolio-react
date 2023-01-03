@@ -21,6 +21,7 @@ import IconPSGimp from "../../../assets/images/icons/ps-gimp.png";
 import IconFigma from "../../../assets/images/icons/figma.png";
 import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
+import Text from "context/Languages/MultiLingualContent";
 
 const Skills = ({ translate }) => {
 
@@ -150,7 +151,7 @@ const Skills = ({ translate }) => {
               alt={skill.name}
             ></img>
             <div className="header-text">
-              <h1>{skill.name}</h1>
+              <h1><Text contentID="hello"/></h1>
 
               <h4>{skill.meta}</h4>
             </div>

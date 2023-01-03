@@ -19,32 +19,26 @@ import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
 import PTBR from "../../../Languages/pt-br.json";
 import ENUS from "../../../Languages/en-us.json";
-import { ThemeContext } from "Themes";
+import { ThemeContext } from "context/Themes";
+import { LanguageContext } from "context/Languages/LanguageContext";
+  import Text from "../../../context/Languages/MultiLingualContent/";
 
 const MainWindow = () => {
-  const [title, setTitle] = useState("Heric's Portfolio - Main Page");
-  const [language, setLanguage] = useState("PT-BR");
+  const [titleID, setTitleID] = useState("Heric's Portfolio - Main Page");
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log("title:", title);
+  const { language, toggleLanguage } = useContext(LanguageContext);
+
+  console.log("title:", titleID);
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
 
 
-   const PageTitles = {
-    home: "Página Inicial" ,
-    skills: "Skills and Proficiency Levels",
-    status: "My Professional Profile",
-    quests: "Projects and Successful Jobs",
-    contact: "Get in Touch With me",
-    about: "About this Project"
-  }
   const translate = (section, content) => {
     if (language === "PT-BR") {
-      localStorage.setItem("language", 'PT-BR')
+      localStorage.setItem("language", "PT-BR");
       return PTBR[section][content];
-      
     } else {
-      localStorage.setItem("language", 'EN-US')
+      localStorage.setItem("language", "EN-US");
       return ENUS[section][content];
     }
   };
@@ -52,50 +46,49 @@ const MainWindow = () => {
   function handleClick(e) {
     if (e.target.id) {
       console.log(e.target.id);
-      setTitle(() => PageTitles[e.target.id]);
+      setTitleID(() => e.target.id);
     }
   }
 
-  
-  console.log("aaaa",localStorage.language)
+  console.log("aaaa", localStorage.language);
   return (
     <Router>
       <div className="main-container">
         <div className="hide-mobile rpgui-container framed nav-window">
           <ul onClick={handleClick}>
             <li className="nav-item">
-              <Link id="home" to="/">
+              <Link id="title_home" to="/">
                 <img src={ChangeThemeIcon()} alt="" />
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link id="status" to="/status">
+              <Link id="title_bio" to="/status">
                 <img src={ChangeThemeIcon()} alt="" /> Bio
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link id="skills" to="/skills">
+              <Link id="title_skills" to="/skills">
                 <img className="nav-cursor" src={ChangeThemeIcon()} alt="" />{" "}
                 Skills
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link id="quests" to="/quests">
+              <Link id="title_quests" to="/quests">
                 <img src={ChangeThemeIcon()} alt="" /> Quests
               </Link>
             </li>
             <li className="nav-item">
-              <Link id="contact" to="/contact">
+              <Link id="title_contact" to="/contact">
                 <img src={ChangeThemeIcon()} alt="" />
                 Contact
               </Link>
             </li>
             <li className="nav-item">
-              <Link id="about" to="/about">
+              <Link id="title_about" to="/about">
                 <img src={ChangeThemeIcon()} alt="" /> About
               </Link>
             </li>
@@ -105,12 +98,8 @@ const MainWindow = () => {
           <div>
             <label>Language:</label>
             <select
-              onChange={(e) => {
-                setLanguage(()=>e.target.value);
-               
-        
-              }}
-              value={language}
+              onChange={
+                toggleLanguage}
               className="rpgui-dropdown"
               style={{ width: "100%" }}
             >
@@ -133,7 +122,6 @@ const MainWindow = () => {
             <label>Theme:</label>
             <select
               onChange={(e) => toggleTheme(e.target.value)}
-
               className="rpgui-dropdown"
               style={{ width: "100%" }}
             >
@@ -153,16 +141,19 @@ const MainWindow = () => {
           </div>
         </div>
         <div className="hide-mobile rpgui-container framed title-window center-text">
-          <h1>{title}</h1>
+          <h1>{<Text contentID={titleID} />}</h1>
         </div>
 
         <div className="rpgui-container framed content-window">
           <Routes>
             <Route path="/" element={<Home translate={translate} />} />
-            <Route path="/skills" element={<Skills translate={translate}   />} />
+            <Route path="/skills" element={<Skills translate={translate} />} />
             <Route path="/status" element={<Status translate={translate} />} />
             <Route path="/quests" element={<Quests translate={translate} />} />
-            <Route path="/contact" element={<Contact translate={translate} />} />
+            <Route
+              path="/contact"
+              element={<Contact translate={translate} />}
+            />
             <Route path="/about" element={<About translate={translate} />} />
           </Routes>
         </div>

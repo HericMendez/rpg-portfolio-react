@@ -4,8 +4,8 @@ import "./index.css";
 import "./assets/rpgui/rpgui.css";
 import App from "./App";
 
-import { ThemeChanger } from "Themes";
-import "./Themes/variables.css";
+import { ThemeChanger } from "context/Themes";
+import "./context/Themes/variables.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
