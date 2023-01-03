@@ -3,7 +3,8 @@
     --border-img:   url("assets/rpgui/img/theme-images/border-image-ff.png");
     --bg-color:linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
 
-    --avatar-full: url("assets/images/avatar/sans.png");
+
+    --avatar-full: url("assets/images/avatar/ff_avatar_rascunho.png");
     --avatar-portrait: url("assets/images/avatar/avatar_portrait.png");
 
 
@@ -46,7 +47,7 @@
     --border-img:url("assets/rpgui/img/theme-images/border-image-ff.png");  
     --bg-color:linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
 
-    --avatar-full: url("assets/images/avatar/avatar_half_res.png");
+    --avatar-full: url("assets/images/avatar/ff_avatar_rascunho.png");
     --avatar-portrait: url("assets/images/avatar/avatar_portrait.png");
 
     --select-border-image: url("assets/rpgui/img/theme-images/select-border-image-ff.png");

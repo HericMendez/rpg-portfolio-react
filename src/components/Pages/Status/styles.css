@@ -17,9 +17,10 @@
     left: 0;
 
 
-    height: 83vh;
+    height: 80vh;
     width: 25vw;
-    background-image: url('../../../assets/images/avatar/ff_avatar_rascunho.png');
+    
+    background-image: var(--avatar-full);
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

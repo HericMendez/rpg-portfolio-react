@@ -21,7 +21,7 @@ import PTBR from "../../../Languages/pt-br.json";
 import ENUS from "../../../Languages/en-us.json";
 import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
-  import Text from "../../../context/Languages/MultiLingualContent/";
+import Text from "../../../context/Languages/MultiLingualContent/";
 
 const MainWindow = () => {
   const [titleID, setTitleID] = useState("Heric's Portfolio - Main Page");
@@ -31,7 +31,6 @@ const MainWindow = () => {
   console.log("title:", titleID);
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
-
 
   const translate = (section, content) => {
     if (language === "PT-BR") {
@@ -96,48 +95,31 @@ const MainWindow = () => {
         </div>
         <div className="hide-mobile rpgui-container framed icon-window">
           <div>
-            <label>Language:</label>
-            <select
-              onChange={
-                toggleLanguage}
-              className="rpgui-dropdown"
-              style={{ width: "100%" }}
+            <button
+              style={{ 
+                fontSize: '2.3vh',
+                width: '100%',  
+                color: theme === "undertale-theme" ? "#fff " : "#000" }}
+              className="rpgui-button"
+              type="submit"
+              onClick={toggleTheme}
             >
-              <option
-                style={{ color: "#222", background: "#cccaba" }}
-                value="PT-BR"
-              >
-                Português
-              </option>
-              <option
-                style={{ color: "#222", background: "#cccaba" }}
-                value="EN-US"
-              >
-                English
-              </option>
-              ...
-            </select>
-          </div>
-          <div>
-            <label>Theme:</label>
-            <select
-              onChange={(e) => toggleTheme(e.target.value)}
-              className="rpgui-dropdown"
-              style={{ width: "100%" }}
-            >
-              <option
-                style={{ color: "#222", background: "#cccaba" }}
-                value="ff-theme"
-              >
-                Final Fantasy
-              </option>
-              <option
-                style={{ color: "#222", background: "#cccaba" }}
-                value="undertale-theme"
-              >
-                Undertale
-              </option>
-            </select>
+              Theme: {theme === "ff-theme" ? "Final Fantasy":"Undertale" }
+
+
+            </button>
+
+            <button
+              style={{
+                fontSize: '2.3vh',
+                width: '100%',  
+                color: theme === "undertale-theme" ? "#fff " : "#000" }}
+              className="rpgui-button"
+              type="submit"
+              onClick={toggleLanguage}
+            >Language:<br/>
+             {language}
+            </button>
           </div>
         </div>
         <div className="hide-mobile rpgui-container framed title-window center-text">

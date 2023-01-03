@@ -17,11 +17,7 @@ const ThemeChanger = ({ children }) => {
   const [theme, setTheme] = useState('ff-theme');
 
   function toggleTheme(theme) {
-    if (theme == "ff-theme") {
-      setTheme("ff-theme");
-    } else {
-      setTheme("undertale-theme");
-    }
+    setTheme((theme) => (theme === "ff-theme" ? "undertale-theme" : "ff-theme"));
 
     console.log(theme);
   }

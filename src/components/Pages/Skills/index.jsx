@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ProgressBar from "components/Elements/ProgressBar";
 
 import "./styles.css";
@@ -23,9 +23,9 @@ import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
 import Text from "context/Languages/MultiLingualContent";
 
-const Skills = ({ translate }) => {
+const Skills = () => {
 
-  const [skill, setSkill] = useState(translate("Skills", "0"));
+  const [skillID, setSkillID] = useState("html");
   const [skillIcon, setSkillIcon] = useState(IconHtml);
 
   const icons = [
@@ -33,16 +33,18 @@ const Skills = ({ translate }) => {
     IconReactNative, IconNode,IconNpm, 
     IconBootstrap, IconTailwind, IconNMysql,
     IconGit, IconScrum, IconSwagger, IconPSGimp,
-    IconFigma, IconTS,IconPepakura, IconHD, 
+    IconFigma, IconTS,IconHD,IconPepakura,  
   ];
   function handleClick(e) {
 
     if (e.target.id) {
-
-      setSkill(() => translate("Skills", e.target.id - 1));
-      setSkillIcon(() => icons[e.target.id - 1]);
+   
+      setSkillID(() => e.target.id);
+      setSkillIcon(() => icons[e.target.id-1]);
+      console.log(e.target.value, e.target.id)  
+        
     }
-    return e.target.id -1
+
   }
 
   
@@ -61,75 +63,75 @@ const Skills = ({ translate }) => {
 
           <div onClick={handleClick} className="skills-grid">
             <div className="skill-icon">
-              <img id="1" src={IconHtml} alt="Html" />
+              <img id='1'   src={IconHtml} alt="Html" />
             </div>
 
             <div className="skill-icon">
-              <img id="2" src={IconCSS} alt="CSS" />
+              <img id='2' src={IconCSS} alt="CSS" />
             </div>
 
             <div className="skill-icon">
-              <img id="3" src={IconJS} alt="JS" />
+              <img id='3'  src={IconJS} alt="JS" />
             </div>
 
             <div className="skill-icon">
-              <img id="4" src={IconReact} alt="React" />
+              <img id='4'  src={IconReact} alt="React" />
             </div>
 
             <div className="skill-icon">
-              <img id="5" src={IconReactNative} alt="React-Native" />
+              <img id='5' src={IconReactNative} alt="React-Native" />
             </div>
 
             <div className="skill-icon">
-              <img id="6" src={IconNode} alt="Node" />
+              <img id='6' src={IconNode} alt="Node" />
             </div>
 
             <div className="skill-icon">
-              <img id="7" src={IconNpm} alt="NPM" />
+              <img id='7' src={IconNpm} alt="NPM" />
             </div>
 
             <div className="skill-icon">
-              <img id="8" src={IconBootstrap} alt="Bootstrap" />
+              <img id='8' src={IconBootstrap} alt="Bootstrap" />
             </div>
 
             <div className="skill-icon">
-              <img id="9" src={IconTailwind} alt="Tailwind" />
+              <img id='9' src={IconTailwind} alt="Tailwind" />
             </div>
 
             <div className="skill-icon">
-              <img id="10" src={IconNMysql} alt="Mysql" />
+              <img id='10' src={IconNMysql} alt="Mysql" />
             </div>
 
             <div className="skill-icon">
-              <img id="11" src={IconGit} alt="Git" />
+              <img id='11' src={IconGit} alt="Git" />
             </div>
 
             <div className="skill-icon">
-              <img id="12" src={IconScrum} alt="Scrum" />
+              <img id='12' src={IconScrum} alt="Scrum" />
             </div>
 
             <div className="skill-icon">
-              <img id="13" src={IconSwagger} alt="Swagger" />
+              <img id='13' src={IconSwagger} alt="Swagger" />
             </div>
 
             <div className="skill-icon">
-              <img id="14" src={IconPSGimp} alt="PS" />
+              <img id='14' src={IconPSGimp} alt="PS" />
             </div>
 
             <div className="skill-icon">
-              <img id="15" src={IconFigma} alt="Figma" />
+              <img id='15'  src={IconFigma} alt="Figma" />
             </div>
 
             <div className="skill-icon">
-              <img id="16" src={IconTS} alt="TS" />
+              <img id='16' src={IconTS} alt="TS" />
             </div>
 
             <div className="skill-icon">
-              <img id="18" src={IconHD} alt="HD" />
+              <img id='17' src={IconHD} alt="HD" />
             </div>
 
             <div className="skill-icon">
-              <img id="17" src={IconPepakura} alt="Pepakura" />
+              <img id='18' src={IconPepakura} alt="Pepakura" />
             </div>
           </div>
         </div>
@@ -148,23 +150,23 @@ const Skills = ({ translate }) => {
             <img
               className="header-skill-icon"
               src={skillIcon}
-              alt={skill.name}
-            ></img>
+              alt="Skill Image"
+            />
             <div className="header-text">
-              <h1><Text contentID="hello"/></h1>
+              <h1><Text contentID={`skill_${skillID}_name`}/></h1>
 
-              <h4>{skill.meta}</h4>
+              <h4><Text contentID={`skill_${skillID}_meta`}/></h4>
             </div>
           </div>
 
           {/*           <hr className="golden" /> */}
 
-          <p className="details-text">{skill.description}</p>
+          <p className="details-text"><Text contentID={`skill_${skillID}_description`}/></p>
 
           <ProgressBar
-            label={`Exp. Level: ${skill.level}`}
-            color={skill.barColor}
-            fill={skill.percent}
+            label={`Exp. Level:`}
+            color={<Text contentID={`${skillID}_barcolor`}/>}
+            fill={<Text contentID={`${skillID}_skill_percent`}/>}
           />
         </div>
       </div>
