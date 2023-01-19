@@ -3,43 +3,7 @@ Html ok
 Css ok
 Javascript ok
 Typescript ok
-React ok 
-React Native ok
-Node ok
-NPM ok
-Bootstrap ok
-Tailwind ok
-Mysql ok
-Git ok
-Scrum ok
-Swagger ok
-PS/Gimp ok
-Figma ok
-Papercraft ok
-
-
-Projetos:
-Flappyvania
-Movie Meme Generator
-Empresa ACDCIT - Home Page
-Escritório Advocacia - Home Page
-CryptoApp
-Portfolio React Tailwind
-Projetos da Biotrônica
-App Polar Sapiens
-Polar Sapiens Webpage
-
-_____________________________________________________________________________________________
-
-Skills:
-
-Html 
-A estrutura básica de qualquer site da internet.
-Essencial pra qualquer Front-end. E não, não é uma 
-linguagem de programação.
-Já fiz vários sites e até um joguinho com ela!
-
-The basic structure of any website.
+React ok zite.
 It's essential knowledge for any Front-end dev.
 And no, it's not a programming language.
 I have developed many websites with it, and even coded a game!
@@ -51,13 +15,7 @@ existe pra deixar sua vida na internet mais bonita e colorida!
 Css puro, aplicaçao em frameworks, designs responsivos, grid, flexbox,
 styled components, enfim... eu me viro bem por aqui.
 
-From centering a div to making complex layouts,
-Css is out there to make your life on the web more 
-neat and colorful!
-I can use pure CSS, or with frameworks like React, 
-responsive layouts, grid, flexbox, styled components...
-Anyway, i am quite comfortable with this technology.
-
+"From centering a div to making complex layouts, Css is out there to make your life on the web more neat and colorful!I can use pure CSS, or with frameworks like React,  responsive layouts, grid, flexbox, styled components...Anyway, i am quite comfortable with this technology."
 
 Javascript
 Front-end, Back-end, Mobile, Desktop... 
@@ -72,15 +30,9 @@ on most of my projects.
 
 
 Typescript
-O Javascript é legal porém um pouco bagunçado, mas o Typescript está aí
-pra botar ordem na casa.  
-No momento aprendendo e fuçando na linguagem, que utilizo
-principalmente em projetos do estágio.
+"O Javascript é legal porém um pouco bagunçado, mas o Typescript está aí pra botar ordem na casa. No momento aprendendo e fuçando na linguagem, que utilizo principalmente em projetos do estágio."
 
-Javascript is cool but is a bit messy, and Tailwind is there to 
-put things right.
-Right now i'm learning and messing around with this language,
-which i use mainly on my internship's projects.
+Javascript is cool but is a bit messy, and Tailwind is there to put order on the house .Right now i'm learning and messing around with this language, which i use mainly on my internship's projects.
 
 React
 Este portfolio lindo e incrível que está vendo agora é feito em React!
@@ -106,8 +58,7 @@ JS for Desktop! Very useful for running local servers or
 for building libs.
 
 NPM
-Instalador de pacotes que utilizo em praticamente todos os meus projetos.
-Npm > Yarn
+Instalador de pacotes que utilizo em praticamente todos os meus projetos. Aliás, Npm > Yarn
 
 Package installer, which i use in nearly all my projects.
 Npm > Yarn 
@@ -145,73 +96,47 @@ I have little experience with Back-end, but i can get by if i have to use it.
 
 
 Git
-Basicamente ele é o "Memory Card" do dev, não dá pra sobreviver sem ele!
-Utilizo o Git todos os dias nas plataformas Github e Gitlab.
+Basicamente ele é o "Memory Card" do dev, não dá pra sobreviver sem ele! Utilizo o Git todos os dias nas plataformas Github e Gitlab.
 
-It's basically the dev's "Memory Card", you can't survive without it!
-I use Git on a daily basis, on the platforms Github and Gitlab.
+It's basically the dev's "Memory Card", you can't survive without it! I use Git on a daily basis, on the platforms Github and Gitlab.
 
 Scrum
-Metodologia ágil para planejamento e organização de projetos.
-Utilizo todo dia no meu estágio, além de possuir uma certificação de Scrum Master pela Certiprof.
+"Metodologia ágil para planejamento e organização de projetos.Utilizo todo dia no meu estágio, além de possuir umacertificação de Scrum Master pela Certiprof."
 
 Agile methodology used to plan and organize projects.
 I use it every day on my internship, aside from having a Scrum Master certificate from Certiprof.
 
 
 Swagger
-É uma ferramenta de documentação de APIs. 
-Muito útil para documentar os endpoints que conectam o front-end com o back-end, e facilita bastante o trabalho em equipe.
+"É uma ferramenta de documentação de APIs. Muito útil para documentar os endpoints que conectam o front-end com o back-end, e facilita bastante o trabalho em equipe."
 
-An API documentation tool.
-It's very useful to list all endpoint URLs that connect server to client.
+An API documentation tool. It's very useful to list all endpoint URLs that connect server to client.
 
 
 Photoshop/Gimp
-Softwares de criação e edição de imagens. 
-Consigo fazer muita coisa legal aqui, desde edição de
- fotos até criação e adaptação de logos, ícones,
- elementos de front-end, enfim... 
-No Linux eu uso a versão "de pobre" do Photoshop, o GIMP (que também é uma ferramente muito boa e versátil).
 
-Image creation and edition softwares. 
-I can do al lot of nice things here, from photo edition to
- creation and adaptation of logos, icons, front-end elements, and so on...
-On Linux, i use the Photoshop's "low budget" version, Gimp
-(Which is also a very good and versatile tool).
+"Consigo fazer muita coisa legal aqui, desde edição de fotos até criação e adaptação de logos, ícones, elementos de front-end, enfim... No Linux eu uso a versão "de pobre" do Photoshop, o GIMP (que também é uma ferramente muito boa e versátil)."
 
+"Image creation and edition tools. I can do al lot of nice things here, from photo edition to creation and adaptation of logos, icons, front-end elements, and so on... On Linux, i use the Photoshop's \"low budget"\ version, Gimp (Which is also a very good and versatile tool)."
 
 Figma
-É uma plataforma de criação e compartilhamento de
- design de layouts, que assim como o Swagger, 
-facilita muito no trabalho em equipe e no compartilhamento de ideias. 
+"É uma plataforma de criação e compartilhamento de design de layouts, que assim como o Swagger,  facilita muito no trabalho em equipe e no compartilhamento de ideias. "
 
-A tool used to create and share layout designs, that just like
-Swagger, makes teamwork and idea sharing a lot easier.
+"A tool used to create and share layout designs, that just like Swagger, makes teamwork and idea sharing a lot easier."
 
 Manutenção de Hardware 
-Formato o HD, instalo impressora, configuro o wi-fi, e faço tudo isso melhor que seu sobrinho (mas vou cobrar mais caro também)!
+Formato o HD, instalo impressora, configuro o wi-fi, e faço tudo isso melhor que seu sobrinho!
 
 Hardware Maintenance 
-I format hard drives,install printers, set up wifi network, and i do it better than your nephew (but it'll cost more too!)
+"I format hard drives,install printers, set up wifi network, and i do it better than your nephew!"
 
 Papercraft
-Apesar de não ser uma skill de desenvolvedor, muito 
-do meu conhecimento de edição de imagens e da 
-minha inspiração para me tornar Front-end vem daqui. 
-O Papercraft não somente é meu hobby favorito como
- também minha terapia anti-stress, e eu consigo fazer 
-várias coisas legais (personagens, animais, veículos,
- armas realistas, etc), apenas usando uma impressora,
- papel, cola, tesoura e um pouquinho de paciência.
+"Apesar de não ser uma skill de desenvolvedor, muito do meu conhecimento de edição de imagens e da minha inspiração para me tornar Front-end vem daqui. O Papercraft me permite fazer várias coisas legais (personagens, animais, veículos,armas realistas, etc), apenas usando uma impressora,
+papel, cola, tesoura e um pouquinho de paciência."
 
-Although this is not a dev skill, a lot of my knowledge in
+"Although this is not a dev skill, a lot of my knowledge in
 image edition and my inspiration to become a front-end dev
-comes from it.
-Papercraft is not only my favorite hobby but is also a
-great anti-stress therapy, and i can do many cool things
-(fictional characters, vehicles, animals, realistic weaponry, etc),
-only using a printer, paper, glue, scissors and a little bit of patience.
+comes from it. Papercraft allows me to do many cool things (fictional characters, vehicles, animals, realistic weaponry, etc), only using a printer, paper, glue, scissors and a little bit of patience."
 
 _____________________________________________________________________________________________
 
@@ -223,12 +148,12 @@ Clone do jogo Flappy Bird, feito utilizando HTML Canvas e Javascript,  com a tem
 Tecnologias utilizadas: HTML(Canvas Framework), CSS, Javascript."
 
 Flappyvania
-HTML Canvas Game - Personal Projectkkkkkk
+HTML Canvas Game - Personal Project
 
 
 Movie Meme Generator
 Webpage - Projeto Pessoal
-Esse é simpĺes, porém é um dos meus favoritos. É UM site que transforma um nome de filme em um nome de meme. A quinta série nunca morre!
+Esse é simpĺes, porém é um dos meus favoritos. É um site que transforma um nome de filme em um nome de meme. A quinta série nunca morre!
 Este projeto começou como uma piada entre amigos, porém muitas pessoas gostaram e me incentivaram a dar continuidade ao projeto, e o mesmo escalou para um estudo de caso, onde implementei o uso de Bootstrap no design de layout, além de desenvolver uma função de troca de tema (claro/escuro/sepia). 
 Atualmente atualizei este projeto, com mais filmes, e mais duas novas categorias,
 "Novelas" e "Animes"!
@@ -236,7 +161,7 @@ Tecnologias utilizadas: HTML, CSS, Javascript."
 
 
 Empresa ACDCIT - Home Page
-Webpage HTML - Projeto Freelance
+Webpage HTML - Projeto Freelancer
 Esse foi meu primeiro trabalho como freelancer!
 Fiz essa página a partir de um template pré existente, utilizando HTML, CSS e Javscript, e com função de troca de idioma (português/inglês) através de um arquivo Json local, a pedido do cliente.
 
@@ -247,20 +172,30 @@ Home Page do escritório de advocacia da Dra. Michele Murbach, que fiz em HTML, 
 O Dark Mode do outro projeto também está presente aqui.
 
 
+
+Advocacy Office - Home Page
+HTML Webpage - Freelance Project
+Home Page of Dr. Michele Murbach, which I made in HTML, using a template and customized with the colors and assets chosen by the client.
+The Dark Mode from the other project is also present here.
+
+
 CryptoApp
-React App - Estudo de Caso
-É um app React que exibe estatísticas detalhadas das criptomoedas mais valorizadas do mundo. Este projeto foi feito baseado em um tutorial do canal Code Commerce (Youtube), com o intuito de estudar mais a fundo as tecnologias React e TailwindCSS, e também para aplicar o uso de consumo de APIs utilizando Axios (do site https://www.coingecko.com/pt/api)
-Tecnologias utilizadas: HTML, CSS, Javascript, TailwindCSS, React.
+React App - Case Study
+It's a React app that displays detailed statistics of the world's most valued cryptocurrencies. This project was based on a tutorial from the Code Commerce channel (Youtube), with the aim of further studying React and TailwindCSS technologies, and also to apply the use of API consumption using Axios (from https://www.coingecko.com/pt/api)
 
 
 
 Projetos da Biotrônica
-Estágio Remunerado
+Paid Internship
+
 Não posso contar, é segredo!
 Mas estou fazendo muita coisa legal aqui, e aprendendo muito também!
 Utilizo principalmente Javascript, Typescript e React.
 
 
+I can't talk about it, it's a secret!
+But I'm doing a lot of cool things here, and learning a lot too!
+I mainly use Javascript, Typescript and React.
 
 Portfolio React Tailwind
 React Webpage - Projeto pessoal 
@@ -270,11 +205,18 @@ Como eu não tinha muita experiência quando fiz essa página, a maioria dos pro
 Porém grande parte do código que usei nesse projeto, consigo reaproveitar até hoje (principalmente Dark Mode/troca de idiomas.) 
 
 
-App Polar Sapiens
-React Native App - Projeto Freelance
-Meu primeiro grande projeto, por assim dizer. E também meu primeiro projeto mobile.
-Se trata de um app que tem como função o nível de stress e ansiedade dos usuários por meio de baterias de testes psicológicos.
-Neste projeto estou trabalhando em conjunto com outros devs na implementação de novas features, design de novas telas, correção de bugs e refatoração de código. 
+Portfolio React Tailwind
+React Webpage - Personal project
+My first portfolio website, made using React and TailwindCSS.
+There's a lot of cool stuff here, I learned a lot programming this site and I tested a lot of features too.
+Since I didn't have much experience when I made this page, most of the projects listed on it were made for educational purposes.
+However, a large part of the code I used in this project, I manage to reuse until today (mainly Dark Mode/change of languages.)
+
+Polar Sapiens App
+React Native App - Freelance Project
+My first big project, so to speak. And also my first mobile project.
+It is an app whose function is to assess the level of stress and anxiety of users through batteries of psychological tests.
+In this project I'm working together with other devs to implement new features, design new screens, fix bugs and refactor code.
 
 
 Polar Sapiens Webpage
@@ -284,6 +226,13 @@ Versão Web do app feito em React Native. Pode ser acessado pelo navegador.
 Este projeto foi iniciado do zero, utilizando HTML, CSS, Javascript e um pouquinho de Bootstrap.
 Adaptar o design compacto e vertical da versão para smartphone para uma versão web, mais "bidimensional" e esticada, foi um desafio e tanto!
 
+
+Polar Sapiens Webpage
+Website - Freelance Project
+
+Web version of the app made in React Native. It can be accessed through the browser.
+This project was started from scratch, using HTML, CSS, Javascript and a little bit of Bootstrap.
+Adapting the compact and vertical design of the smartphone version to a more "two-dimensional" and stretched web version was quite a challenge!
 
 Sobre este Projeto
 
@@ -304,49 +253,84 @@ A magnífica biblioteca CSS que usei como base neste projeto:
 /*(link da lib aqui)*/
 
 
+
+
 Status (curriculo)
+Olá, meu nome é Héric, e este é meu portfolio de desenvolvedor Front-end.
 
-Bio 
-
-(pensar em um texto bonitinho - ou nem inserir uma bio)
-
-Estudante de Análise e Desenvolvimento de Sistemas e Dev Freelancer,
-apaixonado por tudo que envolve tecnologia e design.
-Autodidata e de perfil criativo, possuo experiência como desenvolvedor Web e Mobile. Em meus conhecimentos destacam-se as
-tecnologias React, React Native e a criação de layouts responsivos.
-
-Trabalho atual
-Desenvolvedor Estagiário na Biotrônica
+Estudante de Análise e Desenvolvimento de Sistemas e Dev Freelancer,apaixonado por tudo que envolve tecnologia e design. Autodidata e de
+perfil criativo, possuo experiência como desenvolvedor Web e Mobile.
+Em meus conhecimentos destacam-se as tecnologias React, React Native
+e a criação de layouts responsivos.
 
 
+Emprego Atual
+Desenvolvedor Remoto na Biotrônica
 
-Formação profissional
+Tecnólogo em Análise e Desenvolvimento de Sistemas
 
-Análise e Desenvolvimento de Sistemas
 Fatec Taquaritinga
 Agosto/2022 - Atual (2º semestre)
 
 Técnico em Desenvolvimento de Sistemas
-Etec Sylvio de Mattos Carvalho (Matão/SP)
+Etec Matão
 Agosto/2019 - Dezembro/2020
+
 
 Administração de Empresas
 Uniara
 Janeiro/2014 - Dezembro/2017
-
+        
 Cursos e Certificados
+Formação Typescript
+Alura - 2022 (cursando atualmente)
 
 Scrum Foundation Professional Certificate
 Certiprof - 2021
 
+Javascript Algorithms and Data Structures
+FreeCodeCamp - 2021</span>
+
+
 Responsive Web Designs
 FreeCodeCamp - 2021
 
-Javascript Algorithms and Data Structures 
-FreeCodeCamp - 2021
 
-Formação Front-end (HTML, CSS, JS, React)
-Alura - 2021
+Sobre este projeto
 
-React com Typescript
-Alura - 2022 (cursando atualmente)
+
+Esta é uma página de portfolio profissional criada usando React e a
+biblioteca CSS RPGUI, com um design inspirado em jogos de RPG
+clássicos dos anos 90 e 2000.
+
+Este projeto foi feito para ser minha principal página de portfolio (a
+segunda que fiz), com o propósito de ter algo que demonstrasse minhas
+habilidades e meus trabalhos como programador e desenvolvedor, e
+também como um desafio pra mim mesmo.
+
+Em meu primeiro portfolio, que fiz baseado em um tutorial do Youtube
+de React e Tailwind, eu programei e implementei muita coisa legal e
+tive que aprender bastante coisa nova pra que pudesse concluí-lo
+(muito do código original foi aproveitando neste segundo projeto).
+Porém, em certo ponto, eu estava limitado ao template original, e eu
+tinha ideias que queria tirar do papel. Então decidi começar algo do
+zero, criando algo mais original, que tivesse mais a ver com minha
+personalidade e gostos pessoais.
+
+Agradecimentos
+
+Este projeto não seria possível sem a Biblioteca CSS RPGUI, do dev
+RonenNess. Se um dia ler isso, saiba que seu trabalho é incrível,
+muito obrigado!
+
+Ah, e um agradecimento especial à minha amiga JinfSZ pela belíssima
+arte da página inicial. Mais do trabalho dela aqui: /*(link dela
+aqui)*/
+
+Links
+
+Se você gostou desse projeto ou dos outros listados neste portfolio,
+deixa uma estrelinha no meu repositório: /*(link do meu github aqui)*/
+
+A magnífica biblioteca CSS que usei como base neste projeto: /*(link
+da lib aqui)*/

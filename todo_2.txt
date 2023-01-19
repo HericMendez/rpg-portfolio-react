@@ -1,0 +1,80 @@
+O que falta:
+
+Mudanças Globais:
+Refatoração do CSS para Sass
+Trocar scrollbars (padronizar todas) - OK
+
+Inclusão dos textos no dicionário das páginas:
+- Bio
+- Projects (4-9)
+- Contacts
+- About
+
+Web:
+Tamanho dos toggler buttons
+Tamanho da fonte no menu lateral do tema FF
+
+Mobile:
+Toggler buttons flutuantes (fixos) - Ou talvez na barra inferior?
+Icones de ambos os temas (Redesenhar)
+Correção da altura da barra inferior - OK
+Esconder overflow na barra inferior -OK
+
+
+Home
+
+Web: 
+Aumentar tamanho dos ícones de skill
+Só
+
+Mobile:
+Corrigir overflow da div das barras de progresso
+Trocar foto do avatar
+
+
+Bio
+
+Web:
+Inserir arte da Rafa no tema FF
+Mobile:
+nada
+
+Skills:
+
+Web:
+Centralizar texto na div esquerda
+Aumentar ícones (e diminuir gap)
+Remover overflow horizontal no card do lado direito
+Colocar efeito de hover nos ícones
+skilldata.js com as infos de icone e skill level
+
+Mobile:
+Remover borda se width<640
+Aumentar tamanho dos icones
+Reformatar modal (nos dois temas)
+
+
+Quests:
+
+Web:
+Completar lista de projetos
+questdata.js com os dados: repo_link, page_link, tech_icons[array]
+
+Mobile:
+Corrigir alinhamento da lista
+Reformatar modal (nos dois temas)
+
+
+Contact:
+
+Web/Mobile:
+Corrigir overflow horizontal dos links 
+
+
+About:
+
+Nothing
+
+
+
+

@@ -38,7 +38,7 @@
   bottom: 0;
   right: 2vw;
   height: 82vh;
-  content: url('../../../assets/images/avatar/avatar_transparentbg_40ms.gif');
+  content: var(--avatar-full);
 }
 
 .profile-div {

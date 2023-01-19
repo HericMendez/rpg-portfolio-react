@@ -25,7 +25,7 @@
 }
 
 .image-div {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -52,28 +52,49 @@
 
 .projects-list {
   position: absolute;
-  top: 44vh;
-  left: 2vw;
+  left: 0;
+  top: 0;
+  width: 33vw;
+  text-align: center;
+  margin-top: 10px;
   
   
 
-  overflow-y: scroll;
+  overflow
+  :scroll;
 }
 
-.projects-list select{
-    width: 33vw;
-    height: 36vh;
+.projects-list li{
+    width: 31vw;
+    height: 2.2vw;    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-align: left;
+    
+
 
 }
 
-.right-side {
-  width:37vw;
-  position:absolute;
-  right: 2vw;
-  top: 2vh;
-  height: 78vh;
-  display: block;
+.projects-list p:hover{
+  color: yellow;
+  text-decoration: underline;
 
+}
+
+.quest-modal{
+  background-color: #fff;
+}
+
+
+
+.tech-icons{
+display: flex;
+flex-direction: row;
+}
+
+.tech-icons img{
+  width: 12vh;
+  height: 12vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -84,7 +105,7 @@
   }
   .project-frame {
     position: absolute !important;
-    width: 90%;
+    width: 88%;
     height: 40vh;
     top: 2vh;
     
@@ -97,15 +118,18 @@
     background: #fff;
   }
   
-  .projects-list select{
-    width: 95%;
-    height: 36vh;
+  .projects-list li{
+    width: 70vw;
+    height: 6vh;
+
 
 }
-  .right-side {
 
-    display: none;
-  
+  .projects-list {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
 }

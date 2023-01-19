@@ -1,5 +1,4 @@
-import { useState } from "react";
-import ProgressBar from "components/Elements/ProgressBar";
+import { useState, useContext } from "react";
 
 import "./styles.css";
 
@@ -22,153 +21,143 @@ import IconFigma from "../../../assets/images/icons/figma.png";
 import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
 import Text from "context/Languages/MultiLingualContent";
+import SkillCard from "components/Elements/SkillCard";
+import { Modal } from "@mui/material";
+
+import useWindowDimensions from "Hooks/UseWindowDimensions";
+
+import { ThemeContext } from "context/Themes";
 
 const Skills = () => {
-
-  const [skillID, setSkillID] = useState("html");
+  const [isOpen, setIsOpen] = useState(false);
+  const [skillID, setSkillID] = useState(1);
   const [skillIcon, setSkillIcon] = useState(IconHtml);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { height, width } = useWindowDimensions();
 
+  console.log(width, height);
   const icons = [
-    IconHtml, IconCSS, IconJS, IconReact,
-    IconReactNative, IconNode,IconNpm, 
-    IconBootstrap, IconTailwind, IconNMysql,
-    IconGit, IconScrum, IconSwagger, IconPSGimp,
-    IconFigma, IconTS,IconHD,IconPepakura,  
+    IconHtml,
+    IconCSS,
+    IconJS,
+    IconReact,
+    IconReactNative,
+    IconNode,
+    IconNpm,
+    IconBootstrap,
+    IconTailwind,
+    IconNMysql,
+    IconGit,
+    IconScrum,
+    IconSwagger,
+    IconPSGimp,
+    IconFigma,
+    IconTS,
+    IconHD,
+    IconPepakura,
   ];
   function handleClick(e) {
-
     if (e.target.id) {
-   
       setSkillID(() => e.target.id);
-      setSkillIcon(() => icons[e.target.id-1]);
-      console.log(e.target.value, e.target.id)  
-        
+      setSkillIcon(() => icons[e.target.id - 1]);
+      setIsOpen(() => true);
+      console.log(e.target.value, e.target.id);
     }
-
   }
-
-  
-
-
-
 
   return (
     <div className="scrollable">
       <div className="skills-container">
-        <div
-          className=" rpgui-container framed skills-div"
- 
-        >
+        <div className={`rpgui-container ${width<640? '': 'framed'} skills-div`}>
           <h1 className="grid-title">Main Skills</h1>
+          <p>(click to view)</p>
 
           <div onClick={handleClick} className="skills-grid">
             <div className="skill-icon">
-              <img id='1'   src={IconHtml} alt="Html" />
+              <img id="1" src={IconHtml} alt="Html" />
             </div>
 
             <div className="skill-icon">
-              <img id='2' src={IconCSS} alt="CSS" />
+              <img id="2" src={IconCSS} alt="CSS" />
             </div>
 
             <div className="skill-icon">
-              <img id='3'  src={IconJS} alt="JS" />
+              <img id="3" src={IconJS} alt="JS" />
             </div>
 
             <div className="skill-icon">
-              <img id='4'  src={IconReact} alt="React" />
+              <img id="4" src={IconReact} alt="React" />
             </div>
 
             <div className="skill-icon">
-              <img id='5' src={IconReactNative} alt="React-Native" />
+              <img id="5" src={IconReactNative} alt="React-Native" />
             </div>
 
             <div className="skill-icon">
-              <img id='6' src={IconNode} alt="Node" />
+              <img id="6" src={IconNode} alt="Node" />
             </div>
 
             <div className="skill-icon">
-              <img id='7' src={IconNpm} alt="NPM" />
+              <img id="7" src={IconNpm} alt="NPM" />
             </div>
 
             <div className="skill-icon">
-              <img id='8' src={IconBootstrap} alt="Bootstrap" />
+              <img id="8" src={IconBootstrap} alt="Bootstrap" />
             </div>
 
             <div className="skill-icon">
-              <img id='9' src={IconTailwind} alt="Tailwind" />
+              <img id="9" src={IconTailwind} alt="Tailwind" />
             </div>
 
             <div className="skill-icon">
-              <img id='10' src={IconNMysql} alt="Mysql" />
+              <img id="10" src={IconNMysql} alt="Mysql" />
             </div>
 
             <div className="skill-icon">
-              <img id='11' src={IconGit} alt="Git" />
+              <img id="11" src={IconGit} alt="Git" />
             </div>
 
             <div className="skill-icon">
-              <img id='12' src={IconScrum} alt="Scrum" />
+              <img id="12" src={IconScrum} alt="Scrum" />
             </div>
 
             <div className="skill-icon">
-              <img id='13' src={IconSwagger} alt="Swagger" />
+              <img id="13" src={IconSwagger} alt="Swagger" />
             </div>
 
             <div className="skill-icon">
-              <img id='14' src={IconPSGimp} alt="PS" />
+              <img id="14" src={IconPSGimp} alt="PS" />
             </div>
 
             <div className="skill-icon">
-              <img id='15'  src={IconFigma} alt="Figma" />
+              <img id="15" src={IconFigma} alt="Figma" />
             </div>
 
             <div className="skill-icon">
-              <img id='16' src={IconTS} alt="TS" />
+              <img id="16" src={IconTS} alt="TS" />
             </div>
 
             <div className="skill-icon">
-              <img id='17' src={IconHD} alt="HD" />
+              <img id="17" src={IconHD} alt="HD" />
             </div>
 
             <div className="skill-icon">
-              <img id='18' src={IconPepakura} alt="Pepakura" />
+              <img id="18" src={IconPepakura} alt="Pepakura" />
             </div>
           </div>
         </div>
-        <div
-          className="details-div rpgui-container framed-golden-2  "
-          style={{
-            position: "absolute",
-            top: "3vh",
-            right: "3vw",
-            height: "75vh",
-
-            // background: '#858587'//"#a8a9ad"
-          }}
-        >
-          <div className="details-header rpgui-container framed-grey">
-            <img
-              className="header-skill-icon"
-              src={skillIcon}
-              alt="Skill Image"
-            />
-            <div className="header-text">
-              <h1><Text contentID={`skill_${skillID}_name`}/></h1>
-
-              <h4><Text contentID={`skill_${skillID}_meta`}/></h4>
-            </div>
-          </div>
-
-          {/*           <hr className="golden" /> */}
-
-          <p className="details-text"><Text contentID={`skill_${skillID}_description`}/></p>
-
-          <ProgressBar
-            label={`Exp. Level:`}
-            color={<Text contentID={`${skillID}_barcolor`}/>}
-            fill={<Text contentID={`${skillID}_skill_percent`}/>}
-          />
-        </div>
+        {width > 800 ? (
+          <SkillCard skillID={skillID} skillIcon={skillIcon} />
+        ) : (
+          <Modal
+            open={isOpen}
+            onClose={() => setIsOpen(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <SkillCard skillID={skillID} skillIcon={skillIcon} />
+          </Modal>
+        )}
       </div>
     </div>
   );

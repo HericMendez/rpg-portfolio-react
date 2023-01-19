@@ -20,7 +20,7 @@
     height: 80vh;
     width: 25vw;
     
-    background-image: var(--avatar-full);
+    background-image:  url('../../../assets/images/avatar/avatar_transparentbg_40ms.gif');
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

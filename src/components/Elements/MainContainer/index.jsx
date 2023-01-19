@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "components/Pages/Home";
 import About from "components/Pages/About";
-import Status from "components/Pages/Status";
+import Bio from "components/Pages/Bio";
 import Quests from "components/Pages/Quests";
 import Skills from "components/Pages/Skills";
 import Contact from "components/Pages/Contact";
@@ -14,33 +14,26 @@ import IconGreen from "../../../assets/images/icons/Blank_Green.png";
 import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
 import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
 import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
+import IconRed from "../../../assets/images/icons/Blank_Red.png";
 
 import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
-import PTBR from "../../../Languages/pt-br.json";
-import ENUS from "../../../Languages/en-us.json";
+
 import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
-import Text from "../../../context/Languages/MultiLingualContent/";
+import Text from "../../../context/Languages/MultiLingualContent";
 
-const MainWindow = () => {
+
+const MainContainer = () => {
   const [titleID, setTitleID] = useState("Heric's Portfolio - Main Page");
   const { theme, toggleTheme } = useContext(ThemeContext);
+  
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   console.log("title:", titleID);
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
 
-  const translate = (section, content) => {
-    if (language === "PT-BR") {
-      localStorage.setItem("language", "PT-BR");
-      return PTBR[section][content];
-    } else {
-      localStorage.setItem("language", "EN-US");
-      return ENUS[section][content];
-    }
-  };
 
   function handleClick(e) {
     if (e.target.id) {
@@ -63,7 +56,7 @@ const MainWindow = () => {
             </li>
 
             <li className="nav-item">
-              <Link id="title_bio" to="/status">
+              <Link id="title_bio" to="/bio">
                 <img src={ChangeThemeIcon()} alt="" /> Bio
               </Link>
             </li>
@@ -96,29 +89,33 @@ const MainWindow = () => {
         <div className="hide-mobile rpgui-container framed icon-window">
           <div>
             <button
-              style={{ 
-                fontSize: '2.3vh',
-                width: '100%',  
-                color: theme === "undertale-theme" ? "#fff " : "#000" }}
+              style={{
+                fontSize: "2.3vh",
+                width: "100%",
+                color: theme === "undertale-theme" ? "#fff " : "#000",
+              }}
               className="rpgui-button"
               type="submit"
               onClick={toggleTheme}
             >
-              Theme: {theme === "ff-theme" ? "Final Fantasy":"Undertale" }
+              Theme: 
 
-
+              {theme === "ff-theme" ? "Final Fantasy" : "Undertale"}
             </button>
 
             <button
               style={{
-                fontSize: '2.3vh',
-                width: '100%',  
-                color: theme === "undertale-theme" ? "#fff " : "#000" }}
+                fontSize: "2.3vh",
+                width: "100%",
+                color: theme === "undertale-theme" ? "#fff " : "#000",
+              }}
               className="rpgui-button"
               type="submit"
               onClick={toggleLanguage}
-            >Language:<br/>
-             {language}
+            >
+              Language:
+              <br />
+              {language}
             </button>
           </div>
         </div>
@@ -128,46 +125,78 @@ const MainWindow = () => {
 
         <div className="rpgui-container framed content-window">
           <Routes>
-            <Route path="/" element={<Home translate={translate} />} />
-            <Route path="/skills" element={<Skills translate={translate} />} />
-            <Route path="/status" element={<Status translate={translate} />} />
-            <Route path="/quests" element={<Quests translate={translate} />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/bio" element={<Bio />} />
+            <Route path="/quests" element={<Quests />} />
             <Route
               path="/contact"
-              element={<Contact translate={translate} />}
+              element={<Contact />}
             />
-            <Route path="/about" element={<About translate={translate} />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <div className="rpgui-container framed nav-mobile">
           <Link className="nav-link" to="/">
             <img className="nav-icon" src={HomeIcon} alt="Home" />
-            Home
+
           </Link>
           <Link className="nav-link" to="/skills">
             <img className="nav-icon" src={IconPurple} alt="Home" />
-            Skills
+
           </Link>
-          <Link className="nav-link" to="/status">
+          <Link className="nav-link" to="/bio">
             <img className="nav-icon" src={IconLightBlue} alt="Home" />
-            Status
+
           </Link>
           <Link className="nav-link" to="/quests">
             <img className="nav-icon" src={IconGreen} alt="Home" />
-            Quests
+
           </Link>
           <Link className="nav-link" to="/contact">
             <img className="nav-icon" src={IconYellow} alt="Home" />
-            Contact
+
           </Link>
           <Link className="nav-link" to="/about">
-            <img className="nav-icon" src={IconBlack} alt="Home" />
-            About
+            <img className="nav-icon" src={IconRed} alt="Home" />
+
           </Link>
+
+
+          <Link
+              style={{
+
+                backgroundColor: 'transparent',
+                padding: 0,
+                margin: 0,
+                border: 'none',
+              }}
+     
+    
+              onClick={toggleTheme}
+            >
+              <img className="nav-icon" src={IconBlack} alt="Home" />
+            </Link>
+
+            <Link
+              style={{
+
+                backgroundColor: 'transparent',
+                padding: 0,
+                margin: 0,
+                border: 'none',
+              }}
+     
+    
+              onClick={toggleLanguage}
+            >
+              <img className="nav-icon" src={IconBlack} alt="Home" />
+            </Link>
+
         </div>
       </div>
     </Router>
   );
 };
 
-export default MainWindow;
+export default MainContainer;

@@ -8,12 +8,12 @@ import IconReact from "../../../assets/images/icons/react.png";
 import IconHtml from "../../../assets/images/icons/html.png";
 import IconCss from "../../../assets/images/icons/css.png";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
-  import Text from "../../../context/Languages/MultiLingualContent/";
+import Text from "../../../context/Languages/MultiLingualContent/";
 
-const Home = ({ translate }) => {
+const Home = () => {
   const { height, width } = useWindowDimensions();
   console.log(width, height);
-  console.log(translate("Home", "p1"))
+
   if (width > 850) {
     return (
       <div className="home-container">
@@ -30,16 +30,22 @@ const Home = ({ translate }) => {
               <div className="profile-description">
                 <h1 className="center-text">Heric Mendes</h1>
                 <h4 className=" center-text">
-                <Text contentID="home_h4_1" />
+                  <Text contentID="home_h4_1" />
                 </h4>
 
-                <p className="text-class">- <Text contentID="home_p_1" /></p>
-                <p className="text-class">- <Text contentID="home_p_2" /></p>
-                <p className="text-class">- <Text contentID="home_p_3" /></p>
-                <p className="text-class">- <Text contentID="home_p_4" /></p>
-              
+                <p className="text-class">
+                  - <Text contentID="home_p_1" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_2" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_3" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_4" />
+                </p>
               </div>
-
             </div>
             <br />
             <div
@@ -50,14 +56,26 @@ const Home = ({ translate }) => {
               }}
             >
               <div style={{ width: "55%" }}>
-              <ProgressBar label={<Text contentID="home_label_1" />} color="red" fill="80%" />
-              <ProgressBar label={<Text contentID="home_label_2" />} color="blue" fill="70%" />
-              <ProgressBar label={<Text contentID="home_label_3" />} color="green" fill="30%" />
+                <ProgressBar
+                  label={<Text contentID="home_label_1" />}
+                  color="red"
+                  fill="80%"
+                />
+                <ProgressBar
+                  label={<Text contentID="home_label_2" />}
+                  color="blue"
+                  fill="70%"
+                />
+                <ProgressBar
+                  label={<Text contentID="home_label_3" />}
+                  color="green"
+                  fill="30%"
+                />
               </div>
-              <div style={{ width: "45%"}}>
+              <div style={{ width: "45%" }}>
                 <div>
                   <p className="center-text">
-                  <Text contentID="home_h4_2" />
+                    <Text contentID="home_h4_2" />
                   </p>
                   <div className="skill-icons">
                     <img
@@ -93,56 +111,55 @@ const Home = ({ translate }) => {
           </div>
         </div>
         <div className="hide-mobile avatar-div">
-          <img className="avatar-img"  alt="Avatar"></img>
+          <img className="avatar-img" alt="Avatar"></img>
         </div>
       </div>
     );
-
-
-
-  } 
-  else {
+  } else {
     return (
       <div>
         <div className="home-container">
           <div className="panel-div ">
             <div className="panel-window scrollable">
-            <h1 className="center-text">Heric Mendes</h1>
-                <h4 style={{ paddingBottom: "2vh" }} className=" center-text">
-                {translate("Home", "h3_1")}
-                </h4>
+              <h1 className="center-text">Heric Mendes</h1>
+              <h4 style={{ paddingBottom: "2vh" }} className=" center-text">
+                {}
+              </h4>
 
               <div className="profile-div ">
-                
                 <div className="portrait-div">
-                  <img
-                    className="avatar-portrait"
-    
-                    alt="Avatar Portrait"
-                  ></img>
-                              <div className="progress-bars">
-              <ProgressBar label={translate("Home", "label_1")} color="red" fill="80%" />
-              <ProgressBar label={translate("Home", "label_2")} color="blue" fill="70%" />
-              <ProgressBar label={translate("Home", "label_3")} color="green" fill="30%" />
-             </div>
+                  <img className="avatar-portrait" alt="Avatar Portrait"></img>
+                  <div className="progress-bars">
+                    <ProgressBar
+                      label={<Text contentID="home_label_1" />}
+                      color="red"
+                      fill="80%"
+                    />
+                    <ProgressBar
+                      label={<Text contentID="home_label_2" />}
+                      color="blue"
+                      fill="70%"
+                    />
+                    <ProgressBar
+                      label={<Text contentID="home_label_3" />}
+                      color="green"
+                      fill="30%"
+                    />
+                  </div>
                 </div>
-                
               </div>
               <hr className="golden" />
               <div className="profile-description">
-       
-              <p className="text-class">- {translate("Home", "p1")}</p>
-                <p className="text-class">- {translate("Home", "p2")}</p>
-                <p className="text-class">- {translate("Home", "p3")}</p>
-                <p className="text-class">- {translate("Home", "p4")}</p>
+                <p className="text-class">- <Text contentID="home_p_1" /></p>
+                <p className="text-class">- <Text contentID="home_p_2" /></p>
+                <p className="text-class">- <Text contentID="home_p_3" /></p>
+                <p className="text-class">- <Text contentID="home_p_4" /></p>
               </div>
               <br></br>
-       
-             <div>
+
+              <div>
                 <div>
-                  <h4 className="center-text">
-                  {translate("Home", "h4_1")}
-                  </h4>
+                  <h4 className="center-text">- <Text contentID="home_h4_2" /></h4>
                   <div className="skill-icons">
                     <img
                       className="main-skill-icon"
@@ -154,7 +171,7 @@ const Home = ({ translate }) => {
                       src={IconCss}
                       alt="NodeJS"
                     />
-      
+
                     <img
                       className="main-skill-icon"
                       src={IconJS}
@@ -168,10 +185,9 @@ const Home = ({ translate }) => {
                   </div>
                 </div>
               </div>
-             <br></br>
-             <br></br>
-             <br></br>
-
+              <br></br>
+              <br></br>
+              <br></br>
             </div>
           </div>
         </div>

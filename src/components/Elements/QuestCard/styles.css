@@ -1,0 +1,16 @@
+
+  
+  .right-side a{
+    font-size: 16px;
+  }
+  
+  .tech-icons{
+  display: flex;
+  flex-direction: row;
+  }
+  
+  .tech-icons img{
+    width: 9vh;
+    height: 9vh;
+  }
+  

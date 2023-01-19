@@ -10,6 +10,14 @@
     url("./fonts/DeterminationSansWebRegular-369X.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "PressStart2P";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Press Start 2P"), local("PressStart2P-Regular"),
+  url("./fonts/PressStart2P.ttf") format("truetype");
+}
+
 body {
   background-color: black;
 }
@@ -18,11 +26,12 @@ body {
   overflow: none;
 
 } */
-.resume-text::-webkit-scrollbar, .content-window::-webkit-scrollbar {
+.resume-text::-webkit-scrollbar,
+.content-window::-webkit-scrollbar {
   width: 2vw;
 }
 
- .content-window::-webkit-scrollbar {
+.content-window::-webkit-scrollbar {
   width: 0vw;
 }
 
@@ -30,22 +39,24 @@ body {
 .resume-text::-webkit-scrollbar-track {
   background-image: var(--scrollbar-track);
   background-size: 4vh 8vh;
-  background-repeat: repeat-y; }
+  background-repeat: repeat-y;
+}
 
 /* Handle */
 
 .resume-text::-webkit-scrollbar-thumb {
   background-image: var(--scrollbar-thumb);
   background-size: 3.6vh 100%;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+}
 
 /* buttons */
 
 .resume-text::-webkit-scrollbar-button {
   background-image: var(--scrollbar-button);
   background-size: 100% 100%;
-  background-repeat: no-repeat; }
-
+  background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 640px) {
   .hide-mobile {
@@ -56,13 +67,12 @@ body {
     width: 0vw;
   }
 
-/*   .scrollable {
+  /*   .scrollable {
     overflow-y: scroll;
   } */
 }
 .scrollable::-webkit-scrollbar {
   width: 0vh;
-
 }
 .center-text {
   text-align: center;
@@ -72,11 +82,10 @@ body {
   color: #fff;
   font-size: 2.3vh;
   padding-top: 1vh;
-  padding-bottom:1vh;
+  padding-bottom: 1vh;
 
   white-space: normal;
-  border-bottom: 2px solid #222;
-  
+  border-bottom: 2px solid #cccaba;
 }
 
 .dropdown-text {
@@ -93,4 +102,6 @@ option:checked {
   background-color: #222;
 }
 
-
+.MuiModal-root{
+  border-image: url("assets/rpgui/img/theme-images/border-image-undertale.png");      ;
+}

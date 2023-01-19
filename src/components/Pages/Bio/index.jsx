@@ -4,7 +4,7 @@ import useWindowDimensions from "Hooks/UseWindowDimensions";
 
 import "./styles.css";
 
-const Status = () => {
+const Bio = () => {
   const { height, width } = useWindowDimensions();
   return (
     <div className="status-container">
@@ -25,7 +25,7 @@ const Status = () => {
           </p>
           <br />
           <h2>Emprego Atual</h2>
-          <p>Desenvolvedor Estagiário na Biotrônica</p>
+          <p>Desenvolvedor Remoto na Biotrônica</p>
           <br />
           <h2>Formação Profissional</h2>
           <p>
@@ -40,7 +40,7 @@ const Status = () => {
             <u>Técnico em Desenvolvimento de Sistemas</u>
             <br />{" "}
             <span>
-              Fatec Taquaritinga <br />
+              Etec Matão <br />
               Agosto/2019 - Dezembro/2020
             </span>
           </p>
@@ -86,4 +86,4 @@ const Status = () => {
   );
 };
 
-export default Status;
+export default Bio;

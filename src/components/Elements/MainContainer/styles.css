@@ -2,16 +2,11 @@
   display: flex;
   flex-direction: row;
   list-style-type: none;
-
-  
-
 }
-
 
 .nav-window {
   width: 22vw;
   height: 70vh;
-  
 }
 
 .icon-window {
@@ -39,7 +34,6 @@
   height: 88vh;
   margin-left: 22vw;
   margin-top: 12vh;
-
 }
 
 ul {
@@ -69,7 +63,7 @@ li {
     width: 25vw;
     height: 80vh;
   }
-  
+
   .icon-window {
     width: 25vw;
     height: 20vh;
@@ -81,7 +75,7 @@ li {
     height: 15vh;
     margin-left: 25vw;
   }
-  
+
   .content-window {
     overflow-y: scroll;
     width: 75vw;
@@ -89,13 +83,11 @@ li {
     margin-left: 25vw;
     margin-top: 15vh;
   }
-  
 }
 .skill-icons {
   display: flex;
   padding-top: 16px;
   padding-bottom: 8px;
-
 }
 
 @media screen and (max-width: 640px) {
@@ -107,55 +99,47 @@ li {
 
   .content-window {
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
     margin-left: 0;
     overflow-y: auto;
     margin-top: 0vh;
   }
 
-  .icon-window{
+  .icon-window {
     display: none;
   }
-
 
   .title-window {
     width: 100vw;
     height: 15vh;
     margin-left: 0vw;
-
   }
 
-  .nav-mobile{
+  .nav-mobile {
     display: flex;
     width: 100vw;
     height: 15vh;
-    margin-top: 77vh;
+    margin-top: 85vh;
     justify-content: space-around;
     padding: 0 !important;
-    font-size: 8px;
-
-    
+    overflow-x: scroll;
   }
-  .nav-icon{
+
+  .nav-icon {
     width: 50px;
     height: 50px;
   }
-  .nav-link{
+  .nav-link {
     display: flex;
     flex-direction: column;
     text-align: center;
-
   }
 }
 
-.nav-item img{
-
+.nav-item img {
   display: none;
-
-
-
 }
-.nav-item:hover img{
+.nav-item:hover img {
   display: block;
   position: absolute;
   width: 2.5vw;

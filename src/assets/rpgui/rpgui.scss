@@ -11,6 +11,7 @@ inside your html file.
 /* to get pixelated images (nearest-neighbor filter) on all  browsers */
 .rpgui-pixelated {
   -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: -webkit-crisp-edges;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
@@ -21,6 +22,7 @@ inside your html file.
 .rpgui-noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -35,9 +37,15 @@ inside your html file.
 /* rotate object 90 degrees */
 .rpgui-rotate-90 {
   /* rotate 90 degrees */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   /* rotate from center-left side */
+  -ms-transform-origin: 0% 50%;
   /* IE 9 */
+  -webkit-transform-origin: 0% 50%;
   /* Chrome, Safari, Opera */
   transform-origin: 0% 50%;
 }
@@ -60,15 +68,17 @@ inside your html file.
   background-position: center;
   background-size: 100% 100%;
   /* font size */
-  font-size: 1em;
+  font-size: 2vh;
+  text-align: center;
   /* default size and display */
   max-width: 100%;
-  min-width: 140px;
-  height: 60px;
+
+  height: 10vh;
   display: inline-block;
   /* padding */
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  white-space:normal;
 }
 
 /* button hover */
@@ -134,7 +144,8 @@ inside your html file.
   width: 34px;
   display: block;
   height: 110%;
-  background: transparent url("img/button-golden-left.png") no-repeat right center;
+  background: transparent url("img/button-golden-left.png") no-repeat right
+    center;
   background-size: 100% 100%;
   margin: 0 0 0 0;
   left: 0px;
@@ -149,7 +160,8 @@ inside your html file.
   content: "";
   width: 34px;
   height: 110%;
-  background: transparent url("img/button-golden-right.png") no-repeat left center;
+  background: transparent url("img/button-golden-right.png") no-repeat left
+    center;
   background-size: 100% 100%;
   margin: 0 0 0 0;
   right: 0px;
@@ -173,11 +185,11 @@ inside your html file.
 * style for checkboxes
 */
 /* basic checkbox */
-.rpgui-content input[type=checkbox].rpgui-checkbox {
+.rpgui-content input[type="checkbox"].rpgui-checkbox {
   display: none;
 }
 
-.rpgui-content input[type=checkbox].rpgui-checkbox + label {
+.rpgui-content input[type="checkbox"].rpgui-checkbox + label {
   background: url("img/checkbox-off.png") no-repeat;
   line-height: 24px;
   display: inline-block;
@@ -188,7 +200,7 @@ inside your html file.
   margin-bottom: 10px;
 }
 
-.rpgui-content input[type=checkbox].rpgui-checkbox:checked + label {
+.rpgui-content input[type="checkbox"].rpgui-checkbox:checked + label {
   background: url("img/checkbox-on.png") no-repeat;
   line-height: 24px;
   display: inline-block;
@@ -198,12 +210,12 @@ inside your html file.
 }
 
 /* golden checkbox */
-.rpgui-content input[type=checkbox].rpgui-checkbox.golden + label {
+.rpgui-content input[type="checkbox"].rpgui-checkbox.golden + label {
   background: url("img/checkbox-golden-off.png") no-repeat;
   background-size: auto 100%;
 }
 
-.rpgui-content input[type=checkbox].rpgui-checkbox.golden:checked + label {
+.rpgui-content input[type="checkbox"].rpgui-checkbox.golden:checked + label {
   background: url("img/checkbox-golden-on.png") no-repeat;
   background-size: auto 100%;
 }
@@ -234,12 +246,14 @@ inside your html file.
   /* prevent text selecting */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   /* pixelated enlargement filter (to keep the pixel-art style when enlarging pictures) */
   -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: -webkit-crisp-edges;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
@@ -264,6 +278,7 @@ inside your html file.
   /* border */
   border-style: solid;
   border-image-source: var(--border-img);
+
   border-image-repeat: repeat;
   border-image-slice: 6 6 6 6;
   border-image-width: 18px;
@@ -371,10 +386,10 @@ label {
 .rpgui-content button,
 .rpgui-button,
 .rpgui-slider-container,
-.rpgui-content input[type=radio].rpgui-radio + label,
+.rpgui-content input[type="radio"].rpgui-radio + label,
 .rpgui-list-imp,
 .rpgui-dropdown-imp,
-.rpgui-content input[type=checkbox].rpgui-checkbox + label {
+.rpgui-content input[type="checkbox"].rpgui-checkbox + label {
   cursor: url("img/cursor/point.png") 10 0, auto;
 }
 
@@ -422,6 +437,8 @@ label {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
+  -moz-border-image: url("img/select-border-image.png") 10% repeat repeat;
+  -webkit-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -o-border-image: url("img/select-border-image.png") 10% repeat repeat;
   border-image: var(--select-border-image) 10% repeat repeat;
   /* background */
@@ -574,6 +591,8 @@ ul.rpgui-dropdown-imp {
 .rpgui-content input,
 .rpgui-content textarea {
   /* set size and colors */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -588,6 +607,7 @@ ul.rpgui-dropdown-imp {
   /* enable text selecting */
   -webkit-touch-callout: text;
   -webkit-user-select: text;
+  -khtml-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
@@ -603,9 +623,6 @@ ul.rpgui-dropdown-imp {
 }
 
 /* selection highlight */
-.rpgui-content input::-moz-selection, .rpgui-content textarea::-moz-selection {
-  background: rgba(0, 0, 0, 0.5);
-}
 .rpgui-content input::selection,
 .rpgui-content textarea::selection {
   background: rgba(0, 0, 0, 0.5);
@@ -620,6 +637,7 @@ ul.rpgui-dropdown-imp {
 /* note! this class rule affect both the dropdown header and the list elements! */
 .rpgui-list-imp {
   /* font */
+
   color: #222;
   /* default size */
   min-height: 40px;
@@ -630,10 +648,14 @@ ul.rpgui-dropdown-imp {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
+  -moz-border-image: url("img/select-border-image.png") 10% repeat repeat;
+  -webkit-border-image: url("img/select-border-image.png") 10% repeat repeat;
   -o-border-image: url("img/select-border-image.png") 10% repeat repeat;
-  border-image: url("img/theme-images/select-border-image-ff.png") 10% repeat repeat;
+  border-image: url("img/theme-images/select-border-image-ff.png") 10% repeat
+    repeat;
   /* background */
-  background: url("img/theme-images/select-background-image-ff.png") repeat repeat;
+  background: url("img/theme-images/select-background-image-ff.png") repeat
+    repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center;
@@ -671,6 +693,7 @@ ul.rpgui-list-imp {
 }
 
 /* list hover */
+
 .rpgui-list-imp .rpgui-selected {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -683,8 +706,10 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-h1);
   /* center text */
+
   /* padding */
   padding: 0 0 0 0;
   /* margin: 5px 5px 5px 5px;*/
@@ -695,8 +720,10 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-h2);
   /* center text */
+
   /* padding */
   padding: 0 0 0 0;
   /* margin: 7px 7px 17px 7px;*/
@@ -708,9 +735,11 @@ ul.rpgui-list-imp {
   color: white;
   font-weight: 1;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-h3);
   text-decoration: underline;
   /* center text */
+
   /* padding */
   padding: 0 0 0 0;
   /*  margin: 7px 7px 17px 7px; */
@@ -736,6 +765,7 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-p);
   line-height: 2.3vh;
 }
@@ -743,14 +773,17 @@ ul.rpgui-list-imp {
 @media screen and (max-width: 800px) {
   .rpgui-content p {
     /* color and border */
+
     line-height: 1.8vh;
   }
 }
+
 /* default span */
 .rpgui-content span {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-span);
   line-height: 22px;
 }
@@ -760,6 +793,7 @@ ul.rpgui-list-imp {
   /* color and border */
   color: #fff;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-a);
   line-height: 3vh;
   text-decoration: none;
@@ -788,6 +822,7 @@ ul.rpgui-list-imp {
   margin-left: 3vh;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
   font-size: var(--fontsize-li);
   line-height: 2.5vh;
 }
@@ -801,6 +836,7 @@ ul.rpgui-list-imp {
   width: 100%;
   margin-top: 0;
   margin-bottom: 2vh;
+
   position: relative;
 }
 
@@ -808,6 +844,7 @@ ul.rpgui-list-imp {
 .rpgui-progress-left-edge {
   position: absolute;
   height: 6vh;
+
   width: 3vw;
   left: 0px;
   background-image: var(--progressbar-left);
@@ -818,6 +855,7 @@ ul.rpgui-list-imp {
 .rpgui-progress-right-edge {
   position: absolute;
   height: 6vh;
+
   width: 3vw;
   right: 0px;
   background-image: var(--progressbar-right);
@@ -828,6 +866,7 @@ ul.rpgui-list-imp {
 .rpgui-progress-track {
   position: absolute;
   height: 6vh;
+
   left: 3vw;
   right: 3vw;
   background-image: var(--progressbar-middle);
@@ -866,11 +905,11 @@ ul.rpgui-list-imp {
 * style for radioes
 */
 /* radio box */
-.rpgui-content input[type=radio].rpgui-radio {
+.rpgui-content input[type="radio"].rpgui-radio {
   display: none;
 }
 
-.rpgui-content input[type=radio].rpgui-radio + label {
+.rpgui-content input[type="radio"].rpgui-radio + label {
   background: url("img/radio-off.png") no-repeat;
   line-height: 24px;
   display: inline-block;
@@ -881,7 +920,7 @@ ul.rpgui-list-imp {
   margin-bottom: 8px;
 }
 
-.rpgui-content input[type=radio].rpgui-radio:checked + label {
+.rpgui-content input[type="radio"].rpgui-radio:checked + label {
   background: url("img/radio-on.png") no-repeat;
   line-height: 24px;
   display: inline-block;
@@ -905,10 +944,10 @@ ul.rpgui-list-imp {
 * Rules for misc and general things.
 */
 /* set scrollbars for webkit browsers (like chrome) */
+
 .rpgui-list-imp::-webkit-scrollbar {
   width: 4vh;
 }
-
 /* Track */
 .rpgui-list-imp::-webkit-scrollbar-track {
   background-image: var(--scrollbar-track);
@@ -917,6 +956,7 @@ ul.rpgui-list-imp {
 }
 
 /* Handle */
+
 .rpgui-list-imp::-webkit-scrollbar-thumb {
   background-image: var(--scrollbar-thumb);
   background-size: 3.6vh 4vh;
@@ -924,6 +964,7 @@ ul.rpgui-list-imp {
 }
 
 /* buttons */
+
 .rpgui-list-imp::-webkit-scrollbar-button {
   background-image: var(--scrollbar-button);
   background-size: 100% 100%;
@@ -936,13 +977,15 @@ ul.rpgui-list-imp {
 /* disabled object */
 .rpgui-disabled,
 .rpgui-content :disabled,
-.rpgui-content input[type=radio]:disabled + label,
-.rpgui-content input[type=checkbox]:disabled + label,
-.rpgui-content input[type=range]:disabled + .rpgui-slider-container,
+.rpgui-content input[type="radio"]:disabled + label,
+.rpgui-content input[type="checkbox"]:disabled + label,
+.rpgui-content input[type="range"]:disabled + .rpgui-slider-container,
 .rpgui-content :disabled + .rpgui-dropdown-imp,
 .rpgui-content :disabled + .rpgui-dropdown-imp + .rpgui-dropdown-imp,
 .rpgui-content :disabled + .rpgui-list-imp {
   cursor: url("img/cursor/default.png"), auto;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: url(#greyscale);
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
@@ -1055,4 +1098,4 @@ ul.rpgui-list-imp {
   left: 40px;
   background-image: url("img/slider-thumb-golden.png");
   background-size: 100% 100%;
-}/*# sourceMappingURL=rpgui.css.map */
+}
