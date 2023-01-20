@@ -1,27 +1,25 @@
-.status-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.status-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-    justify-content: space-evenly;
-    
+  justify-content: space-evenly;
 }
-.status-container p{
+.status-container p {
   font-size: 2.2vh;
 }
-.avatar2-div{
-    padding: 20px;
-    margin: 0px;
-    position: absolute;
-    bottom: 0vh;
-    left: 0;
+.avatar2-div {
+  padding: 20px;
+  margin: 0px;
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
 
+  height: 78vh;
+  width: 25vw;
 
-    height: 80vh;
-    width: 25vw;
-    
-    background-image:  url('../../../assets/images/avatar/avatar_transparentbg_40ms.gif');
-    background-position: center;
+  background-image: url("../../../assets/images/avatar/avatar_transparentbg_40ms.gif");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -moz-transform: scaleX(-1);
@@ -30,43 +28,37 @@
   transform: scaleX(-1);
 }
 
-.resume-container{
+.resume-container {
   width: 45vw;
   position: absolute;
   right: 2vw;
-
 }
 
-.resume-text{
+.resume-text {
   overflow-y: scroll;
   height: 72vh;
 
   width: 100%;
   margin-left: 1vw;
-
 }
 
-.resume-text p{
+.resume-text p {
   line-height: 3vh;
   margin-bottom: 3vh;
 }
 
-.resume-text span{
-
+.resume-text span {
   color: #aaa;
 }
 
 @media screen and (max-width: 800px) {
-
-  .avatar2-div{
+  .avatar2-div {
     display: none;
   }
 
-  .resume-container{
+  .resume-container {
     width: 95%;
-    position:static;
-    right:0;
-
-  
+    position: static;
+    right: 0;
   }
 }

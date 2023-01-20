@@ -71,6 +71,7 @@ margin-right: 20%;
 .social-link-container a{
     font-size: var(--fontsize-form-a);
     color: yellow;
+    word-break: break-word;
     
     
 }
@@ -101,11 +102,7 @@ margin-right: 20%;
     .social-links-div{
         width: 100%;
         margin-top: 58vh;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 5vh;
-        
+
     
     }
     

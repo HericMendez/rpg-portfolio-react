@@ -25,8 +25,31 @@ const english = {
   home_label_2: "Code Exp.",
   home_label_3: "Hours of Sleep",
   home_h4_2: "Main Skills",
-  //Bio:
 
+  //Bio:
+  bio_h1: "Hello, my name is Heric, and this is my Front-end Developer Portfolio.",
+
+  bio_p_1: "Systems Analysis and Development student and Dev Freelancer, passionate about everything that involves technology and design. Self-taught and with a creative profile, i have experience as a Web and Mobile developer. React, React Native technologies and the creation of responsive layouts are the tech skills that stand out among my knowledge.",
+
+  bio_h2_1: "Current Job", 
+  bio_p_2: "Remote Developer at Biotronica",
+
+  bio_h2_2: "Professional Qualification",
+  
+  course_1_name: "Technologist Degree in Systems Analysis and Development",
+  course_1_cycle: 
+  "August/2022 - Currently studying (2nd semester)",
+
+  course_2_name: "System Development Technician",
+  course_2_cycle: "Agosto/2019 - Dezembro/2020",
+
+  course_3_name: "Business Administration",
+  course_3_cycle: "January/2014 - December/2017",
+  
+  course_4_name: "Typescript Formation",
+  course_4_cycle: "Alura - 2023 (currently studying)",
+  
+  bio_h2_3: "Courses and Certificates",
   //Skills:
 
   skill_$_name: "",
@@ -179,8 +202,38 @@ const english = {
   project_9_description: "Web version of the app made in React Native. It can be accessed through the browser.This project was started from scratch, using HTML, CSS, Javascript and a little bit of Bootstrap. Adapting the compact and vertical design of the smartphone version to a more \"two-dimensional\" and stretched web version was quite a challenge!",
   
   //Contact:
-
+  form_label_name: "Your name:",
+  form_label_message: "Leave your message:",
+  form_placeholder_undertale: "Seeing this beautiful portfolio fills you with determination.",
+  form_placeholder_ff: "What's your quest, kupo?",
+  form_submit:"Save Game",
+  form_h1: "Where to find me",
+  form_resume_link: "Download my Resumé",
+  
   //About:
+  about_h1: "A little about the journey so far...",
+
+  about_p_1: "This is a professional portfolio page created using React and the CSS RPGUI library, with a design inspired by 90's and 2000's classic RPG games.",
+
+  about_p_2: "This project was created to be my main portfolio page (the second one I made), with the purpose of having something that demonstrated my skills and my work as a programmer and developer, and also as a challenge for myself.",
+
+  about_p_3: "In my first portfolio, which i made based on a Youtube tutorial of React and Tailwind, i programmed and implemented a lot of cool stuff and i had to learn a lot of new things to get it done, and much of the original code was used in this second project.However, at a certain point, I was limited to the original template, and i had ideas that i wanted to get off the ground. So I decided to start something from scratch, creating something more original, that had more to do with my personality and personal tastes.",
+
+  about_h3: "Special Thanks",
+
+  about_p_4: "This project would not be possible without the RPGUI CSS Library, from the dev RonenNess. Your work is awesome, thank you so much!",
+
+  about_p_5: "Oh, and a special thanks to my friend Rafa JinfSZ for the beautiful homepage artwork. ",
+
+  about_p_6: "If you liked this project or the others listed in this portfolio, ",
+  about_a_1: " leave a star on my git repo",
+
+  about_p_7: "The magnificent CSS library I used as the basis for this project: ",
+
+  about_a_2: "Lib link here" ,
+  about_a_3: " JinfSZ's Instagram Profile" ,
+
+  about_p_8: "(seriously, ask her an art commission, her work is beautiful, but doesn't get the spotlight it deserves)"
 };
 
 export default english;

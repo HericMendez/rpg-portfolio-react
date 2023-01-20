@@ -27,9 +27,29 @@ const portuguese = {
   home_h4_2: "Skills Principais",
 
   //Bio:
+  bio_h1: "Olá, meu nome é Héric, e este é meu portfolio de desenvolvedor Front-end.",
 
+  bio_p_1: "Estudante de Análise e Desenvolvimento de Sistemas e Dev Freelancer, apaixonado por tudo que envolve tecnologia e design. Autodidata e de perfil criativo, possuo experiência como desenvolvedor Web e Mobile. Em meus conhecimentos destacam-se as tecnologias React, React Native e a criação de layouts responsivos.",
+
+  bio_h2_1: "Emprego Atual", 
+  bio_p_2: "Desenvolvedor Remoto na Biotrônica",
+
+  bio_h2_2: "Formação Profissional",
+  //professional qualification
+  course_1_name: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+  course_1_cycle: "Agosto/2022 - Atual (2º semestre)",
+
+  course_2_name: "Técnico em Desenvolvimento de Sistemas",
+  course_2_cycle: "Agosto/2019 - Dezembro/2020",
+
+  course_3_name: "Administração de Empresas",
+  course_3_cycle: "Janeiro/2014 - Dezembro/2017",
+  
+  course_4_name: "Formação Typescript",
+  course_4_cycle: "Alura - 2023 (cursando atualmente)",
+  
+  bio_h2_3: "Cursos e Certificados",
   //Skills:
-
   skill_1_name: "HTML",
   skill_1_meta: "Hypertext Markup Language",
   skill_1_description:
@@ -160,8 +180,38 @@ const portuguese = {
   project_9_description: "Versão Web do app feito em Recat Native. Pode ser acessado pelo navegador. Este projeto foi iniciado do zero, utilizando HTML, CSS, Javascript e um pouquinho de Bootstrap.Adaptar o design vertical e compacto da tela do celular para uma versão mais \"bidimensional e esticada\" foi um desafio e tanto!", 
 
   //Contact:
+  form_label_name: "Seu nome:",
+  form_label_message: "Escreva sua mensagem:",
+  form_placeholder_undertale: "Ver esse portfólio incrível te enche de determinação.",
+
+  form_submit:"Salvar jogo",
+  form_h1: "Onde me encontrar",
+  form_resume_link: "Baixe meu Currículo",
 
   //About:
+  about_h1: "Um pouco sobre a jornada até aqui...",
+
+  about_p_1: "Esta é uma página de portfolio profissional criada usando React e abiblioteca CSS RPGUI, com um design inspirado em jogos de RPG clássicos dos anos 90 e 2000.",
+
+  about_p_2: "Este projeto foi feito para ser minha principal página de portfolio (a segunda que fiz), com o propósito de ter algo que demonstrasse minhas habilidades e meus trabalhos como programador e desenvolvedor, e também como um desafio pra mim mesmo.",
+
+  about_p_3: " Em meu primeiro portfolio, que fiz baseado em um tutorial do Youtube de React e Tailwind, eu programei e implementei muita coisa legal e tive que aprender bastante coisa nova pra que pudesse concluí-lo (muito do código original foi aproveitando neste segundo projeto).Porém, em certo ponto, eu estava limitado ao template original, e eu tinha ideias que queria tirar do papel. Então decidi começar algo do zero, criando algo mais original, que tivesse mais a ver com minha personalidade e gostos pessoais.",
+
+  about_h3: "Agradecimentos Especiais",
+
+  about_p_4: "Este projeto não seria possível sem a Biblioteca CSS RPGUI, do dev RonenNess. Seu trabalho é foda, muito obrigado!",
+
+  about_p_5: "  Ah, e um agradecimento especial à minha amiga JinfSZ pela belíssima arte da página inicial. ",
+
+  about_p_6: "Se você gostou desse projeto ou dos outros listados neste portfolio, ",
+  about_a_1: " deixa uma estrelinha no meu repositório.",
+
+  about_p_7: "A magnífica biblioteca CSS que usei como base neste projeto: ",
+  about_a_2: "Link da Lib aqui" ,
+  about_a_3: "Perfil do Insta da JinSZ" ,
+  about_p_8: " (sério, encomendem uma arte com ela, o trabalho dela é incrível mas não tem o destaque que merece)"
 }
 
 export default portuguese;
+
+//<Text contentID="home_p_4" />

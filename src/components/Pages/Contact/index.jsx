@@ -5,35 +5,37 @@ import IconInstagram from "../../../assets/images/icons/instagram.png";
 import IconGithub from "../../../assets/images/icons/github.png";
 import IconResume from "../../../assets/images/icons/resume.png";
 import IconSteam from "../../../assets/images/icons/steam.png";
+import Text from "../../../context/Languages/MultiLingualContent/";
 
 import { ThemeContext } from "context/Themes";
+import { LanguageContext } from "context/Languages/LanguageContext";
 const Contact = () => {
-
-
+const lang = useContext(LanguageContext)
+console.log(lang.language)
 const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className="contact-container scrollable">
       <div className="form-div">
         <form action="#">
-          <label htmlFor="name">Seu nome:</label>
+          <label htmlFor="name"><Text contentID="form_label_name" /></label>
           <input name="name" type="text" placeholder="Nome" />
           <label htmlFor="email">Email:</label>
           <input name="email" type="email" placeholder="aaa@gmail.com" />
-          <label htmlFor="message">Sua mensagem:</label>
-          <textarea name="message" placeholder="What's your quest, sir?" />
+          <label htmlFor="message"><Text contentID="form_label_message" /></label>
+          <textarea name="message" placeholder={lang.language==='english'? "Seeing this beautiful portfolio fills you with determination.": "Ver esse portfólio incrível te enche de determinação."} />
           <button style={{color: theme==="undertale-theme"?"#fff " : "#000"}} className="rpgui-button" type="submit">
-            Enviar
+          <Text contentID="form_submit" />
           </button>
         </form>
       </div>
       <div className="social-links-div">
-        <h1>Onde me encontrar</h1>
-
+        <h1><Text contentID="form_h1" /></h1>
+        <br/>
         <div className="social-link-container">
           <img src={IconLinkedin} alt="" />
           <div>
 
-            <a href="https://www.linkedin.com/in/hericmendes/">https://www.linkedin.com/<br/>in/hericmendes/</a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hericmendes/">Linkedin: Héric Mendes</a>
           </div>
         </div>
 
@@ -41,7 +43,7 @@ const { theme, toggleTheme } = useContext(ThemeContext);
           <img src={IconGithub} alt="" />
           <div>
 
-            <a href="https://github.com/HericMendez">https://github.com/<br/>HericMendez</a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/HericMendez">Github: HericMendez</a>
           </div>
         </div>
 
@@ -49,7 +51,7 @@ const { theme, toggleTheme } = useContext(ThemeContext);
           <img src={IconInstagram} alt="" />
           <div>
 
-            <a href="https://www.instagram.com/revimaxinga/">https://www.instagram.com/<br/>revimaxinga/</a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/revimaxinga/">Instagram: @revimaxinga</a>
           </div>
         </div>
 
@@ -57,7 +59,7 @@ const { theme, toggleTheme } = useContext(ThemeContext);
           <img src={IconSteam} alt="" />
           <div>
 
-            <a href="#">Username: Revimaxinga</a>
+            <a target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/revimaxinga/">Steam: Revimaxinga</a>
           </div>
         </div>
 
@@ -65,7 +67,7 @@ const { theme, toggleTheme } = useContext(ThemeContext);
         <div className="social-link-container">
           <img src={IconResume} alt="" />
           <div>
-            <a>Baixe meu currículo</a>
+            <a target="_blank" rel="noreferrer"><Text contentID="form_resume_link" /></a>
      
           </div>
         </div>

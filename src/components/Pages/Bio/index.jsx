@@ -1,64 +1,60 @@
 
 import useWindowDimensions from "Hooks/UseWindowDimensions";
+import Text from "../../../context/Languages/MultiLingualContent";
 
 
 import "./styles.css";
 
 const Bio = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   return (
     <div className="status-container">
       <section className="avatar2-div"></section>
       <section className={width>800? "resume-container rpgui-container framed": "resume-container"}>
         <div className="resume-text ">
           <h1>
-            Olá, meu nome é Héric, e este é meu portfolio de desenvolvedor
-            Front-end.{" "}
+          <Text contentID="bio_h1" />
           </h1>
           <br />
           <p>
-            Estudante de Análise e Desenvolvimento de Sistemas e Dev Freelancer,
-            apaixonado por tudo que envolve tecnologia e design. Autodidata e de
-            perfil criativo, possuo experiência como desenvolvedor Web e Mobile.
-            Em meus conhecimentos destacam-se as tecnologias React, React Native
-            e a criação de layouts responsivos.
+          <Text contentID="bio_p_1" />
           </p>
           <br />
-          <h2>Emprego Atual</h2>
-          <p>Desenvolvedor Remoto na Biotrônica</p>
+          <h2><Text contentID="bio_h2_1" /></h2>
+          <p><Text contentID="bio_p_2" /></p>
           <br />
-          <h2>Formação Profissional</h2>
+          <h2><Text contentID="bio_h2_2" /></h2>
           <p>
-            <u>Tecnólogo em Análise e Desenvolvimento de Sistemas</u>
+            <u><Text contentID="course_1_name"/></u>
             <br />
             <span>
               Fatec Taquaritinga <br />
-              Agosto/2022 - Atual (2º semestre)
+              <Text contentID="course_1_cycle"/>
             </span>
           </p>
           <p>
-            <u>Técnico em Desenvolvimento de Sistemas</u>
+            <u><Text contentID="course_2_name"/></u>
             <br />{" "}
             <span>
               Etec Matão <br />
-              Agosto/2019 - Dezembro/2020
+              <Text contentID="course_2_name"/>
             </span>
           </p>
           <p>
-            <u>Administração de Empresas</u>
+            <u><Text contentID="course_3_name"/></u>
             <br />
             <span>
               Uniara
               <br />
-              Janeiro/2014 - Dezembro/2017
+              <Text contentID="course_3_cycle"/>
             </span>
           </p>
           <br />
-          <h2>Cursos e Certificados</h2>
+          <h2><Text contentID="bio_h2_3"/></h2>
           <p>
-            <u>React com Typescript</u>
+          <u><Text contentID="course_4_name"/></u>
             <br />
-            <span>Alura - 2022 (cursando atualmente)</span>
+            <span><Text contentID="course_4_cycle"/></span>
           </p>
           <p>
             <u>Scrum Foundation Professional Certificate</u>

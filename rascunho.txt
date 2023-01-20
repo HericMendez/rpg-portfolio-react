@@ -296,7 +296,7 @@ Responsive Web Designs
 FreeCodeCamp - 2021
 
 
-Sobre este projeto
+Um pouco sobre a jornada até aqui...
 
 
 Esta é uma página de portfolio profissional criada usando React e a
@@ -334,3 +334,37 @@ deixa uma estrelinha no meu repositório: /*(link do meu github aqui)*/
 
 A magnífica biblioteca CSS que usei como base neste projeto: /*(link
 da lib aqui)*/
+
+
+A little about the journey so far...
+
+
+This is a professional portfolio page created using React and the
+CSS RPGUI library, with a design inspired by 90's and 2000's classic RPG games.
+
+This project was created to be my main portfolio page (the
+second one I made), with the purpose of having something that demonstrated my
+skills and my work as a programmer and developer, and
+also as a challenge for myself.
+
+In my first portfolio, which i made based on a Youtube tutorial
+of React and Tailwind, i programmed and implemented a lot of cool stuff and i had to learn a lot of new things to get it done, and
+much of the original code was used in this second project.
+However, at a certain point, I was limited to the original template, and i had ideas that i wanted to get off the ground. So I decided to start something from scratch, creating something more original, that had more to do with my personality and personal tastes.
+
+This project would not be possible without the RPGUI CSS Library, from the dev RonenNess. Your work is awesome, thank you so much!
+
+Oh, and a special thanks to my friend Rafa JinfSZ for the beautiful
+homepage artwork. 
+
+Links
+
+If you liked this project or the others listed in this portfolio,
+leave a little star in my repository: /*(my github link here)*/
+
+The magnificent CSS library I used as the basis for this project: /*(link
+from the lib here)*/
+
+
+
+

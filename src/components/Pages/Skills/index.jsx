@@ -32,34 +32,15 @@ const Skills = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [skillID, setSkillID] = useState(1);
   const [skillIcon, setSkillIcon] = useState(IconHtml);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+
   const { height, width } = useWindowDimensions();
 
   console.log(width, height);
-  const icons = [
-    IconHtml,
-    IconCSS,
-    IconJS,
-    IconReact,
-    IconReactNative,
-    IconNode,
-    IconNpm,
-    IconBootstrap,
-    IconTailwind,
-    IconNMysql,
-    IconGit,
-    IconScrum,
-    IconSwagger,
-    IconPSGimp,
-    IconFigma,
-    IconTS,
-    IconHD,
-    IconPepakura,
-  ];
+ 
   function handleClick(e) {
     if (e.target.id) {
       setSkillID(() => e.target.id);
-      setSkillIcon(() => icons[e.target.id - 1]);
+
       setIsOpen(() => true);
       console.log(e.target.value, e.target.id);
     }
@@ -68,7 +49,7 @@ const Skills = () => {
   return (
     <div className="scrollable">
       <div className="skills-container">
-        <div className={`rpgui-container ${width<640? '': 'framed'} skills-div`}>
+        <div className={`rpgui-container ${width<800? '': 'framed'} skills-div`}>
           <h1 className="grid-title">Main Skills</h1>
           <p>(click to view)</p>
 

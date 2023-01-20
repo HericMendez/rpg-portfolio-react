@@ -1,17 +1,18 @@
 import ProgressBar from "components/Elements/ProgressBar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { ThemeContext } from "context/Themes";
 import "./styles.css";
-
+import SkillData from "./skillData";
 
 import Text from "context/Languages/MultiLingualContent";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
 
-const SkillCard = (props) => {
+const SkillCard = ({skillID}) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { height, width } = useWindowDimensions();
-
+  const [skillProps, setSkillProps] = useState()
+/*       setSkillIcon(() => SkillData[skillID - 1]; */
   return (
     <div
     className="details-div rpgui-container framed-golden-2 "
@@ -38,24 +39,24 @@ const SkillCard = (props) => {
     <div className="details-header rpgui-container framed-grey">
       <img
         className="header-skill-icon"
-        src={props.skillIcon}
+        src={SkillData[skillID-1].icon}
         alt="Skill Image"
       />
       <div className="header-text">
-        <h4><Text contentID={`skill_${props.skillID}_name`}/></h4>
+        <h4><Text contentID={`skill_${skillID}_name`}/></h4>
        
       </div>
       <ProgressBar
         style={{width: "30vw"}}
       label={`Exp. Level:`}
-      color={<Text contentID={`skill_${props.skillID}_barcolor`}/>}
-      fill={<Text contentID={`skill_${props.skillID}_percent`}/>}
+      color={SkillData[skillID-1].barColor}
+      fill={SkillData[skillID-1].percent}
     />
     </div>
 
     {/*           <hr className="golden" /> */}
 
-    <p className="details-text"><Text contentID={`skill_${props.skillID}_description`}/></p>
+    <p className="details-text"><Text contentID={`skill_${skillID}_description`}/></p>
 
 
   </div>

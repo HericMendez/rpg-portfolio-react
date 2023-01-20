@@ -6,8 +6,9 @@
     align-items: center;
 }
 .about-content{
-    width: 90%;
+    width: 60%;
     margin-top: 2vh;
+    margin-left: 25vw;
     margin-bottom: 2vh;
 }
 
@@ -15,3 +16,44 @@
     font-size: 2.2vh;
     margin-bottom: 5vh;
 }
+.about-content a{
+    font-size: 2.2vh;
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+
+.avatar3-div {
+    padding: 20px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+  
+    height: 77vh;
+    width: 25vw;
+    z-index: -1;
+    background-image: url("../../../assets/images/avatar/avatar_ff.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
+  @media screen and (max-width: 800px) {
+    .about-content{
+        width: 95%;
+        margin-top: 2vh;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 2vh;
+    }
+
+    .avatar3-div {
+        display: none;
+    }
+  }
