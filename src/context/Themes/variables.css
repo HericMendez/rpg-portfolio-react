@@ -26,7 +26,7 @@
     --button: url("assets/rpgui/img/theme-images/button-ff.png");
     --button-down: url("assets/rpgui/img/theme-images/button-down-ff.png");
     --button-hover: url("assets/rpgui/img/theme-images/button-hover-ff.png");
-
+    --button-hover-alt: url("assets/rpgui/img/theme-images/button-hover-ff-alt.png");
     --inputarea-bg: #fff;
     --inputarea-border: #000
     --font: 'Press Start 2P', cursive;
@@ -68,6 +68,7 @@
     --button: url("assets/rpgui/img/theme-images/button-ff.png");
     --button-down: url("assets/rpgui/img/theme-images/button-down-ff.png");
     --button-hover: url("assets/rpgui/img/theme-images/button-hover-ff.png");
+    --button-hover-alt: url("assets/rpgui/img/theme-images/button-hover-ff-alt.png");
 
     --inputarea-bg: #4e4a4e;
     --inputarea-border: #fff;
@@ -112,7 +113,7 @@
     --button: url("assets/rpgui/img/theme-images/button-undertale.png");
     --button-down: url("assets/rpgui/img/theme-images/button-down-undertale.png");
     --button-hover: url("assets/rpgui/img/theme-images/button-hover-undertale.png");
-
+    --button-hover-alt: url("assets/rpgui/img/theme-images/button-hover-undertale-heartless.png");
     --inputarea-bg: #000;
     --inputarea-border: #fff;
 

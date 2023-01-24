@@ -8,12 +8,14 @@ const english = {
   title_about: "About this Project",
 
   //Navbar:
-  nav_home: "Home",
-  nav_bio: "Bio",
-  nav_skills: "Skills",
-  nav_quests: "Quests",
-  nav_contact: "Contact",
-  nav_about: "About",
+  nav_home: "HOME",
+  nav_bio: "BIO",
+  nav_skills: "SKILLS",
+  nav_quests: "QUESTS",
+  nav_contact: "CONTACT",
+  nav_about: "ABOUT",
+  nav_theme: 'THEME',
+  nav_lang: 'LANG',
 
   //Home Screen:
   home_h4_1: "Level 31 Front-end Dev",

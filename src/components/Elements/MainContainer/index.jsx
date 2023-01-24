@@ -8,14 +8,29 @@ import Quests from "components/Pages/Quests";
 import Skills from "components/Pages/Skills";
 import Contact from "components/Pages/Contact";
 
-import HomeIcon from "../../../assets/images/icons/House_Red.png";
-import IconBlack from "../../../assets/images/icons/Blank_Black.png";
-import IconGreen from "../../../assets/images/icons/Blank_Green.png";
-import IconLightBlue from "../../../assets/images/icons/Blank_LightBlue.png";
-import IconPurple from "../../../assets/images/icons/Blank_Purple.png";
-import IconYellow from "../../../assets/images/icons/Blank_Yellow.png";
-import IconRed from "../../../assets/images/icons/Blank_Red.png";
+import {
 
+
+
+  GiBehold,
+  GiCycle,
+  GiBrazilFlag,
+  GiDeathSkull,
+  GiDrippingSword,
+  
+  GiHelp,
+  GiHouse,
+
+  GiPotionBall,
+  GiScrollQuill,
+  GiSkills,
+
+  GiWantedReward,
+  GiUsaFlag,
+
+} from "react-icons/gi";
+
+import NavButton from "../NavButton";
 import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
 
@@ -23,17 +38,15 @@ import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
 import Text from "../../../context/Languages/MultiLingualContent";
 
-
 const MainContainer = () => {
   const [titleID, setTitleID] = useState("Heric's Portfolio - Main Page");
   const { theme, toggleTheme } = useContext(ThemeContext);
-  
-  const { language, toggleLanguage } = useContext(LanguageContext);
 
+  const { language, toggleLanguage } = useContext(LanguageContext);
+  
   console.log("title:", titleID);
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
-
 
   function handleClick(e) {
     if (e.target.id) {
@@ -41,7 +54,17 @@ const MainContainer = () => {
       setTitleID(() => e.target.id);
     }
   }
-
+  const navButtonStyle = {
+    width: 70,
+    height: 65,
+    marginLeft: 5,
+    marginRight: 5,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: 'flex-start',
+    padding: 10,
+    fontSize: 10,
+  };
   console.log("aaaa", localStorage.language);
   return (
     <Router>
@@ -51,37 +74,37 @@ const MainContainer = () => {
             <li className="nav-item">
               <Link id="title_home" to="/">
                 <img src={ChangeThemeIcon()} alt="" />
-                Home
+                <Text contentID='nav_home'/>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="title_bio" to="/bio">
-                <img src={ChangeThemeIcon()} alt="" /> Bio
+                <img src={ChangeThemeIcon()} alt="" /> <Text contentID='nav_bio'/>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="title_skills" to="/skills">
                 <img className="nav-cursor" src={ChangeThemeIcon()} alt="" />{" "}
-                Skills
+                <Text contentID='nav_skills'/>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link id="title_quests" to="/quests">
-                <img src={ChangeThemeIcon()} alt="" /> Quests
+                <img src={ChangeThemeIcon()} alt="" /> <Text contentID='nav_quests'/>
               </Link>
             </li>
             <li className="nav-item">
               <Link id="title_contact" to="/contact">
                 <img src={ChangeThemeIcon()} alt="" />
-                Contact
+                <Text contentID='nav_contact'/>
               </Link>
             </li>
             <li className="nav-item">
               <Link id="title_about" to="/about">
-                <img src={ChangeThemeIcon()} alt="" /> About
+                <img src={ChangeThemeIcon()} alt="" /> <Text contentID='nav_about'/>
               </Link>
             </li>
           </ul>
@@ -90,7 +113,7 @@ const MainContainer = () => {
           <div>
             <button
               style={{
-                fontSize: "2.3vh",
+                fontSize: "2vh",
                 width: "100%",
                 color: theme === "undertale-theme" ? "#fff " : "#000",
               }}
@@ -98,14 +121,14 @@ const MainContainer = () => {
               type="submit"
               onClick={toggleTheme}
             >
-              Theme: 
-
+              <Text contentID='nav_theme'/>: 
+              <br/>
               {theme === "ff-theme" ? "Final Fantasy" : "Undertale"}
             </button>
 
             <button
               style={{
-                fontSize: "2.3vh",
+                fontSize: "2vh",
                 width: "100%",
                 color: theme === "undertale-theme" ? "#fff " : "#000",
               }}
@@ -113,9 +136,9 @@ const MainContainer = () => {
               type="submit"
               onClick={toggleLanguage}
             >
-              Language:
-              <br />
-              {language}
+              <Text contentID='nav_lang'/>: 
+              <br/>
+              {language==='portuguese'? 'PT-BR': 'ENGLISH'}
             </button>
           </div>
         </div>
@@ -129,70 +152,54 @@ const MainContainer = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/bio" element={<Bio />} />
             <Route path="/quests" element={<Quests />} />
-            <Route
-              path="/contact"
-              element={<Contact />}
-            />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <div className="rpgui-container framed nav-mobile">
-          <Link className="nav-link" to="/">
-            <img className="nav-icon" src={HomeIcon} alt="Home" />
-
+          <Link to="/">
+            <NavButton style={navButtonStyle}>
+              <GiHouse size={36} />
+              HOME
+            </NavButton>
           </Link>
-          <Link className="nav-link" to="/skills">
-            <img className="nav-icon" src={IconPurple} alt="Home" />
-
+          <Link to="/skills">
+            <NavButton style={navButtonStyle}>
+              <GiDrippingSword size={36} /> <Text contentID='nav_skills'/>
+            </NavButton>
           </Link>
-          <Link className="nav-link" to="/bio">
-            <img className="nav-icon" src={IconLightBlue} alt="Home" />
-
+          <Link to="/bio">
+            <NavButton style={navButtonStyle}>
+              <GiSkills size={36} />
+              <Text contentID='nav_bio'/>
+            </NavButton>
           </Link>
-          <Link className="nav-link" to="/quests">
-            <img className="nav-icon" src={IconGreen} alt="Home" />
-
+          <Link to="/quests">
+            <NavButton style={navButtonStyle}>
+              <GiWantedReward size={36} />
+              <Text contentID='nav_quests'/>
+            </NavButton>
           </Link>
-          <Link className="nav-link" to="/contact">
-            <img className="nav-icon" src={IconYellow} alt="Home" />
-
+          <Link to="/contact">
+            <NavButton style={navButtonStyle}>
+              <GiScrollQuill size={36} />
+              <Text contentID='nav_contact'/>
+            </NavButton>
           </Link>
-          <Link className="nav-link" to="/about">
-            <img className="nav-icon" src={IconRed} alt="Home" />
-
+          <Link to="/about">
+            <NavButton style={navButtonStyle}>
+              <GiBehold size={36} />
+              <Text contentID='nav_about'/>
+            </NavButton>
           </Link>
 
+          <div onClick={toggleTheme}>
+            <NavButton style={navButtonStyle}><GiCycle size={36}/><Text contentID='nav_theme'/></NavButton>
+          </div>
 
-          <Link
-              style={{
-
-                backgroundColor: 'transparent',
-                padding: 0,
-                margin: 0,
-                border: 'none',
-              }}
-     
-    
-              onClick={toggleTheme}
-            >
-              <img className="nav-icon" src={IconBlack} alt="Home" />
-            </Link>
-
-            <Link
-              style={{
-
-                backgroundColor: 'transparent',
-                padding: 0,
-                margin: 0,
-                border: 'none',
-              }}
-     
-    
-              onClick={toggleLanguage}
-            >
-              <img className="nav-icon" src={IconBlack} alt="Home" />
-            </Link>
-
+          <div onClick={toggleLanguage}>
+            <NavButton style={navButtonStyle}>{language==='portuguese'? <GiBrazilFlag size={36}/> : <GiUsaFlag size={40}/>}<Text contentID='nav_lang'/></NavButton>
+          </div>
         </div>
       </div>
     </Router>

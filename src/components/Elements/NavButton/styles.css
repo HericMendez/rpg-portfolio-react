@@ -1,0 +1,13 @@
+
+  .theme-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.theme-button:hover {
+    background-image: var(--button-hover-alt) !important;
+
+
+  }

@@ -118,11 +118,13 @@ li {
   .nav-mobile {
     display: flex;
     width: 100vw;
-    height: 15vh;
-    margin-top: 85vh;
-    justify-content: space-around;
+    height: 18vh;
+    margin-top: 82vh;
+align-items: FL;
+
     padding: 0 !important;
     overflow-x: scroll;
+
   }
 
   .nav-icon {
@@ -130,9 +132,7 @@ li {
     height: 50px;
   }
   .nav-link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-left: 5px;
   }
 }
 

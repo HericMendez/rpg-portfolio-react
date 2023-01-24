@@ -1,7 +1,6 @@
 import { useState, useContext } from "react";
 import "./styles.css";
 import Text from "../../../context/Languages/MultiLingualContent";
-
 import QuestCard from "components/Elements/QuestCard";
 import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";

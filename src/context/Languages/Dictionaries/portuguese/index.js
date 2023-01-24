@@ -8,12 +8,14 @@ const portuguese = {
   title_about: "Sobre Este Projeto",
 
   //Navbar:
-  nav_home: "Home",
-  nav_bio: "Bio",
-  nav_skills: "Skills",
-  nav_quests: "Quests",
-  nav_contact: "Contato",
-  nav_about: "Sobre",
+  nav_home: "HOME",
+  nav_bio: "BIO",
+  nav_skills: "SKILLS",
+  nav_quests: "QUESTS",
+  nav_contact: "CONTATO",
+  nav_about: "SOBRE",
+  nav_theme: 'TEMA',
+  nav_lang: 'IDIOMA',
 
   //Home Screen:
   home_h4_1: "Desenvolvedor Front-end Nível 31",
