@@ -56,7 +56,7 @@ const MainContainer = () => {
   }
   const navButtonStyle = {
     width: 70,
-    height: 65,
+    height: 70,
     marginLeft: 5,
     marginRight: 5,
     display: "flex",

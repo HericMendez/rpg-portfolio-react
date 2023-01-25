@@ -18,117 +18,138 @@ import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
 const SkillData = [
   {
-    id: 1,
-    name: "HTML",
+        name: "HTML",
     icon: IconHtml,
     percent: "80%",
     barColor: "red",
-  
   },
 
   {
-    id: 2,
-    name: "CSS",
+        name: "CSS",
     icon: IconCSS,
     percent: "70%",
     barColor: "green",
-  
   },
 
   {
-    name: "Javascript",
-    meta: "Multiparadigm Interpreted Programming Language",
-    description:
-      "A multi-paradigm, multi-purpose language, mostly used on web, but can be used for mobile and desktop as well.",
-    level: "Advanced",
+        name: "Javascript",
     icon: IconJS,
     percent: "70%",
     barColor: "green",
-    knowledge:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 
   {
-    name: "React",
-    meta: "JavaScript Web Library",
-    description:
-      "A JS Library created by Facebook (Meta), used for building user interfaces based on UI components.",
-    level: "Intermediate",
+        name: "React",
     icon: IconReact,
     percent: "60%",
     barColor: "blue",
-    knowledge:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
 
   {
-    name: "React Native",
-    meta: "Javascript Mobile Framework",
-    description: "Same as React, but for Smartphones.",
-    level: "Beginner to Intermediate",
+        name: "React Native",
     icon: IconReactNative,
-    percent: "30%",
+    percent: "40%",
     barColor: "purple",
-    knowledge:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
 
   {
-    name: "NodeJS",
-    meta: "Javascript Runtime",
-    description: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, used to run JS applications on the back-end.",
-    level: "Intermediate",
+        name: "NodeJS",
     icon: IconNode,
     percent: "45%",
     barColor: "green",
-    knowledge:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
+
   {
-    name: "TailwindCSS",
-    meta: "Utility-first CSS framework",
-    description: "A CSS framework focused on utility that allows simple inline CSS styling.",
-    level: "Intermediate",
+        name: "NPM",
+    icon: IconNpm,
+    percent: "70%",
+    barColor: "green",
+  },
+
+  {
+        name: "Bootstrap",
+    icon: IconBootstrap,
+    percent: "70%",
+    barColor: "blue",
+  },
+
+  {
+        name: "Tailwind",
     icon: IconTailwind,
-    percent: "50%",
+    percent: "60%",
     barColor: "red",
-    knowledge: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-},
-{
+  },
+
+  {
+    
     name: "MySQL",
-    meta: "Database Management System",
-    description: "MySQL is an open-source relational database management system.",
-    level: "Beginner",
     icon: IconMysql,
     percent: "20%",
     barColor: "purple",
-    knowledge: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-},
+  },
 
-{
+  {
+    
+    name: "Git",
+    icon: IconGit,
+    percent: "70%",
+    barColor: "red",
+  },
+
+  {
+    
     name: "Scrum",
-    meta: "Agile Methodology",
-    description: "Scrum is a structured framework for product development that is frequently used by agile software development teams. ",
-    level: "Intermediate",
     icon: IconScrum,
     percent: "50%",
     barColor: "green",
-    knowledge: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-},
+  },
+
+  {
+    
+    name: "Swagger",
+    icon: IconSwagger,
+    percent: "50%",
+    barColor: "blue",
+  },
+
+  {
+    
+    name: "Photoshop/Gimp",
+    icon: IconPSGimp,
+    percent: "80%",
+    barColor: "red",
+  },
+
+  {
+    
+    name: "Figma",
+    icon: IconFigma,
+    percent: "50%",
+    barColor: "green",
+  },
+
+  {
+    
+    name: "Typescript",
+    icon: IconTS,
+    percent: "50%",
+    barColor: "green",
+  },
+
+  {
+    
+    name: "Hardware",
+    icon: IconTS,
+    percent: "60%",
+    barColor: "blue",
+  },
+
+  {
+    name: "Pepakura",
+    icon: IconPepakura,
+    percent: "99%",
+    barColor: "red",
+  },
 ];
 
 export default SkillData;
-
-/*
-{
-    name: "",
-    meta: "",
-    description: "",
-    level: "",
-    icon: "",
-    percent: "",
-    barColor: "",
-    knowledge: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-},
-
-*/

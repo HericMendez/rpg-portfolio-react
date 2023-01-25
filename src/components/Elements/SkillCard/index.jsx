@@ -19,10 +19,10 @@ const SkillCard = ({skillID}) => {
     style={{
       position: "absolute",
       
-      top: "5vh",
+      top: "2vh",
       right: width<800 ? "10%": "3vw",
 
-      height: '80vh',
+      height: '77vh',
       overflowX: 'hidden',
       overflowY:"scroll",
       width: width<800 ? (width < 640 ? '80%':'60%'): '33vw',
