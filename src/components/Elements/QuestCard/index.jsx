@@ -6,6 +6,8 @@ import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
 import { ThemeContext } from "context/Themes";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
+import Flappy from '../../../assets/images/project-screenshots/flappyvania.gif'
+
 
 const QuestCard = (props) => {
   const { theme } = useContext(ThemeContext);
@@ -20,9 +22,9 @@ const QuestCard = (props) => {
         position: "absolute",
 
         top: "2vh",
-        right: width < 800 ? "10%" : "3vw",
+        right: width < 1000 ? "10%" : "3vw",
 
-        height: "77vh",
+        height: "80vh",
         overflowX: "hidden",
         overflowY: "scroll",
 
@@ -32,7 +34,7 @@ const QuestCard = (props) => {
         textShadow: "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
         color: "#fff",
 
-        width: width < 800 ? (width < 640 ? "80%" : "60%") : "37vw",
+        width: width < 1000 ? (width < 640 ? "90%" : "60%") : "37vw",
         background:
           theme === "ff-theme"
             ? "linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat"
@@ -54,13 +56,17 @@ const QuestCard = (props) => {
             }_type`}
           />
         </h3>
-
+            <div className="rpgui-container framed-grey">
+              <img style={{width: '100%'}} src={questData[props.projectID - 1].image} alt="" />
+            </div>
         <p
           style={{
             lineHeight: 1.5,
             fontSize: "2vh",
           }}
         >
+         <hr className="golden" />
+         <br />
           <Text
             contentID={`project_${
               props.projectID ? props.projectID : "1"
@@ -68,6 +74,7 @@ const QuestCard = (props) => {
           />
         </p>
         <hr className="golden" />
+        <br />
         <div className="project-links">
           <h4>Links:</h4>
           <div  style={{visibility: questData[props.projectID - 1].demo? 'visible': 'hidden'}}>

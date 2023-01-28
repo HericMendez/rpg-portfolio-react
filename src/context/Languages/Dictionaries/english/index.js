@@ -6,6 +6,7 @@ const english = {
   title_quests: "Projects and Successful Jobs",
   title_contact: "Get in Touch With Me",
   title_about: "About this Project",
+  title_404: 'Page not found!',
 
   //Navbar:
   nav_home: "HOME",
@@ -186,23 +187,26 @@ const english = {
   project_5_type: "React App - Case Study",
   project_5_description: "It's a React app that displays detailed statistics of the world's most valued cryptocurrencies. This project was based on a tutorial from the Code Commerce channel (Youtube), with the aim of further studying React and TailwindCSS technologies, and also to apply the use of API consumption using Axios (from https://www.coingecko.com/pt/api)",
 
-  project_6_name: "Biotronica Projects",
-  project_6_type: "Paid Internship",
-  project_6_description: "I can't talk about it, it's a secret! But I'm doing a lot of cool things here, and learning a lot too!I mainly use Javascript, Typescript and React.",
 
-  project_7_name: "Portfolio React Tailwind",
-  project_7_type: "React Webpage - Personal project",
-  project_7_description: "My first portfolio website, made using React and TailwindCSS. There's a lot of cool stuff here, I learned a lot programming this site and I tested a lot of features too.Since I didn't have much experience when I made this page, most of the projects listed on it were made for educational purposes.However, a large part of the code I used in this project, I manage to reuse until today (mainly Dark Mode/change of languages.)",
+
+  project_6_name: "Portfolio React Tailwind",
+  project_6_type: "React Webpage - Personal project",
+  project_6_description: "My first portfolio website, made using React and TailwindCSS. There's a lot of cool stuff here, I learned a lot programming this site and I tested a lot of features too.Since I didn't have much experience when I made this page, most of the projects listed on it were made for educational purposes.However, a large part of the code I used in this project, I manage to reuse until today (mainly Dark Mode/change of languages.)",
+
+  project_7_name: "Polar Sapiens Webpage",
+  project_7_type: "Website - Freelance Project",
+  project_7_description: "Web version of the app made in React Native. It can be accessed through the browser.This project was started from scratch, using HTML, CSS, Javascript and a little bit of Bootstrap. Adapting the compact and vertical design of the smartphone version to a more \"two-dimensional\" and stretched web version was quite a challenge!",
 
   
   project_8_name: "Polar Sapiens App",
   project_8_type: "React Native App - Freelance Project",
   project_8_description: "My first big project, so to speak. And also my first mobile project. It is an app whose function is to assess the level of stress and anxiety of users through batteries of psychological tests. In this project I'm working together with other devs to implement new features, design new screens, fix bugs and refactor code.",
 
-  project_9_name: "Polar Sapiens Webpage",
-  project_9_type: "Website - Freelance Project",
-  project_9_description: "Web version of the app made in React Native. It can be accessed through the browser.This project was started from scratch, using HTML, CSS, Javascript and a little bit of Bootstrap. Adapting the compact and vertical design of the smartphone version to a more \"two-dimensional\" and stretched web version was quite a challenge!",
-  
+
+
+  project_9_name: "Biotronica Projects",
+  project_9_type: "Paid Internship",
+  project_9_description: "I can't talk about it, it's a secret! But I'm doing a lot of cool things here, and learning a lot too!I mainly use Javascript, Typescript and React.",
   //Contact:
   form_label_name: "Your name:",
   form_label_message: "Leave your message:",
@@ -235,7 +239,12 @@ const english = {
   about_a_2: "Lib link here" ,
   about_a_3: " JinfSZ's Instagram Profile" ,
 
-  about_p_8: "(seriously, ask her an art commission, her work is beautiful, but doesn't get the spotlight it deserves)"
+  about_p_8: "(seriously, ask her an art commission, her work is beautiful, but doesn't get the spotlight it deserves)",
+
+  page404_p_1: '* You found a 404 Error:',
+  page404_p_2: 'Page Not Found!',
+  page404_p_3: 'Toriel blocks the way!'
+  
 };
 
 export default english;

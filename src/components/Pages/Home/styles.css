@@ -1,13 +1,13 @@
 .home-container {
   margin: 3vw;
   -moz-text-size-adjust: none;
--webkit-text-size-adjust: none;
--ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 .panel-div {
   display: flex;
-  
+
   align-items: center;
 }
 
@@ -24,8 +24,6 @@
   justify-content: center;
   align-items: stretch;
   font-size: 2vh;
-
-  
 }
 
 .avatar-div {
@@ -42,13 +40,11 @@
 }
 
 .profile-div {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 2%;
   height: 28vh;
-
 }
 
 .profile-description {
@@ -57,9 +53,7 @@
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
-  
 }
-
 
 .skill-icons {
   display: flex;
@@ -73,8 +67,16 @@
 }
 
 .main-skill-icon {
-  width: 8vh;
-  height: 8vh;
+  width: 7vh;
+  height: 7vh;
+  margin: 8px;
+  background-image: var(--skill-frame);
+
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 7vh 7vh;
 }
 
 h1,
@@ -96,61 +98,49 @@ h4 {
     height: 80vh;
   }
   .profile-div {
-
     margin-bottom: 3vh;
     padding-bottom: 5vh;
-
-    
   }
-  
 }
 
 @media screen and (max-width: 850px) {
   .home-container {
     margin: 1vh;
     padding-bottom: 200px;
-    
-
   }
-  
-  .profile-div {
 
+  .profile-div {
     display: block;
 
     margin-top: 2%;
     height: 28vh;
-  
   }
-  .avatar-portrait {
-    margin-top: 3vh;
 
-    height: 25vh;
-    width: 45%;
-    margin-left: 1%;
+  .portrait-frame{
+    margin-top: 10px;
+    width: 185px;
+    margin-left: 3vw;
+  }
+
+  .avatar-portrait {
+    width: 22vh;
+    
     z-index: -1;
     display: flex;
     align-self: center;
     justify-self: center;
     padding-right: 2vh;
     content: var(--avatar-portrait);
-    
-
   }
   .profile-div {
-
     margin-bottom: 2vh;
     padding: 0;
-
-    
   }
 
   .portrait-div {
     display: flex;
     margin-top: 0vh;
     justify-content: space-between;
-    
-
-    
   }
 
   .panel-window {
@@ -159,24 +149,32 @@ h4 {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    
-  
-    
   }
 
-  
-  .progress-bars{
+  .progress-bars {
     width: 50%;
     height: 100px;
   }
-
-
 }
 
-
-
-.text-class{
+.text-class {
   padding-top: 0;
   list-style-type: square;
   font-size: 1.5vh;
+}
+
+@media screen and (max-width: 800px) {
+  .main-skill-icon {
+    width: 10vh;
+    height: 10vh;
+    margin: 8px;
+    background-image: var(--skill-frame);
+  
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10vh 10vh;
+  }
+  
 }

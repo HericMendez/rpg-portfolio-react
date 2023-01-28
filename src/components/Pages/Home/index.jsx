@@ -128,7 +128,12 @@ const Home = () => {
 
               <div className="profile-div ">
                 <div className="portrait-div">
-                  <img className="avatar-portrait" alt="Avatar Portrait"></img>
+                  <div className="rpgui-container framed-grey portrait-frame">
+                    <img
+                      className="avatar-portrait"
+                      alt="Avatar Portrait"
+                    ></img>
+                  </div>
                   <div className="progress-bars">
                     <ProgressBar
                       label={<Text contentID="home_label_1" />}
@@ -150,16 +155,26 @@ const Home = () => {
               </div>
               <hr className="golden" />
               <div className="profile-description">
-                <p className="text-class">- <Text contentID="home_p_1" /></p>
-                <p className="text-class">- <Text contentID="home_p_2" /></p>
-                <p className="text-class">- <Text contentID="home_p_3" /></p>
-                <p className="text-class">- <Text contentID="home_p_4" /></p>
+                <p className="text-class">
+                  - <Text contentID="home_p_1" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_2" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_3" />
+                </p>
+                <p className="text-class">
+                  - <Text contentID="home_p_4" />
+                </p>
               </div>
               <br></br>
 
               <div>
                 <div>
-                  <h4 className="center-text">- <Text contentID="home_h4_2" /></h4>
+                  <h4 className="center-text">
+                    - <Text contentID="home_h4_2" />
+                  </h4>
                   <div className="skill-icons">
                     <img
                       className="main-skill-icon"

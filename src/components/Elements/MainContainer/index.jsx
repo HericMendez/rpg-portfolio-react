@@ -37,6 +37,7 @@ import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png
 import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
 import Text from "../../../context/Languages/MultiLingualContent";
+import Page404 from "components/Pages/Page404";
 
 const MainContainer = () => {
   const [titleID, setTitleID] = useState("Heric's Portfolio - Main Page");
@@ -148,6 +149,7 @@ const MainContainer = () => {
 
         <div className="rpgui-container framed content-window">
           <Routes>
+            <Route path="*" element={<Page404/>}/>
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/bio" element={<Bio />} />

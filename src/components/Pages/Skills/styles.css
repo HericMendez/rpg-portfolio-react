@@ -133,12 +133,24 @@
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     
   }
+  
+  .skill-icon {
+    width: 9vw;
+    height: 9vw;
+    margin: 8px;
+    background-image: var(--skill-frame);
 
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 9vw 9vw;
+  }
 
 }
 @media screen and (max-width: 640px) {
@@ -165,9 +177,7 @@
   height: 80px;
   margin: 10px;
   background-image: var(--skill-frame);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80px 80px;

@@ -108,7 +108,7 @@ const Quests = () => {
           </ul>
         </div>
       </div>
-      {width > 800 ? (
+      {width > 1000 ? (
       <QuestCard projectID={projectID} />
 
         ) : (

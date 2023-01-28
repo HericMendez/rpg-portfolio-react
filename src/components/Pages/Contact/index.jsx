@@ -12,15 +12,15 @@ import { LanguageContext } from "context/Languages/LanguageContext";
 const Contact = () => {
 const lang = useContext(LanguageContext)
 console.log(lang.language)
-const { theme, toggleTheme } = useContext(ThemeContext);
+const { theme } = useContext(ThemeContext);
   return (
     <div className="contact-container scrollable">
       <div className="form-div">
-        <form action="#">
+      <form action="https://getform.io/f/06a7b1a6-7841-4abe-9072-4ea50308c71d" method="POST">
           <label htmlFor="name"><Text contentID="form_label_name" /></label>
-          <input name="name" type="text" placeholder="Nome" />
+          <input name="name" required={true} type="text" placeholder="Nome" />
           <label htmlFor="email">Email:</label>
-          <input name="email" type="email" placeholder="aaa@gmail.com" />
+          <input name="email" required={true} type="email" placeholder="aaa@gmail.com" />
           <label htmlFor="message"><Text contentID="form_label_message" /></label>
           <textarea name="message" placeholder={lang.language==='english'? "Seeing this beautiful portfolio fills you with determination.": "Ver esse portfólio incrível te enche de determinação."} />
           <button style={{color: theme==="undertale-theme"?"#fff " : "#000"}} className="rpgui-button" type="submit">

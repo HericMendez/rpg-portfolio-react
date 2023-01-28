@@ -87,17 +87,8 @@
 
 
 
-.tech-icons{
-display: flex;
-flex-direction: row;
-}
 
-.tech-icons img{
-  width: 12vh;
-  height: 12vh;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
   .quests-container {
 

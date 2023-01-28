@@ -5,7 +5,7 @@
 
 
     --avatar-full: url("assets/images/avatar/avatar_half_res.png");
-    --avatar-portrait: url("assets/images/avatar/avatar_portrait.png");
+    --avatar-portrait: url("assets/images/avatar/avatar_portrait_transparentbg_40ms.gif");
 
 
     --select-border-image: url("assets/rpgui/img/theme-images/select-border-image-ff.png");
@@ -48,7 +48,7 @@
     --bg-color:linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat;
 
     --avatar-full: url("assets/images/avatar/avatar_half_res.png");
-    --avatar-portrait: url("assets/images/avatar/avatar_portrait.png");
+    --avatar-portrait: url("assets/images/avatar/avatar_portrait_transparentbg_40ms.gif");
 
     --select-border-image: url("assets/rpgui/img/theme-images/select-border-image-ff.png");
     --select-bg-image: url("assets/rpgui/img/theme-images/select-background-image-ff.png");
@@ -93,7 +93,7 @@
     --bg-color: #000000;
 
     --avatar-full: url("assets/images/avatar/sans.png");
-    --avatar-portrait: url("assets/images/avatar/avatar_portrait.png");
+    --avatar-portrait: url("assets/images/avatar/avatar_portrait_transparentbg_40ms.gif");
 
     --select-border-image: url("assets/rpgui/img/theme-images/select-border-image-undertale.png");
     --select-bg-image: url("assets/rpgui/img/theme-images/select-background-image-undertale.png");

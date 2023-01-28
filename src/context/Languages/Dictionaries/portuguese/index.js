@@ -6,6 +6,7 @@ const portuguese = {
   title_quests: "Projetos e Trabalhos bem-sucedidos",
   title_contact: "Entre em Contato Comigo",
   title_about: "Sobre Este Projeto",
+  title_404: 'Página não encontrada!',
 
   //Navbar:
   nav_home: "HOME",
@@ -164,23 +165,21 @@ const portuguese = {
   project_5_type: "React App - Caso de Estudo",
   project_5_description: "É um aplicativo React que exibe estatísticas detalhadas das criptomoedas de maior valor no mundo. Este projeto foi baseado em um tutorial do canal Code Commmerce (Youtube), com a intenção de estudar as tecnologias React e TailwindCSS, e também de aplicar o consumo de API utilizando Axios (da API https://www.coingecko.com/pt/api)",
 
+  project_6_name: "Portfolio React Tailwind",
+  project_6_type: "React Webpage - Projeto pessoal",
+  project_6_description: "Meu primeiro site de portfolio, feito usando React e TailwindCSS.Tem muita coisa legal aqui, aprendi muita coisa programando esse site e testei vários recursos também.Como eu não tinha muita experiência quando fiz essa página, a maioria dos projetos listados nele foram feitos para fins didáticos.Porém grande parte do código que usei nesse projeto, consigo reaproveitar até hoje (principalmente Dark Mode/troca de idiomas.)",
 
-  project_6_name: "Projetos da Biotrônica",
-  project_6_type: "Estágio Remunerado",
-  project_6_description: "Não posso contar, é segredo! Mas estou fazendo muita coisa legal aqui, e aprendendo muito também! Utilizo principalmente Javascript, Typescript e React.",
-
-  project_7_name: "Portfolio React Tailwind",
-  project_7_type: "React Webpage - Projeto pessoal",
-  project_7_description: "Meu primeiro site de portfolio, feito usando React e TailwindCSS.Tem muita coisa legal aqui, aprendi muita coisa programando esse site e testei vários recursos também.Como eu não tinha muita experiência quando fiz essa página, a maioria dos projetos listados nele foram feitos para fins didáticos.Porém grande parte do código que usei nesse projeto, consigo reaproveitar até hoje (principalmente Dark Mode/troca de idiomas.)",
+  project_7_name: "Polar Sapiens Webpage",
+  project_7_type: "Website - Projeto Freelance",
+  project_7_description: "Versão Web do app feito em Recat Native. Pode ser acessado pelo navegador. Este projeto foi iniciado do zero, utilizando HTML, CSS, Javascript e um pouquinho de Bootstrap.Adaptar o design vertical e compacto da tela do celular para uma versão mais \"bidimensional e esticada\" foi um desafio e tanto!", 
 
   project_8_name: "Polar Sapiens App",
   project_8_type: "React Native App - Projeto Freelance",
   project_8_description: "Meu primeiro grande projeto, por assim dizer. E também meu primeiro projeto mobile. É um aplicativo que tem por finalizade avaliar o nível de stress e ansiedade dos usuários através de baterias de testes psicológicos. Neste projeto estou trabalhando em conjunto com outros devs na implementação de novas funcionalidades, design de novas telas, correção de bugs e refatoração de código.", 
 
-  project_9_name: "Polar Sapiens Webpage",
-  project_9_type: "Website - Projeto Freelance",
-  project_9_description: "Versão Web do app feito em Recat Native. Pode ser acessado pelo navegador. Este projeto foi iniciado do zero, utilizando HTML, CSS, Javascript e um pouquinho de Bootstrap.Adaptar o design vertical e compacto da tela do celular para uma versão mais \"bidimensional e esticada\" foi um desafio e tanto!", 
-
+  project_9_name: "Projetos da Biotrônica",
+  project_9_type: "Estágio Remunerado",
+  project_9_description: "Não posso contar, é segredo! Mas estou fazendo muita coisa legal aqui, e aprendendo muito também! Utilizo principalmente Javascript, Typescript e React.",
   //Contact:
   form_label_name: "Seu nome:",
   form_label_message: "Escreva sua mensagem:",
@@ -211,7 +210,12 @@ const portuguese = {
   about_p_7: "A magnífica biblioteca CSS que usei como base neste projeto: ",
   about_a_2: "Link da Lib aqui" ,
   about_a_3: "Perfil do Insta da JinSZ" ,
-  about_p_8: " (sério, encomendem uma arte com ela, o trabalho dela é incrível mas não tem o destaque que merece)"
+  about_p_8: " (sério, encomendem uma arte com ela, o trabalho dela é incrível mas não tem o destaque que merece)",
+
+
+  page404_p_1: '* Você encontrou um Erro 404:',
+  page404_p_2: 'Página Não Encontrada!',
+  page404_p_3: 'Toriel bloqueia o caminho!'
 }
 
 export default portuguese;
