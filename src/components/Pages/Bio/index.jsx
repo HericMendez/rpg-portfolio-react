@@ -6,6 +6,7 @@ import Text from "../../../context/Languages/MultiLingualContent";
 import "./styles.css";
 
 const Bio = () => {
+  document.title = "My Profile"
   const { width } = useWindowDimensions();
   return (
     <div className="status-container">

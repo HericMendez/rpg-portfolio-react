@@ -10,8 +10,9 @@ const Page404 = () => {
   const { language } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
   console.log(theme);
-
+  document.title = "Error 404 :("
   return (
+    
     <div className="page404">
       <img src={language === "portuguese" ? TorielPt : TorielEng} alt="" />
       <div className="dialog-box">

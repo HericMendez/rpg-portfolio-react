@@ -36,7 +36,7 @@ const Skills = () => {
   const { height, width } = useWindowDimensions();
 
   console.log(width, height);
- 
+  document.title = "My Skills"
   function handleClick(e) {
     if (e.target.id) {
       setSkillID(() => e.target.id);

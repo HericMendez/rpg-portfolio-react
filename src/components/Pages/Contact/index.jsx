@@ -13,6 +13,7 @@ const Contact = () => {
 const lang = useContext(LanguageContext)
 console.log(lang.language)
 const { theme } = useContext(ThemeContext);
+document.title = "Contact"
   return (
     <div className="contact-container scrollable">
       <div className="form-div">

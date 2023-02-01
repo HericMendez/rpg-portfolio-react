@@ -20,6 +20,7 @@ const Home = () => {
   const ChangeThemeIcon = () =>
     theme === "ff-theme" ? HandCursor : HeartCursor;
   if (width > 850) {
+    document.title = "My Portfolio"
     return (
       <div className="home-container">
         <div className="panel-div ">

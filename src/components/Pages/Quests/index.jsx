@@ -23,7 +23,7 @@ const Quests = () => {
       setIsOpen(()=> true)
     }
   }
-
+  document.title = "My Projects"
   return (
     <div className="quests-container">
       <div className="left-side">

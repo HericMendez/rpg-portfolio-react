@@ -2,6 +2,7 @@ import "./styles.css";
 import Text from "../../../context/Languages/MultiLingualContent/";
 
 const About = () => {
+  document.title = "About me"
   return (
     <div className="resume-text about-container">
       <section className="avatar3-div"></section>
