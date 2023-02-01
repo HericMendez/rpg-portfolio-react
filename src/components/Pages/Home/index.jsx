@@ -1,5 +1,5 @@
 import ProgressBar from "components/Elements/ProgressBar";
-import React from "react";
+import { useContext } from "react";
 import "./styles.css";
 
 import Portrait from "../../../assets/images/avatar/avatar_portrait.png";
@@ -9,11 +9,16 @@ import IconHtml from "../../../assets/images/icons/html.png";
 import IconCss from "../../../assets/images/icons/css.png";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
 import Text from "../../../context/Languages/MultiLingualContent/";
-
+import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
+import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
+import { ThemeContext } from "context/Themes";
 const Home = () => {
   const { height, width } = useWindowDimensions();
   console.log(width, height);
+  const { theme } = useContext(ThemeContext);
 
+  const ChangeThemeIcon = () =>
+    theme === "ff-theme" ? HandCursor : HeartCursor;
   if (width > 850) {
     return (
       <div className="home-container">
@@ -32,19 +37,23 @@ const Home = () => {
                 <h4 className=" center-text">
                   <Text contentID="home_h4_1" />
                 </h4>
-
-                <p className="text-class">
-                  - <Text contentID="home_p_1" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_2" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_3" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_4" />
-                </p>
+                <ul>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_1" />
+                  </li>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_2" />
+                  </li>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_3" />
+                  </li>
+                </ul>
               </div>
             </div>
             <br />
@@ -123,7 +132,7 @@ const Home = () => {
             <div className="panel-window scrollable">
               <h1 className="center-text">Heric Mendes</h1>
               <h4 style={{ paddingBottom: "2vh" }} className=" center-text">
-                {}
+                <Text contentID="home_h4_1" />
               </h4>
 
               <div className="profile-div ">
@@ -155,18 +164,23 @@ const Home = () => {
               </div>
               <hr className="golden" />
               <div className="profile-description">
-                <p className="text-class">
-                  - <Text contentID="home_p_1" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_2" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_3" />
-                </p>
-                <p className="text-class">
-                  - <Text contentID="home_p_4" />
-                </p>
+                <ul>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_1" />
+                  </li>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_2" />
+                  </li>
+                  <li className="text-class">
+                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_3" />
+                  </li>
+                </ul>
               </div>
               <br></br>
 

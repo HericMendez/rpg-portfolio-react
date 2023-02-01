@@ -36,18 +36,18 @@ const About = () => {
         <h3>Links</h3>
         <p>
           <Text contentID="about_p_6" />
-          <a href="https://github.com/HericMendez/rpg-portfolio-react">
+          <a target="_blank" rel="noreferrer" href="https://github.com/HericMendez/rpg-portfolio-react">
             <Text contentID="about_a_1" />
           </a>
         </p>
         <p>
           <Text contentID="about_p_7" />
-          <a href="https://ronenness.github.io/RPGUI/">
+          <a target="_blank" rel="noreferrer" href="https://ronenness.github.io/RPGUI/">
             <Text contentID="about_a_2" />
           </a>
         </p>
         <p>
-          <a href="">
+          <a href="#">
             <Text contentID="about_a_3" />
           </a>
           <Text contentID="about_p_8" />

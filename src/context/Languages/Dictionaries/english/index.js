@@ -132,7 +132,7 @@ const english = {
   skill_13_description:
     "An API documentation tool. It's very useful to list all endpoint URLs that connect server to client.",
 
-  skill_14_name: "Photoshop/Gimp",
+  skill_14_name: "Photoshop/ Gimp",
   skill_14_meta: "Image Edition Softwares",
   skill_14_description:
     'Image creation and edition tools. I can do al lot of nice things here, from photo edition to creation and adaptation of logos, icons, front-end elements, and so on... On Linux, i use the Photoshop\'s "low budget" version, Gimp (Which is also a very good and versatile tool).',

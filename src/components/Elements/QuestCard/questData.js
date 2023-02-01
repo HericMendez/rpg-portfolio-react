@@ -1,6 +1,6 @@
 import Flappy from '../../../assets/images/project-screenshots/flappyvania.gif'
 import MovieMeme from '../../../assets/images/project-screenshots/movie.jpeg'
-import Acdcit from '../../../assets/images/project-screenshots/acdc.gif'
+import Acdcit from '../../../assets/images/project-screenshots/acdc.png'
 import Lawyer from '../../../assets/images/project-screenshots/lawyer.jpeg'
 import Crypto from '../../../assets/images/project-screenshots/coinapp.jpeg'
 import Biotronica from '../../../assets/images/project-screenshots/biotronica.png'

@@ -6,7 +6,8 @@ import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
 import { ThemeContext } from "context/Themes";
 import useWindowDimensions from "Hooks/UseWindowDimensions";
-import Flappy from '../../../assets/images/project-screenshots/flappyvania.gif'
+
+
 
 
 const QuestCard = (props) => {
@@ -32,7 +33,7 @@ const QuestCard = (props) => {
         fontSize: theme === "ff-theme" ? "2vh" : "3vh",
         color: "#fff",
         textShadow: "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
-        color: "#fff",
+
 
         width: width < 1000 ? (width < 640 ? "90%" : "60%") : "37vw",
         background:

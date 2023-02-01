@@ -139,7 +139,7 @@ const SkillData = [
   {
     
     name: "Hardware",
-    icon: IconTS,
+    icon: IconHD,
     percent: "60%",
     barColor: "blue",
   },

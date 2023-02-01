@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState} from "react";
 
 import "./styles.css";
 
@@ -20,13 +20,13 @@ import IconPSGimp from "../../../assets/images/icons/ps-gimp.png";
 import IconFigma from "../../../assets/images/icons/figma.png";
 import IconHD from "../../../assets/images/icons/hd.png";
 import IconPepakura from "../../../assets/images/icons/pepakura.png";
-import Text from "context/Languages/MultiLingualContent";
+
 import SkillCard from "components/Elements/SkillCard";
 import { Modal } from "@mui/material";
 
 import useWindowDimensions from "Hooks/UseWindowDimensions";
 
-import { ThemeContext } from "context/Themes";
+
 
 const Skills = () => {
   const [isOpen, setIsOpen] = useState(false);

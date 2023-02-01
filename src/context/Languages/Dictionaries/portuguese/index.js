@@ -118,7 +118,7 @@ const portuguese = {
   skill_13_description:
     "É uma ferramenta de documentação de APIs. Muito útil para documentar os endpoints que conectam o front-end com o back-end, e facilita bastante o trabalho em equipe.",
 
-  skill_14_name: "Photoshop/Gimp",
+  skill_14_name: "Photoshop/ Gimp",
   skill_14_meta: "Softwares de Edição de Imagens",
   skill_14_description:
     'Ferramentas de criação e edição de imagens. Consigo fazer muita coisa legal aqui, desde edição de fotos até criação e adaptação de logos, ícones, elementos de front-end, enfim... No Linux eu uso a versão "de pobre" do Photoshop, o GIMP (que também é uma ferramenta muito boa e versátil).',

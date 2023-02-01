@@ -23,17 +23,7 @@ const Quests = () => {
       setIsOpen(()=> true)
     }
   }
-  const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
+
   return (
     <div className="quests-container">
       <div className="left-side">
@@ -42,28 +32,28 @@ const Quests = () => {
           <p>(click to view)</p>
           <ul onClick={handleClick} size="6">
             <li className="select-text" value="flappyvania">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="1">
                 <Text contentID="project_1_name" />
               </p>
             </li>
             <li className="select-text" value="meme-generator">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="2">
                 <Text contentID="project_2_name" />
               </p>
             </li>
             <li x className="select-text" value="acdcit">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="3">
                 <Text contentID="project_3_name" />
               </p>
             </li>
             <li  className="select-text" value="advogada">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="4">
                 {" "}
@@ -71,35 +61,35 @@ const Quests = () => {
               </p>{" "}
             </li>
             <li  className="select-text" value="cryptoapp">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="5">
                 <Text contentID="project_5_name" />
               </p>
             </li>
             <li  className="select-text" value="portfolio_1.0">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="6">
                 <Text contentID="project_6_name" />
               </p>
             </li>
             <li className="select-text" value="biotronica">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="7">
                 <Text contentID="project_7_name" />
               </p>
             </li>
             <li className="select-text" value="polar_mobile">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="8" >
                 <Text contentID="project_8_name" />
               </p>
             </li>
             <li  className="select-text" value="polar_web">
-              <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+              <img style={{ width: 36 }} src={ChangeThemeIcon()} alt="" />
               &nbsp;
               <p id="9">
                 <Text contentID="project_9_name" />

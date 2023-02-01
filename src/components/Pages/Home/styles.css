@@ -3,6 +3,9 @@
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-div {
@@ -16,8 +19,8 @@
 
   position: absolute;
   height: fit-content;
-  top: 5%;
-  bottom: 5%;
+  top: 2%;
+
   left: 3%;
   flex-direction: column;
   z-index: 10;
@@ -44,15 +47,30 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 2%;
-  height: 28vh;
+
 }
 
 .profile-description {
   text-align: left;
-  font-size: 2vh;
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
+
+
+}
+
+.profile-description ul{
+ padding:  0;
+ margin: 0;
+   display: flex;
+}
+
+.profile-description  li{
+  font-size: var(--fontsize-span);
+  padding: 1vh;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
 }
 
 .skill-icons {
@@ -67,16 +85,16 @@
 }
 
 .main-skill-icon {
-  width: 7vh;
-  height: 7vh;
-  margin: 8px;
+  width: 8vh;
+  height: 8vh;
+
   background-image: var(--skill-frame);
 
   justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 7vh 7vh;
+  background-size: 8vh 8vh;
 }
 
 h1,
@@ -97,39 +115,39 @@ h4 {
     width: 40vw;
     height: 80vh;
   }
-  .profile-div {
-    margin-bottom: 3vh;
-    padding-bottom: 5vh;
-  }
+
 }
 
 @media screen and (max-width: 850px) {
   .home-container {
     margin: 1vh;
-    padding-bottom: 200px;
+    padding-bottom: 10px;
   }
 
   .profile-div {
     display: block;
 
     margin-top: 2%;
-    height: 28vh;
+
   }
 
   .portrait-frame{
-    margin-top: 10px;
-    width: 185px;
-    margin-left: 3vw;
+    margin-top: 4vh;
+    
+    height:  100% ;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .avatar-portrait {
-    width: 22vh;
+    width: 140px;
     
     z-index: -1;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    padding-right: 2vh;
+
+
+
     content: var(--avatar-portrait);
   }
   .profile-div {
@@ -139,21 +157,21 @@ h4 {
 
   .portrait-div {
     display: flex;
-    margin-top: 0vh;
-    justify-content: space-between;
+    margin-top: 1vh;
+    justify-content: center;
   }
 
   .panel-window {
-    width: 100vw;
+    width: 100%;
     position: inherit;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
   }
 
   .progress-bars {
     width: 50%;
-    height: 100px;
+
   }
 }
 
@@ -164,17 +182,24 @@ h4 {
 }
 
 @media screen and (max-width: 800px) {
+  .home-container{
+ 
+    zoom: 90%;
+  }
   .main-skill-icon {
-    width: 10vh;
-    height: 10vh;
-    margin: 8px;
+    width: 8vh;
+    height: 8vh;
+
     background-image: var(--skill-frame);
   
     justify-content: center;
     align-items: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 10vh 10vh;
+    background-size: 8vh 8vh;
   }
+
+
+  
   
 }

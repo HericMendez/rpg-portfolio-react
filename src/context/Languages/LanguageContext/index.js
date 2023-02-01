@@ -7,4 +7,4 @@ export const dictionary = {
   english: english,
 };
 
-export const LanguageContext = createContext(dictionary.portuguese);
+export const LanguageContext = createContext(localStorage.language ==='portuguese' ? dictionary.portuguese : dictionary.english);

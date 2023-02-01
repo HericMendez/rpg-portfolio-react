@@ -1,6 +1,6 @@
 import MainContainer from "components/Elements/MainContainer";
 import './fonts/DeterminationMonoWebRegular-Z5oq.ttf'
-import { useState ,useContext } from "react";
+import { useState ,useContext, useEffect } from "react";
 import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
 import Modal from 'react-modal'
@@ -12,6 +12,7 @@ function App() {
   const [language, setLanguage] = useState("portuguese");
   function toggleLanguage() {
     setLanguage((language) => (language === "portuguese" ? "english" : "portuguese"));
+    localStorage.setItem("language", language)
   }
 
   return (

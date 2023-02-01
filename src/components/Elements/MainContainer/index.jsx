@@ -15,13 +15,13 @@ import {
   GiBehold,
   GiCycle,
   GiBrazilFlag,
-  GiDeathSkull,
+
   GiDrippingSword,
   
-  GiHelp,
+
   GiHouse,
 
-  GiPotionBall,
+
   GiScrollQuill,
   GiSkills,
 

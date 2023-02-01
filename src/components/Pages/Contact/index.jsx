@@ -65,9 +65,9 @@ const { theme } = useContext(ThemeContext);
 
 
         <div className="social-link-container">
-          <img src={IconResume} alt="" />
+          <img style={{filter: 'grayscale(100)'}} src={IconResume} alt="" />
           <div>
-            <a target="_blank" rel="noreferrer"><Text contentID="form_resume_link" /></a>
+            <a style={{color: '#808080', textDecoration: 'none'}}  target="_blank" rel="noreferrer"><Text contentID="form_resume_link" /></a>
      
           </div>
         </div>
