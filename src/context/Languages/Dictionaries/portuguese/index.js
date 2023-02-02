@@ -19,11 +19,12 @@ const portuguese = {
   nav_lang: 'IDIOMA',
 
   //Home Screen:
-  home_h4_1: "Desenvolvedor Front-end Nível 31",
+  home_h4_1: "Level 31 Front-end Dev",
   home_p_1: "Freelancer Front-end/Mobile",
-  home_p_2: "Dev Estagiário na Biotrônica",
-  home_p_3: "Estudante na Fatec Taquaritinga",
-  home_p_4: "Atualmente estudando Typescript",
+  home_p_2: "Desenvolvedor na Biotronica",
+  home_p_3: "Desenvolvedor Polar Sapiens",
+  home_p_4: "Estudante na Fatec Taquaritinga",
+  home_p_5: "Viciado em Café   ",
   home_label_1: "Saúde",
   home_label_2: "Code Exp.",
   home_label_3: "Horas de Sono",
@@ -98,10 +99,9 @@ const portuguese = {
   skill_9_description:
     "Biblioteca utilitária de CSS, parecida com Bootstrap, só que melhor.Permite a utilização de classes CSS inline,com maior nível de personalização, dispensa quase que 100% o uso de CSS (o que é ótimo em componentes React e em protótipos.)",
 
-  skill_10_name: "MySql",
-  skill_10_meta: "Sistema de Gestão de Banco de Dados",
-  skill_10_description:
-    "Possuo pouca experiência com Back-end, mas até que eu me viro aqui.",
+    skill_10_name: "SASS",
+    skill_10_meta: "Syntatically Awesome Stylesheets",
+    skill_10_description:"Syntatically Awesome Stylesheets - Ou Folhas de Estilo Sintaticamente Incríveis. O nome já diz tudo! Precisei aprender Sass para refatorar o código de um projeto, e me apaixonei por ele desde então. O Sass torna o CSS padrão muito mais organizado e legível, acrescenta muitas funcionalidades úteis a ele, como mixins (funções), importações de arquivos, herança, classes aninhadas, e muito mais.",
 
   skill_11_name: "Git",
   skill_11_meta: "Version Control System",

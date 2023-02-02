@@ -8,7 +8,7 @@ import IconNode from "../../../assets/images/icons/node.png";
 import IconNpm from "../../../assets/images/icons/npm.png";
 import IconBootstrap from "../../../assets/images/icons/bootstrap.png";
 import IconTailwind from "../../../assets/images/icons/tailwind.png";
-import IconMysql from "../../../assets/images/icons/mysql.png";
+import IconSass from "../../../assets/images/icons/sass.png";
 import IconGit from "../../../assets/images/icons/git.png";
 import IconScrum from "../../../assets/images/icons/agile.png";
 import IconSwagger from "../../../assets/images/icons/swagger.png";
@@ -82,9 +82,9 @@ const SkillData = [
 
   {
     
-    name: "MySQL",
-    icon: IconMysql,
-    percent: "20%",
+    name: "Sass",
+    icon: IconSass,
+    percent: "40%",
     barColor: "purple",
   },
 

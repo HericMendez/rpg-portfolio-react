@@ -26,7 +26,7 @@ body {
   overflow: none;
 
 } */
-.resume-text::-webkit-scrollbar,
+::-webkit-scrollbar,
 .content-window::-webkit-scrollbar {
   width: 2vw;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 /* Track */
-.resume-text::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background-image: var(--scrollbar-track);
   background-size: 4vh 8vh;
   background-repeat: repeat-y;
@@ -44,7 +44,7 @@ body {
 
 /* Handle */
 
-.resume-text::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-image: var(--scrollbar-thumb);
   background-size: 3.6vh 100%;
   background-repeat: repeat;
@@ -52,7 +52,7 @@ body {
 
 /* buttons */
 
-.resume-text::-webkit-scrollbar-button {
+::-webkit-scrollbar-button {
   background-image: var(--scrollbar-button);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ body {
   }
   
 
-  .resume-text::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 0vw;
   }
 

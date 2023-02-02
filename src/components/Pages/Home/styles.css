@@ -16,9 +16,10 @@
 
 .panel-window {
   width: 40vw;
+  height: 80vh;
 
   position: absolute;
-  height: fit-content;
+  
   top: 2%;
 
   left: 3%;
@@ -109,11 +110,12 @@ h4 {
 
 @media screen and (max-width: 1100px) {
   .avatar-img {
-    right: 0;
+    right: -10vh;
+    z-index: -100;
   }
   .panel-window {
-    width: 40vw;
-    height: 80vh;
+    width: fit-content;
+    height: 78vh;
   }
 
 }
@@ -177,8 +179,13 @@ h4 {
 
 .text-class {
   padding-top: 0;
-  list-style-type: square;
+  list-style-type: none;
   font-size: 1.5vh;
+}
+
+.text-class img{
+  width: 4vh;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 800px) {

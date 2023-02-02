@@ -18,12 +18,14 @@ const QuestCard = (props) => {
     theme === "ff-theme" ? HandCursor : HeartCursor;
   return (
     <div
-      className="rpgui-container framed  resume-text"
+      className="rpgui-container framed  resume-text rpgui-pixelated"
       style={{
         position: "absolute",
 
         top: "2vh",
+
         right: width < 1000 ? "10%" : "3vw",
+   
 
         height: "80vh",
         overflowX: "hidden",
@@ -59,6 +61,27 @@ const QuestCard = (props) => {
         </h3>
             <div className="rpgui-container framed-grey">
               <img style={{width: '100%'}} src={questData[props.projectID - 1].image} alt="" />
+              <hr />
+
+              <div className="project-links">
+              <a
+              target="_blank"
+              rel="noreferrer"
+              href={questData[props.projectID - 1].demo}
+            >
+               <button disabled={!questData[props.projectID - 1].demo? true:false}>DEMO</button>
+            </a>
+              
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={questData[props.projectID - 1].git}
+           
+            >
+              <button disabled={!questData[props.projectID - 1].git? true:false}>CODE</button>
+            </a>
+              </div>
+            
             </div>
         <p
           style={{
@@ -67,42 +90,15 @@ const QuestCard = (props) => {
           }}
         >
          <hr className="golden" />
-         <br />
+  
           <Text
             contentID={`project_${
               props.projectID ? props.projectID : "1"
             }_description`}
           />
         </p>
-        <hr className="golden" />
-        <br />
-        <div className="project-links">
-          <h4>Links:</h4>
-          <div  style={{visibility: questData[props.projectID - 1].demo? 'visible': 'hidden'}}>
-            <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
-            &nbsp;
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={questData[props.projectID - 1].demo}
-            >
-              Demonstration
-            </a>
-          </div>
-          <br />
-          <div  style={{visibility: questData[props.projectID - 1].git? 'visible': 'hidden'}}>
-            <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
-            &nbsp;
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={questData[props.projectID - 1].git}
-             
-            >
-              Github Repository
-            </a>
-          </div>
-        </div>
+       
+      
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const SkillCard = ({ skillID }) => {
         // background: '#858587'//"#a8a9ad"
       }}
     >
-      <div className="details-header rpgui-container framed-grey">
+      <div className="details-header rpgui-container framed-grey rpgui-pixelated" >
         <img
           className="header-skill-icon"
           src={SkillData[skillID - 1].icon}

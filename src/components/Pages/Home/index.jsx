@@ -11,7 +11,10 @@ import useWindowDimensions from "Hooks/UseWindowDimensions";
 import Text from "../../../context/Languages/MultiLingualContent/";
 import HandCursor from "../../../assets/rpgui/img/theme-images/hand_cursor.png";
 import HeartCursor from "../../../assets/rpgui/img/theme-images/heart_cursor.png";
+import Coffee from "../../../assets/images/icons/coffee.png";
+
 import { ThemeContext } from "context/Themes";
+import { GiCoffeeCup } from 'react-icons/gi';
 const Home = () => {
   const { height, width } = useWindowDimensions();
   console.log(width, height);
@@ -40,20 +43,34 @@ const Home = () => {
                 </h4>
                 <ul>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_1" />
                   </li>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img  src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_2" />
                   </li>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img  src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_3" />
                   </li>
+                  <li className="text-class">
+                    <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_4" />
+                  </li>
+                  <li className="text-class">
+                  <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    
+                    <Text contentID="home_p_5" /> 
+                     
+                    <img style={{width: 28}} src={Coffee} alt="" />
+                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -167,17 +184,17 @@ const Home = () => {
               <div className="profile-description">
                 <ul>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img  src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_1" />
                   </li>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img  src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_2" />
                   </li>
                   <li className="text-class">
-                    <img style={{ width: 24 }} src={ChangeThemeIcon()} alt="" />
+                    <img  src={ChangeThemeIcon()} alt="" />
                     
                     <Text contentID="home_p_3" />
                   </li>

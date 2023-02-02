@@ -14,15 +14,17 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 4vh;
+  top: 1vh;
   left: 1vw;
-  height: fit-content;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%  ;
   width: 30vw;
+  height: 60vh;
 }
 
 .grid-title {

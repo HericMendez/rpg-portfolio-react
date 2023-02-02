@@ -21,9 +21,10 @@ const english = {
   //Home Screen:
   home_h4_1: "Level 31 Front-end Dev",
   home_p_1: "Front-end/Mobile Freelancer",
-  home_p_2: "Intern Dev at Biotronica",
-  home_p_3: "Student at Fatec Taquaritinga",
-  home_p_4: "Currently learning Typescript",
+  home_p_2: "Developer at Biotronica",
+  home_p_3: "Developer at Polar Sapiens",
+  home_p_4: "Student at Fatec Taquaritinga",
+  home_p_5: "Addicted to Coffee",
   home_label_1: "Health",
   home_label_2: "Code Exp.",
   home_label_3: "Hours of Sleep",
@@ -112,10 +113,11 @@ const english = {
   skill_9_description:
     "An utility-first Css Lib, almost like Bootstrap, but better. Allows the use of inline CSS with built-in classes with a higher customization level, and dismisses the use of css almost completely (which is great in React components and MVPs).",
 
-  skill_10_name: "MySql",
-  skill_10_meta: "Database Management System",
+  skill_10_name: "SASS",
+  skill_10_meta: "Syntatically Awesome Stylesheets",
   skill_10_description:
-    "I have little experience with Back-end, but i can get by if i have to use it..",
+    "Syntatically Awesome Stylesheets, the name says it all! I had to learn it to refactor a project code, and fell in love with it since then. It makes vanilla CSS much more organized and readable, and also adds many useful features to it, like mixins (functions), file imports, class inheritance, nested classes, and much more.",
+
 
   skill_11_name: "Git",
   skill_11_meta: "Sistema de Controle de Versão",

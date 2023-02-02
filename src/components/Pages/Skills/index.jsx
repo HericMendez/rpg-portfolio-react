@@ -12,7 +12,7 @@ import IconNode from "../../../assets/images/icons/node.png";
 import IconNpm from "../../../assets/images/icons/npm.png";
 import IconBootstrap from "../../../assets/images/icons/bootstrap.png";
 import IconTailwind from "../../../assets/images/icons/tailwind.png";
-import IconNMysql from "../../../assets/images/icons/mysql.png";
+import IconSass from "../../../assets/images/icons/sass.png";
 import IconGit from "../../../assets/images/icons/git.png";
 import IconScrum from "../../../assets/images/icons/agile.png";
 import IconSwagger from "../../../assets/images/icons/swagger.png";
@@ -91,7 +91,7 @@ const Skills = () => {
             </div>
 
             <div className="skill-icon">
-              <img id="10" src={IconNMysql} alt="Mysql" />
+              <img id="10" src={IconSass} alt="Mysql" />
             </div>
 
             <div className="skill-icon">
