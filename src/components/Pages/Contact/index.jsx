@@ -6,7 +6,7 @@ import IconGithub from "../../../assets/images/icons/github.png";
 import IconResume from "../../../assets/images/icons/resume.png";
 import IconSteam from "../../../assets/images/icons/steam.png";
 import Text from "../../../context/Languages/MultiLingualContent/";
-
+import Resume from '../../../assets/pdf/resume.pdf'
 import { ThemeContext } from "context/Themes";
 import { LanguageContext } from "context/Languages/LanguageContext";
 const Contact = () => {
@@ -68,7 +68,7 @@ document.title = "Contact"
         <div className="social-link-container">
           <img  src={IconResume} alt="" />
           <div>
-            <a href="/src/assets/pdf/resume.pdf" download="resume"><Text contentID="form_resume_link" /></a>
+            <a href={Resume} download='resume'><Text contentID="form_resume_link" /></a>
      
           </div>
         </div>
