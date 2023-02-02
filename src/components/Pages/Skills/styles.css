@@ -6,6 +6,7 @@
   align-items: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
+
 }
 
 .skills-div {
@@ -18,6 +19,7 @@
   left: 1vw;
   height: 80vh;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .skills-grid {

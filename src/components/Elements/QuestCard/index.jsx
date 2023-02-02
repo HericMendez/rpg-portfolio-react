@@ -14,8 +14,7 @@ const QuestCard = (props) => {
   const { theme } = useContext(ThemeContext);
   const { width } = useWindowDimensions();
   console.log(questData[props.projectID - 1]);
-  const ChangeThemeIcon = () =>
-    theme === "ff-theme" ? HandCursor : HeartCursor;
+
   return (
     <div
       className="rpgui-container framed  resume-text rpgui-pixelated"
@@ -24,8 +23,9 @@ const QuestCard = (props) => {
 
         top: "2vh",
 
-        right: width < 1000 ? "10%" : "3vw",
-   
+        right: width < 1000 ? "2.5%" : "2vw",
+        marginLeft: 100,
+
 
         height: "80vh",
         overflowX: "hidden",
@@ -37,7 +37,7 @@ const QuestCard = (props) => {
         textShadow: "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
 
 
-        width: width < 1000 ? (width < 640 ? "90%" : "60%") : "37vw",
+        width: width < 1000 ? (width < 640 ? "95%" : "60%") : "37vw",
         background:
           theme === "ff-theme"
             ? "linear-gradient(to bottom right, #466bfa, #00002b) repeat repeat"
@@ -45,14 +45,14 @@ const QuestCard = (props) => {
       }}
     >
       <div>
-        <h1>
+        <h1 style={{fontSize: theme === "ff-theme" ? "2.5vh" : "5vh",}}>
           <Text
             contentID={`project_${
               props.projectID ? props.projectID : "1"
             }_name`}
           />
         </h1>
-        <h3>
+        <h3 style={{fontSize: theme === "ff-theme" ? "1.5vh" : "2vh", color: '#ccc'}}>
           <Text
             contentID={`project_${
               props.projectID ? props.projectID : "1"

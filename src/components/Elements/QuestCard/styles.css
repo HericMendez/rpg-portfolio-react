@@ -17,6 +17,15 @@
   font-family: 'Press Start 2P' !important;
 }
 
+
+
+@media screen and (max-width: 800px) {
+  .project-links button {
+    width: 80px;
+
+  }
+  
+}
 .project-links button:active{
   filter: invert(100%);
 }
