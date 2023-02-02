@@ -191,7 +191,7 @@ h4 {
 @media screen and (max-width: 800px) {
   .home-container{
  
-    zoom: 90%;
+    zoom: 80%;
   }
   .main-skill-icon {
     width: 8vh;

@@ -68,7 +68,7 @@ document.title = "Contact"
         <div className="social-link-container">
           <img style={{filter: 'grayscale(100)'}} src={IconResume} alt="" />
           <div>
-            <a style={{color: '#808080', textDecoration: 'none'}}  target="_blank" rel="noreferrer"><Text contentID="form_resume_link" /></a>
+            <a href="/src/assets/pdf/resume.pdf" download="resume"><Text contentID="form_resume_link" /></a>
      
           </div>
         </div>
