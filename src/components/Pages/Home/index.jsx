@@ -198,6 +198,16 @@ const Home = () => {
                     
                     <Text contentID="home_p_3" />
                   </li>
+                  <li className="text-class">
+                    <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_4" />
+                  </li>
+                  <li className="text-class">
+                    <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_5" />
+                  </li>
                 </ul>
               </div>
               <br></br>

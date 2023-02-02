@@ -16,7 +16,7 @@
 
 .panel-window {
   width: 40vw;
-  height: 80vh;
+
 
   position: absolute;
   
@@ -115,7 +115,7 @@ h4 {
   }
   .panel-window {
     width: fit-content;
-    height: 78vh;
+    height: fit-content;
   }
 
 }
