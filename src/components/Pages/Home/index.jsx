@@ -62,14 +62,7 @@ const Home = () => {
                     
                     <Text contentID="home_p_4" />
                   </li>
-                  <li className="text-class">
-                  <img  src={ChangeThemeIcon()} alt="" />
-                    
-                    
-                    <Text contentID="home_p_5" /> 
-                     
-                    <img style={{width: 28}} src={Coffee} alt="" />
-                  </li>
+                  
                   
                 </ul>
               </div>
@@ -203,11 +196,7 @@ const Home = () => {
                     
                     <Text contentID="home_p_4" />
                   </li>
-                  <li className="text-class">
-                    <img  src={ChangeThemeIcon()} alt="" />
-                    
-                    <Text contentID="home_p_5" />
-                  </li>
+                  
                 </ul>
               </div>
               <br></br>
