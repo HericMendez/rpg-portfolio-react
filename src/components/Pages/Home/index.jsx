@@ -62,6 +62,11 @@ const Home = () => {
                     
                     <Text contentID="home_p_4" />
                   </li>
+                  <li className="text-class">
+                    <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text contentID="home_p_5" />
+                  </li>
       
                   
                 </ul>
@@ -196,6 +201,11 @@ const Home = () => {
                     
                     <Text contentID="home_p_4" />
                   </li>
+                  <li className="text-class">
+                    <img  src={ChangeThemeIcon()} alt="" />
+                    
+                    <Text   contentID="home_p_5" />
+                  </li>
           
                 </ul>
               </div>
@@ -204,7 +214,7 @@ const Home = () => {
               <div>
                 <div>
                   <h4 className="center-text">
-                    - <Text contentID="home_h4_2" />
+                    <Text contentID="home_h4_2" />
                   </h4>
                   <div className="skill-icons">
                     <img

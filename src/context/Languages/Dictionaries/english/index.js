@@ -24,7 +24,7 @@ const english = {
   home_p_2: "Developer at Biotronica",
   home_p_3: "Developer at Polar Sapiens",
   home_p_4: "Student at Fatec Taquaritinga",
-  home_p_5: "Addicted to Coffee",
+  home_p_5: "Score of 740 on TOEIC English Proficiency Test",
   home_label_1: "Health",
   home_label_2: "Code Exp.",
   home_label_3: "Hours of Sleep",
@@ -50,7 +50,7 @@ const english = {
   course_3_name: "Business Administration",
   course_3_cycle: "January/2014 - December/2017",
   
-  course_4_name: "Typescript Formation",
+  course_4_name: "TOEIC English Proficiency Test",
   course_4_cycle: "Alura - 2023 (currently studying)",
   
   bio_h2_3: "Courses and Certificates",

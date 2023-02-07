@@ -53,9 +53,9 @@ const Bio = () => {
           <br />
           <h2><Text contentID="bio_h2_3"/></h2>
           <p>
-          <u><Text contentID="course_4_name"/></u>
+          <u>TOEIC English Proficiency Test</u>
             <br />
-            <span><Text contentID="course_4_cycle"/></span>
+            <span>Score: 740 (405 Reading / 335 Listening) (2023)</span>
           </p>
           <p>
             <u>Scrum Foundation Professional Certificate</u>

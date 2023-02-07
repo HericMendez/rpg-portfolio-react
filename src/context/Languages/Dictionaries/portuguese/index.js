@@ -24,7 +24,7 @@ const portuguese = {
   home_p_2: "Desenvolvedor na Biotronica",
   home_p_3: "Desenvolvedor Polar Sapiens",
   home_p_4: "Estudante na Fatec Taquaritinga",
-  home_p_5: "Viciado em Café   ",
+  home_p_5: "Pontuação de 740 no  TOEIC English Proficiency Test",
   home_label_1: "Saúde",
   home_label_2: "Code Exp.",
   home_label_3: "Horas de Sono",

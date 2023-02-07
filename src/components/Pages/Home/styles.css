@@ -110,12 +110,13 @@ h4 {
 
 @media screen and (max-width: 1100px) {
   .avatar-img {
-    right: -10vh;
+    right: 0vh;
     z-index: -100;
   }
   .panel-window {
-    width: fit-content;
+    width: 40vw;
     height: fit-content;
+    top: 0
   }
 
 }
